@@ -1,0 +1,117 @@
+SOALAN
+
+1 admin 1 tempat?
+
+
+
+------------------DONE-------------------
+
+- Search bar dalam hmburger tak keluar 
+- Dropdown setting tak muncul 
+- Card 
+- Admin login 
+- Backend data 
+- Super Admin Dashboard 
+- Upload gambar 
+- Admin Add
+- Assign Admin
+- Design admin dashboard
+- Baiki design manage event then copy paste untuk comment
+- Edit event
+
+------------TO FIX------------------
+=== Error message tak allign dengan logo
+
+- - Sizing untuk upload gambar dengan butang dalam admin add event
+- Popup message not appearing (session not transferring correctly, not appearing) (improve popup display)
+- Time display
+- separate admin dengan place
+- change location of responsbility through scroll
+- how to geolocate? pin map & gps?
+  - for database use only. Then the user will be redirected to google map
+- Media
+- Combine CSS bagi tak panjang
+  - Admin dashboard card clash dengan manage attraction card
+  -media destination THIS
+  - Change file upload destination in php
+  
+- truncuate display time
+- Optimize length of CSS
+
+
+-----------TO ADD---------------
+
+CROP GAMBAR AUTO TIME UPLOAD APE2 
+
+(E)
+- Design error box from admin add event
+- Event details
+-
+
+(Esok)
+
+
+- Design input media and display all medias how
+- Design view attraction and edit attraction gone
+- View reviews (delete or approve) *based on superadmin manage
+- Add event *based on superadmin manage
+- Admin Edit Profile for admin not superadmin *based on superadmin manage
+
+
+- Edit Attraction View (
+  - Only can change when user click edit button
+
+
+- Close button after clicking additional detail in edit attraction
+
+
+
+- Comment
+- Feedback
+- Notification
+- PWA
+  - Caching
+Separate javacsript and php code from
+
+
+
+
+---------TO NOTE--------------
+Superadmin strictly boxicon
+
+
+
+-------ESOK------
+
+Nanti ejas asing javascript
+
+
+
+
+
+
+--- UPLOAD GAMBAR/VIDEO IKUT PATH AUTO DIRECTORY 
+--- AUTO CROP GAMBAR
+
+
+
+OWNER BAIKI HEADER CLASH DGN STYLING ORANGE YG NK BUAT
+- Feedback
+- Comment
+- Design Admin
+  
+- Ejas fail destination utk admin
+tempat process
+- Cara tambah video
+
+Visitor akan nampakx
+
+Butiran Am
+- Aktiviti Menarik dan RIngkasan
+- Masa Operasi dan hari
+
+Acara
+
+Galeri
+
+Ulasan

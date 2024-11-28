@@ -1,0 +1,255 @@
+body { 
+    background-color: #f5f5f5; 
+}
+
+/* Nav */
+
+nav { 
+    background-color: #ffa500; 
+    height: 60px;
+}
+
+
+.nav-wrapper {
+    display: flex;
+    justify-content: space-between; /* Ensures logo is on the left, nav items on the right */
+    align-items: center; /* Center vertically */
+    position: relative;
+    width: 100%; /* Full width of the container */
+}
+
+/* Logo */
+.nav-wrapper .brand-logo {
+    display: flex; /* Use flexbox for better alignment */
+    align-items: center; /* Center vertically */
+    height: 100%; /* Ensure it takes full height of nav */
+    margin-left: 10px; /* Adjust for spacing */
+}
+
+.nav-wrapper .brand-logo img {
+    height: 100%;
+    width: auto;
+    transform: scale(1.7); /* Increase size by 50%. Adjust this value as needed */
+    transform-origin: left center; /* Scale from the left side */
+}
+
+/* Right-side navigation*/
+
+.nav-wrapper ul {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+ul.right {
+    margin-left: auto; /* Push this ul to the right */
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+
+/* Setting Dropdown */
+
+.dropdown-content {
+    background-color: white;
+    min-width: 160px;
+    border-radius: 4px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  .dropdown-content li {
+    min-height: 40px;
+  }
+  
+  .dropdown-content li > a {
+    color: black;
+    padding: 12px 16px;
+    display: block;
+  }
+  
+  .dropdown-content li:hover {
+    background-color: #f5f5f5;
+  }
+
+
+  
+
+/* Search bar */
+.search-center {
+    flex: 1; 
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    margin-left: 50px;
+}
+
+.search-wrapper { 
+    position: relative;
+    width: 100%; /* Adjust to fit the available width */
+    max-width: 1000px; /* Max width on larger screens */
+    height: 40px;
+    background-color: white;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+}
+
+.search-wrapper input {
+    width: 100%;
+    height: 100%;
+    border: none; /* Removes the border */
+    outline: none; /* Removes the outline */
+    background: transparent; /* Keeps the background transparent */
+    color: black;
+    padding-right: 40px;
+    font-size: 16px;
+}
+
+.search-wrapper i { 
+    position: absolute; 
+    right: 15px;
+    color: #888;
+    cursor: pointer;
+}
+
+/* Mobile search bar */
+.search-wrapper-mobile {
+    display: none; /* Initially hidden */
+    width: 100%; /* Full width on mobile */
+    margin: 10px 0;
+    padding-left: 5px; /* Adds padding on the left */
+    height: 40px;
+    background-color: white;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.search-wrapper-mobile input {
+    width: 100%;
+    height: 100%;
+    border: none;
+    background: transparent;
+    color: black;
+    padding-right: 40px;
+    font-size: 16px;
+}
+
+.search-wrapper-mobile i { 
+    position: absolute; 
+    right: 15px;
+    color: #888;
+    cursor: pointer;
+}
+
+
+
+/* Adjust the icon position */
+.search-wrapper i { 
+    position: absolute; 
+    right: 15px;
+    color: #888;
+    cursor: pointer;
+}
+
+
+/*Login Page*/
+
+.admin-login-container{
+    height: 400px;           
+    margin: auto;           
+    border-radius: 10px;     
+    padding: 20px;           
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    flex-direction: column;
+    justify-content: center; 
+}
+
+.admin-login-container login-title{
+    
+}
+/* VIsitors View Content */
+.card { 
+    border-radius: 10px; 
+    overflow: hidden; 
+    margin-bottom: 20px; /* Add some spacing between cards */
+}
+
+.card-image img { 
+    height: 250px; 
+    object-fit: cover;
+    filter: brightness(60%); 
+    width: 100%; 
+}
+
+.card-title { 
+    width: 100%; 
+    padding: 10px !important; 
+    margin-bottom: 50px;
+    
+}
+
+/* Page numbers */    
+.pagination { 
+    text-align: right;
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap; 
+}
+
+/* Media queries for responsiveness */
+@media screen and (max-width: 1000px) {
+
+    .desktop-only {
+        display: block; /* Show on desktop but not mobile */
+    }
+
+    .nav-wrapper ul.center {
+        display: none; /* Hide the center ul in mobile */
+    }
+
+    .nav-wrapper ul.right {
+        display: none; /* Hide right ul */
+    }
+
+    .search-center {
+        display: none; /* Hide the search bar on smaller screens */
+    }
+
+    .sidenav-trigger {
+        display: block !important; /* Hamburger menu for smaller screen */
+    }
+
+    .search-wrapper { 
+        display: none;
+    }
+    
+    
+}
+
+/* Medias */
+
+
+
+/* Status message styling */
+.message {
+    padding: 1rem;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+.error-message {
+    background-color: #ffebee;
+    color: #c62828;
+    border: 1px solid #ffcdd2;
+}
+
+.success-message {
+    background-color: #e8f5e9;
+    color: #2e7d32;
+    border: 1px solid #c8e6c9;
+}

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MaranGuide - Attraction Details</title>
+
+  <!-- Materialize CSS -->
+  <link type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="../project.css">
+
+  <!-- PWA Support -->
+  <link rel="manifest" href="../manifest.json">
+  <link rel="apple-touch-icon" href="/Media/Picture/img/MARANGUIDE_ICON.png">
+  <meta name="apple-mobile-web-app-status-bar" content="#ffa500">
+</head>
+<body>
+  <!-- Header Placeholder -->
+  <div id="header-html"></div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col s12 m8 offset-m2">
+        <div class="card">
+          <div class="card-image">
+            <img id="attraction-image" src="" alt="">
+          </div>
+          <div class="card-content">
+            <span class="card-title" id="attraction-name"></span>
+            <!-- Add additional details here -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    //Register Service Worker
+    if('serviceWorker' in navigator)
+        {navigator.serviceWorker.register('/service-worker.js')
+            .then(registration => {}
+        
+        
+        
+        }
+    // Retrieve the attraction data from localStorage
+    const attractionData = JSON.parse(localStorage.getItem('attractionData'));
+
+    // Populate the detail page with the attraction data
+    document.getElementById('attraction-image').src = attractionData.media_path;
+    document.getElementById('attraction-name').textContent = attractionData.name;
+
+    // Load the header
+    fetch('header.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('header-html').innerHTML = data;
+
+        // Initialize Materialize components
+        var sidenavElems = document.querySelectorAll('.sidenav');
+        M.Sidenav.init(sidenavElems);
+
+        var dropdownElems = document.querySelectorAll('.dropdown-trigger');
+        M.Dropdown.init(dropdownElems, {
+          coverTrigger: false,
+          constrainWidth: false,
+          alignment: 'right'
+        });
+      })
+      .catch(error => console.error('Error loading the header:', error));
+  </script>
+</body>
+</html>

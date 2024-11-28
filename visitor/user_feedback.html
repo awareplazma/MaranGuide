@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Borang Maklum Balas</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <style>
+        .feedback-form {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+        }
+        @media only screen and (max-width: 600px) {
+            .feedback-form {
+                margin: 10px;
+                padding: 10px;
+            }
+        }
+        .page-header {
+            background-color: #ffa000;
+            padding: 15px;
+            color: white;
+        }
+        .back-button {
+            color: white;
+            margin-right: 15px;
+        }
+    </style>
+</head>
+<body>
+<!-- Header -->
+<div id="header-html"></div>
+<div class="container">
+    <div class="feedback-form card">
+        <form method="POST" action="">
+            <div class="row">
+                <div class="input-field col s12">
+                    <input id="tajuk" name="title" type="text" class="validate" required>
+                    <label for="tajuk">TAJUK</label>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="input-field col s12">
+                    <textarea id="ulasan" name="content" class="materialize-textarea" required></textarea>
+                    <label for="ulasan">ULASAN</label>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col s12 center-align">
+                    <button class="btn waves-effect waves-light red" type="submit" name="action">
+                        HANTAR
+                    </button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+<script>
+//Load header
+document.addEventListener('DOMContentLoaded', function() {
+  fetch('/visitor/header.html')
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById('header-html').innerHTML = data;
+      var sidenavElems = document.querySelectorAll('.sidenav');
+      var sidenavInstances = M.Sidenav.init(sidenavElems);
+
+      var dropdownElems = document.querySelectorAll('.dropdown-trigger');
+      var dropdownInstances = M.Dropdown.init(dropdownElems, {
+        coverTrigger: false,
+        constrainWidth: false,
+        alignment: 'right'
+      });
+    })
+    .catch(error => console.error('Error loading the header:', error));
+});
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    // Initialize Materialize components
+    M.updateTextFields();
+    M.textareaAutoResize(document.querySelector('#ulasan'));
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<script src="/js/ui.js"></script>
+</body>
+</html>

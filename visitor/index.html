@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MaranGuide - Attractions</title>
+    
+    <!-- Materialize CSS -->
+    <link type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../project.css">
+    
+    <!-- PWA Support -->
+    <link rel="manifest" href="../manifest.json">
+    <link rel="apple-touch-icon" href="/Media/Picture/img/MARANGUIDE_ICON.png">
+    <meta name="apple-mobile-web-app-status-bar" content="#ffa500">
+</head>
+<body>
+    <!-- Header Placeholder -->
+    <div id="header-html"></div>
+    
+    <div class="container">
+        <!-- Loading Indicator -->
+        <div id="loading" class="center" style="display:none;">
+            <div class="preloader-wrapper big active">
+                <div class="spinner-layer spinner-blue-only">
+                    <div class="circle-clipper left">
+                        <div class="circle"></div>
+                    </div>
+                    <div class="circle-clipper right">
+                        <div class="circle"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Attractions Container -->
+        <div id="attractions-container" class="row"></div>
+
+        <!-- Pagination -->
+        <ul id="pagination" class="pagination center"></ul>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+        // Service Worker Registration
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('/service-worker.js')
+                .then(registration => {
+                    console.log('Service Worker registered successfully');
+                })
+                .catch(error => {
+                    console.error('Service Worker registration failed:', error);
+                });
+        }
+
+        // Current page tracker
+        let currentPage = 1;
+
+        // Fetch and display attractions
+        async function fetchAttractions(page = 1) {
+            const container = document.getElementById('attractions-container');
+            const paginationContainer = document.getElementById('pagination');
+            const loadingIndicator = document.getElementById('loading');
+
+            // Show loading
+            loadingIndicator.style.display = 'block';
+            container.innerHTML = '';
+            paginationContainer.innerHTML = '';
+
+            try {
+                const response = await fetch(`/api/fetch_attraction.php?page=${page}`);
+                const data = await response.json();
+
+                // Hide loading
+                loadingIndicator.style.display = 'none';
+
+                // Check for errors
+                if (data.error) {
+                    throw new Error(data.message);
+                }
+
+                const attractions = data.attractions;
+
+                if (attractions.length === 0) {
+                    container.innerHTML = `
+                        <div class="col s12">
+                            <div class="card red lighten-2">
+                                <div class="card-content white-text">
+                                    <span class="card-title">No Attractions Found</span>
+                                    <p>No attractions are currently available.</p>
+                                </div>
+                            </div>
+                        </div>
+                    `;
+                    return;
+                }
+
+                // Render attractions
+                attractions.forEach(attraction => {
+                    const card = document.createElement('div');
+                    card.className = 'col s12 m4 on ';
+                    card.innerHTML = `
+                        <div class="card">
+                            <div class="card-image">
+                                <img src="${attraction.media_path}" alt="${attraction.name}">
+                                <span class="card-title">${attraction.name}</span>
+                            </div>
+                        </div>
+                    `;
+                    card.addEventListener('click', () => {
+                // Redirect to attraction details page with the attraction ID
+                window.location.href = `attraction-details.html?id=${attraction.id}`;
+                   });
+                
+                container.appendChild(card);
+                });
+
+                // Render pagination
+                for (let i = 1; i <= data.totalPages; i++) {
+                    const li = document.createElement('li');
+                    li.className = i === data.currentPage ? 'active' : 'waves-effect';
+                    li.innerHTML = `<a href="#" onclick="fetchAttractions(${i})">${i}</a>`;
+                    paginationContainer.appendChild(li);
+                }
+
+            } catch (error) {
+                // Hide loading
+                loadingIndicator.style.display = 'none';
+
+                console.error('Failed to fetch attractions:', error);
+                container.innerHTML = `
+                    <div class="col s12">
+                        <div class="card red lighten-2">
+                            <div class="card-content white-text">
+                                <span class="card-title">Connection Error</span>
+                                <p>Unable to load attractions. ${error.message}</p>
+                                <div class="card-action">
+                                    <a href="#" onclick="fetchAttractions()">Retry</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                `;
+            }
+        }
+
+        // Load header and fetch attractions
+        document.addEventListener('DOMContentLoaded', function() {
+            fetch('header.html')
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('header-html').innerHTML = data;
+                    
+                    // Initialize Materialize components
+                    var sidenavElems = document.querySelectorAll('.sidenav');
+                    M.Sidenav.init(sidenavElems);
+
+                    var dropdownElems = document.querySelectorAll('.dropdown-trigger');
+                    M.Dropdown.init(dropdownElems, {
+                        coverTrigger: false,
+                        constrainWidth: false,
+                        alignment: 'right'
+                    });
+
+                    // Fetch attractions
+                    fetchAttractions();
+                })
+                .catch(error => console.error('Error loading the header:', error));
+        });
+
+        
+    
+    container.appendChild(card);
+    </script>
+</body>
+</html>
