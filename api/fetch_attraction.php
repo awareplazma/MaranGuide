@@ -1,5 +1,6 @@
 <?php
-// Enhanced API for Attractions with Comprehensive Error Handling and Security
+
+include '../database_config.php';
 
 // Set headers for JSON response and CORS
 header('Content-Type: application/json');
@@ -20,10 +21,12 @@ function sendErrorResponse($message, $code = 500) {
     exit;
 }
 
-// Validate and sanitize input
+// Sanitize Input Function
 function sanitizeInput($input) {
     return is_numeric($input) ? intval($input) : null;
 }
+
+// Fetch Attraction for Index.html
 
 try {
     // Pagination parameters with validation
@@ -83,10 +86,14 @@ try {
 
     // Fetch attractions
     while ($row = mysqli_fetch_assoc($result)) {
+
+        $media_path = $row['imageUrl'];
+
+        $media_path = BASE_PATH_VISITOR . basename($row['imageUrl']);
         $response['attractions'][] = [
             'id' => $row['attraction_id'],
             'name' => htmlspecialchars($row['attraction_name']),
-            'imageUrl' => htmlspecialchars($row['imageUrl'])
+            'media_path' => htmlspecialchars($row['imageUrl'])
         ];
     }
 
@@ -96,7 +103,7 @@ try {
             'id' => 0,
             'name' => 'No Attractions Available',
             'description' => 'Check back later for new attractions.',
-            'imageUrl' => '../media/default_attraction.png'
+            'media_path' => '../media/default_attraction.png'
         ];
     }
 

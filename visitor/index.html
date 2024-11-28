@@ -21,7 +21,6 @@
     <!-- Header Placeholder -->
     <div id="header-html"></div>
     
-    <div class="container">
         <!-- Loading Indicator -->
         <div id="loading" class="center" style="display:none;">
             <div class="preloader-wrapper big active">
@@ -37,7 +36,18 @@
         </div>
 
         <!-- Attractions Container -->
-        <div id="attractions-container" class="row"></div>
+        <div id="attractions-container" class="container">
+            <div class="row">
+                <div class="col s12 m4" id="location-card" style="display: none">
+                    <div class="card">
+                        <div class="card-image">
+                        <img src="" alt="attraction-image">
+                        <span class="card-title"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
 
         <!-- Pagination -->
         <ul id="pagination" class="pagination center"></ul>
@@ -61,9 +71,10 @@
 
         // Fetch and display attractions
         async function fetchAttractions(page = 1) {
-            const container = document.getElementById('attractions-container');
-            const paginationContainer = document.getElementById('pagination');
-            const loadingIndicator = document.getElementById('loading');
+        const container = document.getElementById('attractions-container');
+        const paginationContainer = document.getElementById('pagination');
+        const loadingIndicator = document.getElementById('loading');
+        const locationCardTemplate = document.getElementById('location-card');
 
             // Show loading
             loadingIndicator.style.display = 'block';
@@ -98,25 +109,31 @@
                     return;
                 }
 
-                // Render attractions
-                attractions.forEach(attraction => {
-                    const card = document.createElement('div');
-                    card.className = 'col s12 m4 on ';
-                    card.innerHTML = `
-                        <div class="card">
-                            <div class="card-image">
-                                <img src="${attraction.media_path}" alt="${attraction.name}">
-                                <span class="card-title">${attraction.name}</span>
-                            </div>
-                        </div>
-                    `;
-                    card.addEventListener('click', () => {
-                // Redirect to attraction details page with the attraction ID
+                 // Render attractions
+            attractions.forEach(attraction => {
+            // Clone the template card
+            const container = document.getElementById('attractions-container');
+            const cardClone = locationCardTemplate.cloneNode(true);
+            cardClone.style.display = 'block';
+            cardClone.id = `attraction-${attraction.id}`; // Unique ID
+
+            // Update image
+            const imgElement = cardClone.querySelector('.card-image img');
+            imgElement.src = attraction.media_path;
+            imgElement.alt = attraction.name;
+
+            // Update title
+            const titleElement = cardClone.querySelector('.card-title');
+            titleElement.textContent = attraction.name;
+
+            // Add click event
+            cardClone.addEventListener('click', () => {
                 window.location.href = `attraction-details.html?id=${attraction.id}`;
-                   });
-                
-                container.appendChild(card);
-                });
+            });
+            
+            // Append to container
+            container.appendChild(cardClone);
+        });
 
                 // Render pagination
                 for (let i = 1; i <= data.totalPages; i++) {
@@ -171,9 +188,6 @@
                 .catch(error => console.error('Error loading the header:', error));
         });
 
-        
-    
-    container.appendChild(card);
     </script>
 </body>
 </html>
