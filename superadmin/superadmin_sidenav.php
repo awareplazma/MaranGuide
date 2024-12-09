@@ -1,7 +1,7 @@
 <?php 
 include('../maranguide_connection.php');
 if (!isset($_SESSION['admin_id']) || !isset($_SESSION['role']) || $_SESSION['role'] !== 'superadmin') {
-    header("Location: ../visitor/admin_login.php");
+    header("Location: /visitor/admin_login.php");
     exit();
 }
 

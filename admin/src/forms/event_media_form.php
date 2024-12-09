@@ -21,7 +21,7 @@
                 <div class="media-preview center-align">
                     <div class="image-preview" style="display: none;">
                         <i class="material-icons large">image</i>
-                        <img id="imagePreview" src="#" alt="Preview" style="max-width: 100%; display: none;">
+                        <img id="image-preview" src="#" alt="Preview" style="max-width: 100%; display: none;">
                     </div>
                     <div class="video-preview" style="display: none;">
                         <video id="videoPreview" controls style="max-width: 100%; display: none;">

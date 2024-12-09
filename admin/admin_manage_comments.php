@@ -99,7 +99,7 @@ $result = $conn->query($sql);
 // Delete confirmation
 function deleteEvent(id) {
     if (confirm('Are you sure you want to delete this event?')) {
-        window.location.href = `admin_delete_event_process.php?id=${id}`;
+        window.location.href = `src/process/admin_delete_event_process.php?id=${id}`;
     }
 }
 </script>

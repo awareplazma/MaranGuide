@@ -23,7 +23,11 @@ SOALAN
 === Error message tak allign dengan logo
 
 - - Sizing untuk upload gambar dengan butang dalam admin add event
-- Popup message not appearing (session not transferring correctly, not appearing) (improve popup display)
+- Format add event
+-  GALLERY GAMBAR TAK display
+  TIME MASUKKAN GAMBAR TAK BOLEH PREVIEW UNTUK MANAGE ATTRACTION DENGAN ADD EVENET
+
+  
 - Time display
 - separate admin dengan place
 - change location of responsbility through scroll
@@ -35,8 +39,7 @@ SOALAN
   -media destination THIS
   - Change file upload destination in php
   
-- truncuate display time
-- Optimize length of CSS
+-
 
 
 -----------TO ADD---------------

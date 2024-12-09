@@ -357,7 +357,7 @@ document.getElementById('searchInput').addEventListener('keyup', function() {
 // Delete confirmation
 function deleteAdmin(id) {
     if (confirm('Are you sure you want to delete this admin?')) {
-        window.location.href = `superadmin_delete_owner_process.php?id=${id}`;
+        window.location.href = `/src/process/superadmin_delete_owner_process.php?id=${id}`;
     }
 }
 </script>

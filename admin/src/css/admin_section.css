@@ -186,30 +186,6 @@
 
 /* Admin Edit Section */
 
-.event-form-container,
-.attraction-form-container {
-    max-width: 900px;
-    margin: 2rem auto;
-    padding: 20px;
-}
-
-.event-form-section,
-.attraction-form-section {
-    background: white;
-    border-radius: 8px;
-    padding: 24px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    margin-bottom: 2rem;
-}
-
-.section-title {
-    border-bottom: 2px solid #26a69a;
-    padding-bottom: 10px;
-    margin-bottom: 20px;
-    color: #26a69a;
-    font-size: 1.2rem;
-    font-weight: 500;
-}
 
 .date-time-field {
     display: flex;
@@ -403,30 +379,6 @@
     font-weight: 500;
 }
 
-.date-time-field {
-    display: flex;
-    gap: 20px;
-    align-items: flex-start;
-}
-
-.status-chip {
-    padding: 8px 16px;
-    border-radius: 16px;
-    font-weight: 500;
-    text-transform: uppercase;
-    font-size: 0.8rem;
-}
-
-.status-chip.active {
-    background-color: #e8f5e9;
-    color: #2e7d32;
-}
-
-.status-chip.inactive {
-    background-color: #ffebee;
-    color: #c62828;
-}
-
 .input-field .prefix {
     font-size: 1.5rem;
 }
@@ -462,17 +414,6 @@
 }
 
 
-@media (max-width: 600px) {
-    .event-form-container {
-        padding: 10px;
-    }
-    
-    .date-time-field {
-        flex-direction: column;
-        gap: 0;
-    }
-}
-
 
 /* Add Section */
 
@@ -495,29 +436,6 @@
 
 .upload-section {
     margin-bottom: 2rem;
-}
-
-.image-preview {
-    position: relative;
-    margin-top: 1rem;
-    border-radius: 8px;
-    overflow: hidden;
-    max-height: 300px;
-}
-
-.image-preview img {
-    width: 100%;
-    height: 300px;
-    object-fit: cover;
-    border-radius: 8px;
-}
-
-.remove-btn {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    background: rgba(244, 67, 54, 0.9) !important;
-    padding: 8px 16px !important;
 }
 
 .datetime-group {
@@ -589,11 +507,6 @@
 .add-button i {
     font-size: 1.25rem;
 }
-
-/* Search button */
-
-
-
 
 /* Status message styling */
 .message {

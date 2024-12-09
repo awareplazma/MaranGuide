@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rabbitland - MaranGuide</title>
+    
+    <!-- Materialize CSS -->
+    <link type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/project.css">
+    <link rel="stylesheet" href="/visitor/src/css/visitor.css">
+
+
+    <!-- PWA Support -->
+    <link rel="manifest" href="../manifest.json">
+    <link rel="apple-touch-icon" href="/Media/Picture/img/MARANGUIDE_ICON.png">
+    <meta name="apple-mobile-web-app-status-bar" content="#ffa500">
+</head>
+<body>
+    <!-- Header Container -->
+    <div id="header-html"></div>
+
+    <!-- Loading Indicator -->
+    <div id="loading" class="center" style="display:none;">
+        <div class="preloader-wrapper big active">
+            <div class="spinner-layer spinner-blue-only">
+                <div class="circle-clipper left">
+                    <div class="circle"></div>
+                </div>
+                <div class="circle-clipper right">
+                    <div class="circle"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content Container -->
+    <div id="attraction-info-container" style="display:none;">
+        <div class="container">
+            <!-- Attraction Name -->
+        <div class="attraction-name">
+         <h2 id="attraction-name"></h2>
+        </div>
+        </div>
+            <!-- Tabs -->
+            <div class="row">
+                <div class="col s12">
+                    <ul class="tabs">
+                        <li class="tab col s4"><a href="#butiran-am">Butiran Am</a></li>
+                        <li class="tab col s4"><a href="#tarikan-acara">Tarikan dan Acara</a></li>
+                        <li class="tab col s4"><a href="#galeri">Galeri</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Tab Content Containers -->
+            <div id="butiran-am" class="tab-content section"></div>
+            <div id="tarikan-acara" class="tab-content section"></div>
+            <div id="galeri" class="tab-content section"></div>
+        
+    </div>
+
+    <!-- Find on Map Button -->
+    <div class="fixed-action-btn">
+        <a href="#" id="find-on-map" class="btn-floating btn-large waves-effect waves-light blue">
+            <i class="material-icons">map</i>
+        </a>
+    </div>
+
+   
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        
+        const loading = document.getElementById('loading');
+        const attractionInfoContainer = document.getElementById('attraction-info-container');
+        const tabs = ['butiran-am', 'tarikan-acara', 'galeri'];
+
+        // Show loading indicator
+        function showLoading() {
+            loading.style.display = 'block';
+            attractionInfoContainer.style.display = 'none';
+        }
+
+        // Hide loading indicator
+        function hideLoading() {
+            loading.style.display = 'none';
+            attractionInfoContainer.style.display = 'block';
+        }
+
+        // Display error message
+        function displayError(message) {
+            hideLoading();
+            document.body.innerHTML = `
+                <div class="container error-message">
+                    <div class="card red lighten-2">
+                        <div class="card-content white-text">
+                            <span class="card-title">Error</span>
+                            <p>${message}</p>
+                        </div>
+                    </div>
+                </div>
+            `;
+        }
+
+        // Tab content
+     
+    async function loadTabContent(attractionId, tabId) {
+        const tabContainer = document.getElementById(tabId);
+
+        // Avoid reloading if already loaded
+        if (tabContainer.getAttribute('data-loaded') === 'true') return;
+
+        // Show loading spinner within tab
+        tabContainer.innerHTML = `
+            <div class="center">
+                <div class="preloader-wrapper small active">
+                    <div class="spinner-layer spinner-blue-only">
+                        <div class="circle-clipper left">
+                            <div class="circle"></div>
+                        </div>
+                        <div class="circle-clipper right">
+                            <div class="circle"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        `;
+
+        try {
+            // Fetch tab content from server
+            const response = await fetch(`/api/fetch_attraction_tab_content.php?id=${attractionId}&tab=${tabId}`);
+            
+            if (!response.ok) throw new Error(`HTTP error: ${response.status}`);
+            
+            const content = await response.text();
+            tabContainer.innerHTML = content;
+            tabContainer.setAttribute('data-loaded', 'true');
+
+            if (tabId === 'butiran-am') {
+                attachButiranAmScripts(attractionId);
+            }
+
+            if(tabId=='tarikan-acara')
+            {
+                attachTarikanAcaraScripts(attractionId);
+            }
+
+            if(tabId=='galeri')
+            {
+                attachGaleriScripts(attractionId);
+            }
+
+        } catch (error) {
+            console.error(`Failed to load ${tabId} content:`, error);
+            tabContainer.innerHTML = `
+                <div class="card red lighten-2">
+                    <div class="card-content white-text">
+                        <p>Unable to load content: ${error.message}</p>
+                    </div>
+                </div>
+            `;
+        }
+    }
+
+    //Butiran Am
+
+    function attachButiranAmScripts(attractionId) {
+        const container = document.getElementById('butiran-am');
+        async function fetchAttractionDetails() {
+            try {
+                const response = await fetch(`/api/fetch_attraction_details.php?id=${attractionId}`);
+                
+                if (!response.ok) {
+                    throw new Error(`Attractions fetch error: ${response.status}`);
+                }
+                
+                const data = await response.json();
+                
+                // Check for API-level errors
+                if (data.error) {
+                    throw new Error(data.message);
+                }
+
+                // Update DOM elements
+                container.querySelector('#attraction_name').textContent = data.name;
+                container.querySelector('#description').textContent = data.description;
+
+                // Operating Days
+                const operatingDaysList = container.querySelector('#operatingDays');
+                operatingDaysList.innerHTML = data.operatingDays.split(',').map(day => 
+                    `<li>${day.trim()}</li>`
+                ).join('');
+                
+                // Operating Hours
+                container.querySelector('#operatingHours').textContent = data.operatingHours;
+            
+            } catch (error) {
+                console.error('Failed to fetch attractions:', error);
+                container.innerHTML = `
+                    <div class="col s12">
+                        <div class="card red lighten-2">
+                            <div class="card-content white-text">
+                                <span class="card-title">Ralat</span>
+                                <p>Tidak dapat memuatkan maklumat. ${error.message}</p>
+                                <div class="card-action">
+                                    <a href="#" onclick="attachButiranAmScripts('${attractionId}')">Cuba Semula</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                `;
+            }
+        }
+
+    // Call the fetch function
+    fetchAttractionDetails();
+}
+
+    //Tarikan dan Acara
+
+        function attachTarikanAcaraScripts(attractionId) {
+        const container = document.getElementById('tarikan-acara');
+        async function fetchTarikanList() {
+            try {
+                const response = await fetch(`/api/fetch_event_list.php?id=${attractionId}`);
+                
+                if (!response.ok) {
+                    throw new Error(`Attractions fetch error: ${response.status}`);
+                }
+                
+                const data = await response.json();
+                
+                // Check for API-level errors
+                if (data.error) {
+                    throw new Error(data.message);
+                }
+
+                // Update DOM elements
+                container.querySelector('#attraction_name').textContent = data.name;
+                container.querySelector('#description').textContent = data.description;
+
+                // Operating Days
+                const operatingDaysList = container.querySelector('#operatingDays');
+                operatingDaysList.innerHTML = data.operatingDays.split(',').map(day => 
+                    `<li>${day.trim()}</li>`
+                ).join('');
+                
+                // Operating Hours
+                container.querySelector('#operatingHours').textContent = data.operatingHours;
+            
+            } catch (error) {
+                console.error('Failed to fetch attractions:', error);
+                container.innerHTML = `
+                    <div class="col s12">
+                        <div class="card red lighten-2">
+                            <div class="card-content white-text">
+                                <span class="card-title">Ralat</span>
+                                <p>Tidak dapat memuatkan maklumat. ${error.message}</p>
+                                <div class="card-action">
+                                    <a href="#" onclick="attachButiranAmScripts('${attractionId}')">Cuba Semula</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                `;
+            }
+        }
+
+    // Call the fetch function
+    fetchAttractionDetails();
+}
+    // Initialize page
+    async function initPage() {
+
+    showLoading();
+
+    const urlParams = new URLSearchParams(window.location.search);
+    const attractionId = urlParams.get('id');
+
+    if (!attractionId) {
+        displayError('No attraction ID provided in the URL.');
+        return;
+    }
+
+    try {
+        // Load header
+        const headerResponse = await fetch('header.html');
+        if (!headerResponse.ok) throw new Error(`Header load error: ${headerResponse.status}`);
+        
+        const headerData = await headerResponse.text();
+        document.getElementById('header-html').innerHTML = headerData;
+
+        // Initialize Materialize components
+        M.Sidenav.init(document.querySelectorAll('.sidenav'));
+        M.Dropdown.init(document.querySelectorAll('.dropdown-trigger'), {
+            coverTrigger: false,
+            constrainWidth: false,
+            alignment: 'right'
+        });
+        M.Tabs.init(document.querySelectorAll('.tabs'));
+        
+
+        // Load tab contents
+        const tabLoadPromises = tabs.map(tab => loadTabContent(attractionId, tab));
+        await Promise.all(tabLoadPromises);
+
+        // Find on map button
+        document.getElementById('find-on-map').href = `/map.html?id=${attractionId}`;
+
+        hideLoading();
+    } catch (error) {
+        console.error('Initialization error:', error);
+        displayError(`Failed to load page: ${error.message}`);
+    }
+}
+
+    // Call initialization
+    initPage();
+});
+    </script>
+</body>
+</html>

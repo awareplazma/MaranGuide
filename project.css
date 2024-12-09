@@ -5,8 +5,8 @@ body {
 /* Nav */
 
 nav { 
-    background-color: #ffa500; 
-    height: 60px;
+    background-color: #ffa500 !important;
+    height: 60px !important;
 }
 
 
@@ -20,16 +20,16 @@ nav {
 
 /* Logo */
 .nav-wrapper .brand-logo {
-    display: flex; /* Use flexbox for better alignment */
+    display: flex; /* Better alignment */
     align-items: center; /* Center vertically */
-    height: 100%; /* Ensure it takes full height of nav */
-    margin-left: 10px; /* Adjust for spacing */
+    height: 100%; /* Full height of nav */
+    margin-left: 10px; /* Spacing between icons*/
 }
 
 .nav-wrapper .brand-logo img {
     height: 100%;
     width: auto;
-    transform: scale(1.7); /* Increase size by 50%. Adjust this value as needed */
+    transform: scale(1.7); /* Increase logo size by 50%. Adjust this value as needed */
     transform-origin: left center; /* Scale from the left side */
 }
 
@@ -78,6 +78,7 @@ ul.right {
   
 
 /* Search bar */
+
 .search-center {
     flex: 1; 
     display: flex;
@@ -169,7 +170,8 @@ ul.right {
     justify-content: center; 
 }
 
-.admin-login-container login-title{
+.admin-login-container login-title
+{
     
 }
 /* VIsitors View Content */

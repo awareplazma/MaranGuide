@@ -57,6 +57,7 @@ $conn->close();
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <!-- Materialize JS CDN -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script src="script.js?v=<?php echo time(); ?>"></script>
   <link rel="stylesheet" href="../project.css">
 </head>
 <body>
@@ -79,7 +80,7 @@ $conn->close();
             <?php endif; ?>
     <div class="admin-login-container">
         <h4 class="login-title">LOG MASUK ADMIN</h4>
-        <img src="tttt" alt="MaranGuide Logo" class="brand-logo">
+        <img src="" alt="MaranGuide Logo" class="brand-logo">
         <form method="POST" action="">
             <div class="input-field">
               <input type="text" id="username" name="admin_id" placeholder="NOMBOR ID" class="grey lighten-3" required>

@@ -1,10 +1,13 @@
 <?php session_start();
 
-$servername = "localhost";
+$servername = "127.0.0.1";
 $username = "root";
 $password = "";
-$dbname = "maranguide";
+$dbname = "maranguidebackup";
 
-$conn = mysqli_connect($servername,$username,$password,$dbname);	
+$conn = mysqli_connect($servername, $username, $password, $dbname);
+if (!$conn) {
+    die("Connection failed: " . mysqli_connect_error());
+}	
 
 ?>

@@ -19,9 +19,9 @@ if (isset($_SESSION['success_message'])) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tambah Lokasi Baru</title>
-    <link rel="stylesheet" href="../css/superadmin_section.css">
-    <link rel="stylesheet" href="superadmin_sidenav.css">
-    <link rel="stylesheet" href="../css/project.css">
+    <link rel="stylesheet" href="src/css/superadmin_section.css">
+    <link rel="stylesheet" href="src/css/superadmin_sidenav.css">
+    <link rel="stylesheet" href="../project.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>

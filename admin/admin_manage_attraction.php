@@ -33,7 +33,7 @@ if (isset($_SESSION['attraction_id'])) {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Event Information - <?php echo htmlspecialchars($attraction_data['attraction_name']); ?></title>
+    <title><?php echo htmlspecialchars($attraction_data['attraction_name']); ?></title>
     <link rel="stylesheet" href="src/css/project.css">
     <link rel="stylesheet" href="src/css/admin_section.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">

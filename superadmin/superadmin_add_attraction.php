@@ -9,6 +9,8 @@ if (isset($_SESSION['error_message'])) {
 if (isset($_SESSION['success_message'])) {
     echo "<div style='color:green;'>" . $_SESSION['success_message'] . "</div>";
     unset($_SESSION['success_message']);
+
+    
 }
 
 $admin_sql = "SELECT admin_id, admin_name FROM adminlist WHERE admin_role = 'owner'";
@@ -23,13 +25,16 @@ $admin_result = $conn->query($admin_sql);
     <title>Tambah Lokasi Baru</title>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css">
-    <link rel="stylesheet" href="../css/superadmin_section.css">
+    <link rel="stylesheet" href="src/css/superadmin_section.css">
+    <link rel="stylesheet" href="src/css/superadmin_sidenav.css">
+    <link rel="stylesheet" href="../project.css">
+    
     
 </head>
 <body>
     <div class="dashboard-container">
         <h1 class="form-title">Tambah Lokasi Baru</h1>
-        <form id="locationForm" class="form-card" action="superadmin_add_attraction_process.php" method="POST" enctype="multipart/form-data">
+        <form id="locationForm" class="form-card" action="src/process/superadmin_add_attraction_process.php" method="POST" enctype="multipart/form-data">
             <div class="upload-container">
                 <label class="upload-icon" for="ThumbnailUpload">
                     <i class="material-icons">add_photo_alternate</i>

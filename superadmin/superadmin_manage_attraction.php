@@ -43,9 +43,9 @@ function getDayRanges($days) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MaranGuide Superadmin Dashboard</title>
-    <link rel="stylesheet" href="../css/superadmin_section.css">
-    <link rel="stylesheet" href="superadmin_sidenav.css">
-    <link rel="stylesheet" href="../css/project.css">
+    <link rel="stylesheet" href="src/css/superadmin_section.css">
+    <link rel="stylesheet" href="src/css/superadmin_sidenav.css">
+    <link rel="stylesheet" href="../project.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
@@ -213,7 +213,7 @@ function getDayRanges($days) {
         // Delete confirmation
         function deleteAttraction(id) {
             if (confirm('Are you sure you want to delete this attraction?')) {
-                window.location.href = `superadmin_delete_attraction_process.php?id=${id}`;
+                window.location.href = `src/process/superadmin_delete_attraction_process.php?id=${id}`;
             }
         }
     </script>

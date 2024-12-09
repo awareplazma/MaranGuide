@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -55,64 +56,104 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script>
-        // Service Worker Registration
-        if ('serviceWorker' in navigator) {
-            navigator.serviceWorker.register('/service-worker.js')
-                .then(registration => {
-                    console.log('Service Worker registered successfully');
-                })
-                .catch(error => {
-                    console.error('Service Worker registration failed:', error);
-                });
-        }
+        
+async function initPage() {
+    try {
+        // Show loading indicator
+        const loadingIndicator = document.getElementById('loading');
+        loadingIndicator.style.display = 'block';
 
-        // Current page tracker
-        let currentPage = 1;
+        // Load header
+        const headerResponse = await fetch('header.html');
+        if (!headerResponse.ok) throw new Error(`Header load error: ${headerResponse.status}`);
+
+        const headerData = await headerResponse.text();
+        document.getElementById('header-html').innerHTML = headerData;
+
+        // Initialize Materialize components
+        const sidenavElems = document.querySelectorAll('.sidenav');
+        M.Sidenav.init(sidenavElems);
+
+        const dropdownElems = document.querySelectorAll('.dropdown-trigger');
+        M.Dropdown.init(dropdownElems, {
+            coverTrigger: false,
+            constrainWidth: false,
+            alignment: 'right'
+        });
 
         // Fetch and display attractions
-        async function fetchAttractions(page = 1) {
-        const container = document.getElementById('attractions-container');
-        const paginationContainer = document.getElementById('pagination');
+        await fetchAttractions();
+
+        // Hide loading indicator
+        loadingIndicator.style.display = 'none';
+    } catch (error) {
+        console.error('Initialization error:', error);
+        
+        // Hide loading indicator
         const loadingIndicator = document.getElementById('loading');
-        const locationCardTemplate = document.getElementById('location-card');
+        loadingIndicator.style.display = 'none';
 
-            // Show loading
-            loadingIndicator.style.display = 'block';
-            container.innerHTML = '';
-            paginationContainer.innerHTML = '';
-
-            try {
-                const response = await fetch(`/api/fetch_attraction.php?page=${page}`);
-                const data = await response.json();
-
-                // Hide loading
-                loadingIndicator.style.display = 'none';
-
-                // Check for errors
-                if (data.error) {
-                    throw new Error(data.message);
-                }
-
-                const attractions = data.attractions;
-
-                if (attractions.length === 0) {
-                    container.innerHTML = `
-                        <div class="col s12">
-                            <div class="card red lighten-2">
-                                <div class="card-content white-text">
-                                    <span class="card-title">No Attractions Found</span>
-                                    <p>No attractions are currently available.</p>
-                                </div>
-                            </div>
+        // Display error message
+        const container = document.getElementById('attractions-container');
+        container.innerHTML = `
+            <div class="col s12">
+                <div class="card red lighten-2">
+                    <div class="card-content white-text">
+                        <span class="card-title">Initialization Error</span>
+                        <p>Failed to load page: ${error.message}</p>
+                        <div class="card-action">
+                            <a href="#" onclick="initPage()">Retry</a>
                         </div>
-                    `;
-                    return;
-                }
+                    </div>
+                </div>
+            </div>
+        `;
+    }
+}
+// Fetch and display attractions
+async function fetchAttractions(page = 1) {
+    const container = document.getElementById('attractions-container');
+    const paginationContainer = document.getElementById('pagination');
+    const loadingIndicator = document.getElementById('loading');
+    const locationCardTemplate = document.getElementById('location-card');
 
-                 // Render attractions
-            attractions.forEach(attraction => {
-            // Clone the template card
-            const container = document.getElementById('attractions-container');
+    // Show loading
+    loadingIndicator.style.display = 'block';
+    container.innerHTML = '';
+    paginationContainer.innerHTML = '';
+
+    try {
+        const response = await fetch(`/api/fetch_attraction.php?page=${page}`);
+        
+        // Check if response is ok
+        if (!response.ok) throw new Error(`Attractions fetch error: ${response.status}`);
+        
+        const data = await response.json();
+
+        // Check for API-level errors
+        if (data.error) {
+            throw new Error(data.message);
+        }
+
+        const attractions = data.attractions;
+
+        // Handle empty attractions list
+        if (attractions.length === 0) {
+            container.innerHTML = `
+                <div class="col s12">
+                    <div class="card red lighten-2">
+                        <div class="card-content white-text">
+                            <span class="card-title">No Attractions Found</span>
+                            <p>No attractions are currently available.</p>
+                        </div>
+                    </div>
+                </div>
+            `;
+            return;
+        }
+
+        // Render attractions
+        attractions.forEach(attraction => {
             const cardClone = locationCardTemplate.cloneNode(true);
             cardClone.style.display = 'block';
             cardClone.id = `attraction-${attraction.id}`; // Unique ID
@@ -135,59 +176,40 @@
             container.appendChild(cardClone);
         });
 
-                // Render pagination
-                for (let i = 1; i <= data.totalPages; i++) {
-                    const li = document.createElement('li');
-                    li.className = i === data.currentPage ? 'active' : 'waves-effect';
-                    li.innerHTML = `<a href="#" onclick="fetchAttractions(${i})">${i}</a>`;
-                    paginationContainer.appendChild(li);
-                }
-
-            } catch (error) {
-                // Hide loading
-                loadingIndicator.style.display = 'none';
-
-                console.error('Failed to fetch attractions:', error);
-                container.innerHTML = `
-                    <div class="col s12">
-                        <div class="card red lighten-2">
-                            <div class="card-content white-text">
-                                <span class="card-title">Connection Error</span>
-                                <p>Unable to load attractions. ${error.message}</p>
-                                <div class="card-action">
-                                    <a href="#" onclick="fetchAttractions()">Retry</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                `;
-            }
+        // Render pagination
+        for (let i = 1; i <= data.totalPages; i++) {
+            const li = document.createElement('li');
+            li.className = i === data.currentPage ? 'active' : 'waves-effect';
+            li.innerHTML = `<a href="#" onclick="fetchAttractions(${i})">${i}</a>`;
+            paginationContainer.appendChild(li);
         }
 
-        // Load header and fetch attractions
-        document.addEventListener('DOMContentLoaded', function() {
-            fetch('header.html')
-                .then(response => response.text())
-                .then(data => {
-                    document.getElementById('header-html').innerHTML = data;
-                    
-                    // Initialize Materialize components
-                    var sidenavElems = document.querySelectorAll('.sidenav');
-                    M.Sidenav.init(sidenavElems);
+        // Hide loading
+        loadingIndicator.style.display = 'none';
 
-                    var dropdownElems = document.querySelectorAll('.dropdown-trigger');
-                    M.Dropdown.init(dropdownElems, {
-                        coverTrigger: false,
-                        constrainWidth: false,
-                        alignment: 'right'
-                    });
+    } catch (error) {
+        // Hide loading
+        loadingIndicator.style.display = 'none';
 
-                    // Fetch attractions
-                    fetchAttractions();
-                })
-                .catch(error => console.error('Error loading the header:', error));
-        });
+        console.error('Failed to fetch attractions:', error);
+        container.innerHTML = `
+            <div class="col s12">
+                <div class="card red lighten-2">
+                    <div class="card-content white-text">
+                        <span class="card-title">Connection Error</span>
+                        <p>Unable to load attractions. ${error.message}</p>
+                        <div class="card-action">
+                            <a href="#" onclick="fetchAttractions()">Retry</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        `;
+    }
+}
 
+// Initialize page when DOM is loaded
+document.addEventListener('DOMContentLoaded', initPage);
     </script>
 </body>
 </html>

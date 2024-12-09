@@ -1,0 +1,1013 @@
+2024-12-03 04:23:10 - Request: ID=22, Tab=butiran-am
+File not found: Attempted ./event_detail.html
+Current directory: C:\xampp\htdocs\MARANGUIDE\api
+Full attempted path: 
+2024-12-03 04:24:22 - Request: ID=22, Tab=butiran-am
+File not found: Attempted ./event_detail.html
+Current directory: C:\xampp\htdocs\MARANGUIDE\api
+Full attempted path: 
+2024-12-03 04:25:00 - Request: ID=22, Tab=butiran-am
+File not found: Attempted ./event_detail.html
+Current directory: C:\xampp\htdocs\MARANGUIDE\api
+Full attempted path: 
+2024-12-03 04:25:02 - Request: ID=22, Tab=tarikan-acara
+File not found: Attempted ./attraction-detail-complete.html
+Current directory: C:\xampp\htdocs\MARANGUIDE\api
+Full attempted path: 
+2024-12-03 04:25:05 - Request: ID=22, Tab=tarikan-acara
+File not found: Attempted ./attraction-detail-complete.html
+Current directory: C:\xampp\htdocs\MARANGUIDE\api
+Full attempted path: 
+2024-12-03 04:25:05 - Request: ID=22, Tab=ulasan
+File not found: Attempted ./attraction_comment.html
+Current directory: C:\xampp\htdocs\MARANGUIDE\api
+Full attempted path: 
+2024-12-03 04:25:46 - Request: ID=22, Tab=butiran-am
+File not found: Attempted /event_detail.html
+Current directory: C:\xampp\htdocs\MARANGUIDE\api
+Full attempted path: 
+2024-12-03 04:29:54 - Request: ID=22, Tab=butiran-am
+2024-12-03 04:30:04 - Request: ID=22, Tab=butiran-am
+2024-12-03 04:30:10 - Request: ID=22, Tab=tarikan-acara
+File not found: Attempted C:\xampp\htdocs\MARANGUIDE\visitor\attraction-detail-complete.html
+Current directory: C:\xampp\htdocs\MARANGUIDE\api
+Full attempted path: 
+2024-12-03 04:31:06 - Request: ID=22, Tab=ulasan
+File not found: Attempted C:\xampp\htdocs\MARANGUIDE\visitor\attraction_comment.html
+Current directory: C:\xampp\htdocs\MARANGUIDE\api
+Full attempted path: 
+2024-12-03 04:33:39 - Request: ID=22, Tab=butiran-am
+File not found: Attempted /attraction-details-complete.html
+Current directory: C:\xampp\htdocs\MARANGUIDE\api
+Full attempted path: 
+2024-12-03 04:34:19 - Request: ID=22, Tab=butiran-am
+2024-12-03 04:34:42 - Request: ID=22, Tab=butiran-am
+2024-12-03 04:41:16 - Request: ID=22, Tab=butiran-am
+2024-12-03 04:41:18 - Request: ID=22, Tab=tarikan-acara
+File not found: Attempted /event-list.html
+Current directory: C:\xampp\htdocs\MARANGUIDE\api
+Full attempted path: 
+2024-12-03 04:41:27 - Request: ID=22, Tab=tarikan-acara
+File not found: Attempted /event-list.html
+Current directory: C:\xampp\htdocs\MARANGUIDE\api
+Full attempted path: 
+2024-12-03 04:42:00 - Request: ID=22, Tab=butiran-am
+2024-12-03 04:42:01 - Request: ID=22, Tab=tarikan-acara
+File not found: Attempted C:\xampp\htdocs\MARANGUIDE\api/event_detail.html
+Current directory: C:\xampp\htdocs\MARANGUIDE\api
+Full attempted path: 
+2024-12-03 04:42:35 - Request: ID=22, Tab=butiran-am
+2024-12-03 04:42:36 - Request: ID=22, Tab=tarikan-acara
+2024-12-03 04:42:43 - Request: ID=22, Tab=ulasan
+File not found: Attempted /attraction-comment.html
+Current directory: C:\xampp\htdocs\MARANGUIDE\api
+Full attempted path: 
+2024-12-03 04:47:53 - Request: ID=22, Tab=butiran-am
+2024-12-03 04:47:55 - Request: ID=22, Tab=tarikan-acara
+2024-12-03 04:58:33 - Request: ID=22, Tab=butiran-am
+2024-12-03 05:25:29 - Request: ID=22, Tab=butiran-am
+2024-12-03 05:27:02 - Request: ID=22, Tab=butiran-am
+2024-12-03 05:27:12 - Request: ID=22, Tab=tarikan-acara
+2024-12-03 05:27:29 - Request: ID=22, Tab=butiran-am
+2024-12-03 05:27:30 - Request: ID=22, Tab=ulasan
+File not found: Attempted /attraction-comment.html
+Current directory: C:\xampp\htdocs\MARANGUIDE\api
+Full attempted path: 
+2024-12-03 05:27:32 - Request: ID=22, Tab=tarikan-acara
+2024-12-03 05:28:11 - Request: ID=22, Tab=butiran-am
+2024-12-03 05:28:12 - Request: ID=22, Tab=tarikan-acara
+2024-12-03 05:28:26 - Request: ID=22, Tab=butiran-am
+2024-12-03 05:28:27 - Request: ID=22, Tab=tarikan-acara
+2024-12-03 05:37:53 - Request: ID=22, Tab=butiran-am
+2024-12-03 05:41:04 - Request: ID=22, Tab=butiran-am
+2024-12-03 05:44:05 - Request: ID=22, Tab=tarikan-acara
+2024-12-03 05:44:17 - Request: ID=22, Tab=ulasan
+File not found: Attempted /attraction-comment.html
+Current directory: C:\xampp\htdocs\MARANGUIDE\api
+Full attempted path: 
+2024-12-03 05:49:36 - Request: ID=22, Tab=butiran-am
+2024-12-03 05:50:36 - Request: ID=22, Tab=butiran-am
+2024-12-03 09:09:43 - Request: ID=22, Tab=butiran-am
+2024-12-03 09:09:43 - Request: ID=22, Tab=tarikan-acara
+2024-12-03 09:09:43 - Request: ID=22, Tab=ulasan
+File not found: Attempted /attraction-comment.html
+Current directory: C:\xampp\htdocs\MARANGUIDE\api
+Full attempted path: 
+2024-12-03 09:10:07 - Request: ID=22, Tab=butiran-am
+2024-12-03 09:10:07 - Request: ID=22, Tab=tarikan-acara
+2024-12-03 09:10:07 - Request: ID=22, Tab=ulasan
+File not found: Attempted /attraction-comment.html
+Current directory: C:\xampp\htdocs\MARANGUIDE\api
+Full attempted path: 
+2024-12-03 09:11:58 - Request: ID=22, Tab=butiran-am
+2024-12-03 09:11:58 - Request: ID=22, Tab=tarikan-acara
+2024-12-03 09:11:58 - Request: ID=22, Tab=ulasan
+File not found: Attempted /attraction-comment.html
+Current directory: C:\xampp\htdocs\MARANGUIDE\api
+Full attempted path: 
+2024-12-04 01:42:25 - Request: ID=22, Tab=butiran-am
+2024-12-04 01:42:25 - Request: ID=22, Tab=tarikan-acara
+2024-12-04 01:42:25 - Request: ID=22, Tab=ulasan
+File not found: Attempted /attraction-comment.html
+Current directory: C:\xampp\htdocs\MARANGUIDE\api
+Full attempted path: 
+2024-12-04 02:23:47 - Request: ID=22, Tab=butiran-am
+2024-12-04 02:23:47 - Request: ID=22, Tab=tarikan-acara
+2024-12-04 02:23:47 - Request: ID=22, Tab=ulasan
+File not found: Attempted /attraction-comment.html
+Current directory: C:\xampp\htdocs\MARANGUIDE\api
+Full attempted path: 
+2024-12-04 02:37:53 - Request: ID=22, Tab=butiran-am
+2024-12-04 02:37:53 - Request: ID=22, Tab=tarikan-acara
+2024-12-04 02:37:53 - Request: ID=22, Tab=ulasan
+File not found: Attempted /attraction-comment.html
+Current directory: C:\xampp\htdocs\MARANGUIDE\api
+Full attempted path: 
+2024-12-04 02:37:54 - Request: ID=22, Tab=butiran-am
+2024-12-04 02:37:54 - Request: ID=22, Tab=tarikan-acara
+2024-12-04 02:37:54 - Request: ID=22, Tab=ulasan
+File not found: Attempted /attraction-comment.html
+Current directory: C:\xampp\htdocs\MARANGUIDE\api
+Full attempted path: 
+2024-12-04 02:37:58 - Request: ID=22, Tab=butiran-am
+2024-12-04 02:37:58 - Request: ID=22, Tab=tarikan-acara
+2024-12-04 02:37:58 - Request: ID=22, Tab=ulasan
+File not found: Attempted /attraction-comment.html
+Current directory: C:\xampp\htdocs\MARANGUIDE\api
+Full attempted path: 
+2024-12-04 02:39:26 - Request: ID=22, Tab=butiran-am
+2024-12-04 02:39:26 - Request: ID=22, Tab=tarikan-acara
+2024-12-04 02:39:26 - Request: ID=22, Tab=ulasan
+File not found: Attempted /attraction-comment.html
+Current directory: C:\xampp\htdocs\MARANGUIDE\api
+Full attempted path: 
+2024-12-04 02:39:28 - Request: ID=22, Tab=butiran-am
+2024-12-04 02:39:28 - Request: ID=22, Tab=tarikan-acara
+2024-12-04 02:39:28 - Request: ID=22, Tab=ulasan
+File not found: Attempted /attraction-comment.html
+Current directory: C:\xampp\htdocs\MARANGUIDE\api
+Full attempted path: 
+2024-12-04 02:39:29 - Request: ID=22, Tab=butiran-am
+2024-12-04 02:39:29 - Request: ID=22, Tab=tarikan-acara
+2024-12-04 02:39:29 - Request: ID=22, Tab=ulasan
+File not found: Attempted /attraction-comment.html
+Current directory: C:\xampp\htdocs\MARANGUIDE\api
+Full attempted path: 
+2024-12-04 02:48:24 - Request: ID=22, Tab=butiran-am
+2024-12-04 02:48:24 - Request: ID=22, Tab=tarikan-acara
+2024-12-04 02:48:24 - Request: ID=22, Tab=ulasan
+File not found: Attempted /attraction-comment.html
+Current directory: C:\xampp\htdocs\MARANGUIDE\api
+Full attempted path: 
+2024-12-04 02:48:27 - Request: ID=22, Tab=butiran-am
+2024-12-04 02:48:27 - Request: ID=22, Tab=tarikan-acara
+2024-12-04 02:48:27 - Request: ID=22, Tab=ulasan
+File not found: Attempted /attraction-comment.html
+Current directory: C:\xampp\htdocs\MARANGUIDE\api
+Full attempted path: 
+2024-12-04 03:09:18 - Request: ID=22, Tab=butiran-am
+2024-12-04 03:09:18 - Request: ID=22, Tab=tarikan-acara
+2024-12-04 03:09:18 - Request: ID=22, Tab=ulasan
+File not found: Attempted /attraction-comment.html
+Current directory: C:\xampp\htdocs\MARANGUIDE\api
+Full attempted path: 
+2024-12-04 03:09:20 - Request: ID=22, Tab=butiran-am
+2024-12-04 03:09:20 - Request: ID=22, Tab=tarikan-acara
+2024-12-04 03:09:20 - Request: ID=22, Tab=ulasan
+File not found: Attempted /attraction-comment.html
+Current directory: C:\xampp\htdocs\MARANGUIDE\api
+Full attempted path: 
+2024-12-04 03:09:56 - Request: ID=22, Tab=butiran-am
+2024-12-04 03:09:56 - Request: ID=22, Tab=tarikan-acara
+2024-12-04 03:09:56 - Request: ID=22, Tab=ulasan
+File not found: Attempted /attraction-comment.html
+Current directory: C:\xampp\htdocs\MARANGUIDE\api
+Full attempted path: 
+2024-12-04 03:11:19 - Request: ID=22, Tab=butiran-am
+2024-12-04 03:11:19 - Request: ID=22, Tab=tarikan-acara
+2024-12-04 03:11:19 - Request: ID=22, Tab=ulasan
+File not found: Attempted /attraction-comment.html
+Current directory: C:\xampp\htdocs\MARANGUIDE\api
+Full attempted path: 
+2024-12-04 03:14:53 - Request: ID=22, Tab=butiran-am
+2024-12-04 03:14:53 - Request: ID=22, Tab=tarikan-acara
+2024-12-04 03:14:53 - Request: ID=22, Tab=ulasan
+File not found: Attempted /attraction-comment.html
+Current directory: C:\xampp\htdocs\MARANGUIDE\api
+Full attempted path: 
+2024-12-04 03:15:03 - Request: ID=22, Tab=butiran-am
+2024-12-04 03:15:03 - Request: ID=22, Tab=tarikan-acara
+2024-12-04 03:15:03 - Request: ID=22, Tab=ulasan
+File not found: Attempted /attraction-comment.html
+Current directory: C:\xampp\htdocs\MARANGUIDE\api
+Full attempted path: 
+2024-12-04 03:16:07 - Request: ID=22, Tab=butiran-am
+2024-12-04 03:16:07 - Request: ID=22, Tab=tarikan-acara
+2024-12-04 03:16:07 - Request: ID=22, Tab=ulasan
+File not found: Attempted /attraction-comment.html
+Current directory: C:\xampp\htdocs\MARANGUIDE\api
+Full attempted path: 
+2024-12-04 03:21:46 - Request: ID=22, Tab=butiran-am
+2024-12-04 03:21:46 - Request: ID=22, Tab=tarikan-acara
+2024-12-04 03:21:46 - Request: ID=22, Tab=ulasan
+File not found: Attempted /attraction-comment.html
+Current directory: C:\xampp\htdocs\MARANGUIDE\api
+Full attempted path: 
+2024-12-04 03:24:47 - Request: ID=22, Tab=butiran-am
+2024-12-04 03:24:47 - Request: ID=22, Tab=tarikan-acara
+2024-12-04 03:24:47 - Request: ID=22, Tab=ulasan
+File not found: Attempted /attraction-comment.html
+Current directory: C:\xampp\htdocs\MARANGUIDE\api
+Full attempted path: 
+2024-12-04 03:25:06 - Request: ID=22, Tab=butiran-am
+2024-12-04 03:25:06 - Request: ID=22, Tab=tarikan-acara
+2024-12-04 03:25:06 - Request: ID=22, Tab=ulasan
+File not found: Attempted /attraction-comment.html
+Current directory: C:\xampp\htdocs\MARANGUIDE\api
+Full attempted path: 
+2024-12-04 03:27:16 - Request: ID=22, Tab=butiran-am
+2024-12-04 03:27:16 - Request: ID=22, Tab=tarikan-acara
+2024-12-04 03:27:16 - Request: ID=22, Tab=ulasan
+File not found: Attempted /attraction-comment.html
+Current directory: C:\xampp\htdocs\MARANGUIDE\api
+Full attempted path: 
+2024-12-04 03:27:53 - Request: ID=22, Tab=butiran-am
+2024-12-04 03:27:53 - Request: ID=22, Tab=tarikan-acara
+2024-12-04 03:27:53 - Request: ID=22, Tab=ulasan
+File not found: Attempted /attraction-comment.html
+Current directory: C:\xampp\htdocs\MARANGUIDE\api
+Full attempted path: 
+2024-12-04 03:42:41 - Request: ID=22, Tab=butiran-am
+2024-12-04 03:42:41 - Request: ID=22, Tab=tarikan-acara
+2024-12-04 03:42:41 - Request: ID=22, Tab=ulasan
+File not found: Attempted /attraction-comment.html
+Current directory: C:\xampp\htdocs\MARANGUIDE\api
+Full attempted path: 
+2024-12-04 03:43:09 - Request: ID=22, Tab=butiran-am
+2024-12-04 03:43:09 - Request: ID=22, Tab=tarikan-acara
+2024-12-04 03:43:09 - Request: ID=22, Tab=ulasan
+File not found: Attempted /attraction-comment.html
+Current directory: C:\xampp\htdocs\MARANGUIDE\api
+Full attempted path: 
+2024-12-04 03:44:31 - Request: ID=22, Tab=butiran-am
+2024-12-04 03:44:31 - Request: ID=22, Tab=tarikan-acara
+2024-12-04 03:44:31 - Request: ID=22, Tab=ulasan
+File not found: Attempted /attraction-comment.html
+Current directory: C:\xampp\htdocs\MARANGUIDE\api
+Full attempted path: 
+2024-12-04 03:44:43 - Request: ID=22, Tab=butiran-am
+2024-12-04 03:44:43 - Request: ID=22, Tab=tarikan-acara
+2024-12-04 03:44:43 - Request: ID=22, Tab=ulasan
+File not found: Attempted /attraction-comment.html
+Current directory: C:\xampp\htdocs\MARANGUIDE\api
+Full attempted path: 
+2024-12-04 03:44:49 - Request: ID=22, Tab=butiran-am
+2024-12-04 03:44:49 - Request: ID=22, Tab=tarikan-acara
+2024-12-04 03:44:49 - Request: ID=22, Tab=ulasan
+File not found: Attempted /attraction-comment.html
+Current directory: C:\xampp\htdocs\MARANGUIDE\api
+Full attempted path: 
+2024-12-04 03:44:56 - Request: ID=22, Tab=butiran-am
+2024-12-04 03:44:56 - Request: ID=22, Tab=tarikan-acara
+2024-12-04 03:44:56 - Request: ID=22, Tab=ulasan
+File not found: Attempted /attraction-comment.html
+Current directory: C:\xampp\htdocs\MARANGUIDE\api
+Full attempted path: 
+2024-12-04 03:46:12 - Request: ID=22, Tab=butiran-am
+2024-12-04 03:46:12 - Request: ID=22, Tab=tarikan-acara
+2024-12-04 03:46:12 - Request: ID=22, Tab=ulasan
+File not found: Attempted /attraction-comment.html
+Current directory: C:\xampp\htdocs\MARANGUIDE\api
+Full attempted path: 
+2024-12-04 03:46:31 - Request: ID=22, Tab=butiran-am
+2024-12-04 03:46:31 - Request: ID=22, Tab=tarikan-acara
+2024-12-04 03:46:31 - Request: ID=22, Tab=ulasan
+File not found: Attempted /attraction-comment.html
+Current directory: C:\xampp\htdocs\MARANGUIDE\api
+Full attempted path: 
+2024-12-04 03:46:47 - Request: ID=22, Tab=butiran-am
+2024-12-04 03:46:47 - Request: ID=22, Tab=tarikan-acara
+2024-12-04 03:46:47 - Request: ID=22, Tab=ulasan
+File not found: Attempted /attraction-comment.html
+Current directory: C:\xampp\htdocs\MARANGUIDE\api
+Full attempted path: 
+2024-12-04 03:46:53 - Request: ID=22, Tab=butiran-am
+2024-12-04 03:46:53 - Request: ID=22, Tab=tarikan-acara
+2024-12-04 03:46:53 - Request: ID=22, Tab=ulasan
+File not found: Attempted /attraction-comment.html
+Current directory: C:\xampp\htdocs\MARANGUIDE\api
+Full attempted path: 
+2024-12-04 03:47:08 - Request: ID=22, Tab=butiran-am
+2024-12-04 03:47:08 - Request: ID=22, Tab=tarikan-acara
+2024-12-04 03:47:08 - Request: ID=22, Tab=ulasan
+File not found: Attempted /attraction-comment.html
+Current directory: C:\xampp\htdocs\MARANGUIDE\api
+Full attempted path: 
+2024-12-04 03:48:25 - Request: ID=22, Tab=butiran-am
+2024-12-04 03:48:25 - Request: ID=22, Tab=tarikan-acara
+2024-12-04 03:48:25 - Request: ID=22, Tab=ulasan
+File not found: Attempted /attraction-comment.html
+Current directory: C:\xampp\htdocs\MARANGUIDE\api
+Full attempted path: 
+2024-12-04 03:48:38 - Request: ID=22, Tab=butiran-am
+2024-12-04 03:48:38 - Request: ID=22, Tab=tarikan-acara
+2024-12-04 03:48:38 - Request: ID=22, Tab=ulasan
+File not found: Attempted /attraction-comment.html
+Current directory: C:\xampp\htdocs\MARANGUIDE\api
+Full attempted path: 
+2024-12-04 03:49:24 - Request: ID=22, Tab=butiran-am
+2024-12-04 03:49:24 - Request: ID=22, Tab=tarikan-acara
+2024-12-04 03:49:24 - Request: ID=22, Tab=ulasan
+File not found: Attempted /attraction-comment.html
+Current directory: C:\xampp\htdocs\MARANGUIDE\api
+Full attempted path: 
+2024-12-04 03:49:35 - Request: ID=22, Tab=butiran-am
+2024-12-04 03:49:35 - Request: ID=22, Tab=tarikan-acara
+2024-12-04 03:49:35 - Request: ID=22, Tab=ulasan
+File not found: Attempted /attraction-comment.html
+Current directory: C:\xampp\htdocs\MARANGUIDE\api
+Full attempted path: 
+2024-12-04 03:50:34 - Request: ID=22, Tab=butiran-am
+2024-12-04 03:50:34 - Request: ID=22, Tab=tarikan-acara
+2024-12-04 03:50:34 - Request: ID=22, Tab=ulasan
+File not found: Attempted /attraction-comment.html
+Current directory: C:\xampp\htdocs\MARANGUIDE\api
+Full attempted path: 
+2024-12-04 03:50:48 - Request: ID=22, Tab=butiran-am
+2024-12-04 03:50:48 - Request: ID=22, Tab=tarikan-acara
+2024-12-04 03:50:48 - Request: ID=22, Tab=ulasan
+File not found: Attempted /attraction-comment.html
+Current directory: C:\xampp\htdocs\MARANGUIDE\api
+Full attempted path: 
+2024-12-04 03:52:22 - Request: ID=22, Tab=butiran-am
+2024-12-04 03:52:22 - Request: ID=22, Tab=tarikan-acara
+2024-12-04 03:52:22 - Request: ID=22, Tab=ulasan
+File not found: Attempted /attraction-comment.html
+Current directory: C:\xampp\htdocs\MARANGUIDE\api
+Full attempted path: 
+2024-12-04 03:52:48 - Request: ID=22, Tab=butiran-am
+2024-12-04 03:52:48 - Request: ID=22, Tab=tarikan-acara
+2024-12-04 03:52:48 - Request: ID=22, Tab=ulasan
+File not found: Attempted /attraction-comment.html
+Current directory: C:\xampp\htdocs\MARANGUIDE\api
+Full attempted path: 
+2024-12-04 04:01:43 - Request: ID=22, Tab=butiran-am
+2024-12-04 04:01:43 - Request: ID=22, Tab=tarikan-acara
+2024-12-04 04:01:43 - Request: ID=22, Tab=ulasan
+File not found: Attempted /attraction-comment.html
+Current directory: C:\xampp\htdocs\MARANGUIDE\api
+Full attempted path: 
+2024-12-04 04:02:21 - Request: ID=22, Tab=butiran-am
+2024-12-04 04:02:21 - Request: ID=22, Tab=tarikan-acara
+2024-12-04 04:02:21 - Request: ID=22, Tab=ulasan
+File not found: Attempted /attraction-comment.html
+Current directory: C:\xampp\htdocs\MARANGUIDE\api
+Full attempted path: 
+2024-12-04 04:03:21 - Request: ID=22, Tab=butiran-am
+2024-12-04 04:03:21 - Request: ID=22, Tab=tarikan-acara
+2024-12-04 04:03:21 - Request: ID=22, Tab=ulasan
+File not found: Attempted /attraction-comment.html
+Current directory: C:\xampp\htdocs\MARANGUIDE\api
+Full attempted path: 
+2024-12-04 04:03:59 - Request: ID=22, Tab=butiran-am
+2024-12-04 04:03:59 - Request: ID=22, Tab=tarikan-acara
+2024-12-04 04:03:59 - Request: ID=22, Tab=ulasan
+File not found: Attempted /attraction-comment.html
+Current directory: C:\xampp\htdocs\MARANGUIDE\api
+Full attempted path: 
+2024-12-04 04:14:32 - Request: ID=22, Tab=butiran-am
+2024-12-04 04:14:32 - Request: ID=22, Tab=tarikan-acara
+2024-12-04 04:14:32 - Request: ID=22, Tab=ulasan
+File not found: Attempted /attraction-comment.html
+Current directory: C:\xampp\htdocs\MARANGUIDE\api
+Full attempted path: 
+2024-12-04 04:26:35 - Request: ID=22, Tab=butiran-am
+2024-12-04 04:26:35 - Request: ID=22, Tab=tarikan-acara
+2024-12-04 04:26:35 - Request: ID=22, Tab=ulasan
+File not found: Attempted /attraction-comment.html
+Current directory: C:\xampp\htdocs\MARANGUIDE\api
+Full attempted path: 
+2024-12-04 04:41:07 - Request: ID=22, Tab=butiran-am
+2024-12-04 04:41:07 - Request: ID=22, Tab=tarikan-acara
+2024-12-04 04:41:07 - Request: ID=22, Tab=ulasan
+File not found: Attempted /attraction-comment.html
+Current directory: C:\xampp\htdocs\MARANGUIDE\api
+Full attempted path: 
+2024-12-04 04:41:09 - Request: ID=22, Tab=butiran-am
+2024-12-04 04:41:09 - Request: ID=22, Tab=tarikan-acara
+2024-12-04 04:41:09 - Request: ID=22, Tab=ulasan
+File not found: Attempted /attraction-comment.html
+Current directory: C:\xampp\htdocs\MARANGUIDE\api
+Full attempted path: 
+2024-12-04 04:41:10 - Request: ID=22, Tab=butiran-am
+2024-12-04 04:41:10 - Request: ID=22, Tab=tarikan-acara
+2024-12-04 04:41:10 - Request: ID=22, Tab=ulasan
+File not found: Attempted /attraction-comment.html
+Current directory: C:\xampp\htdocs\MARANGUIDE\api
+Full attempted path: 
+2024-12-04 04:41:11 - Request: ID=22, Tab=butiran-am
+2024-12-04 04:41:11 - Request: ID=22, Tab=tarikan-acara
+2024-12-04 04:41:11 - Request: ID=22, Tab=ulasan
+File not found: Attempted /attraction-comment.html
+Current directory: C:\xampp\htdocs\MARANGUIDE\api
+Full attempted path: 
+2024-12-04 04:41:15 - Request: ID=22, Tab=butiran-am
+2024-12-04 04:41:15 - Request: ID=22, Tab=tarikan-acara
+2024-12-04 04:41:15 - Request: ID=22, Tab=ulasan
+File not found: Attempted /attraction-comment.html
+Current directory: C:\xampp\htdocs\MARANGUIDE\api
+Full attempted path: 
+2024-12-04 04:41:40 - Request: ID=22, Tab=butiran-am
+2024-12-04 04:41:40 - Request: ID=22, Tab=tarikan-acara
+2024-12-04 04:41:40 - Request: ID=22, Tab=ulasan
+File not found: Attempted /attraction-comment.html
+Current directory: C:\xampp\htdocs\MARANGUIDE\api
+Full attempted path: 
+2024-12-04 04:42:11 - Request: ID=22, Tab=butiran-am
+2024-12-04 04:42:11 - Request: ID=22, Tab=tarikan-acara
+2024-12-04 04:42:11 - Request: ID=22, Tab=ulasan
+File not found: Attempted /attraction-comment.html
+Current directory: C:\xampp\htdocs\MARANGUIDE\api
+Full attempted path: 
+2024-12-04 04:43:37 - Request: ID=22, Tab=butiran-am
+2024-12-04 04:43:37 - Request: ID=22, Tab=tarikan-acara
+2024-12-04 04:43:37 - Request: ID=22, Tab=ulasan
+File not found: Attempted /attraction-comment.html
+Current directory: C:\xampp\htdocs\MARANGUIDE\api
+Full attempted path: 
+2024-12-04 04:44:13 - Request: ID=22, Tab=butiran-am
+2024-12-04 04:44:13 - Request: ID=22, Tab=tarikan-acara
+2024-12-04 04:44:13 - Request: ID=22, Tab=ulasan
+File not found: Attempted /attraction-comment.html
+Current directory: C:\xampp\htdocs\MARANGUIDE\api
+Full attempted path: 
+2024-12-04 04:44:16 - Request: ID=22, Tab=butiran-am
+2024-12-04 04:44:16 - Request: ID=22, Tab=tarikan-acara
+2024-12-04 04:44:16 - Request: ID=22, Tab=ulasan
+File not found: Attempted /attraction-comment.html
+Current directory: C:\xampp\htdocs\MARANGUIDE\api
+Full attempted path: 
+2024-12-04 04:44:39 - Request: ID=22, Tab=butiran-am
+2024-12-04 04:44:39 - Request: ID=22, Tab=tarikan-acara
+2024-12-04 04:44:39 - Request: ID=22, Tab=ulasan
+File not found: Attempted /attraction-comment.html
+Current directory: C:\xampp\htdocs\MARANGUIDE\api
+Full attempted path: 
+2024-12-04 04:46:10 - Request: ID=22, Tab=butiran-am
+2024-12-04 04:46:10 - Request: ID=22, Tab=tarikan-acara
+2024-12-04 04:46:10 - Request: ID=22, Tab=ulasan
+File not found: Attempted /attraction-comment.html
+Current directory: C:\xampp\htdocs\MARANGUIDE\api
+Full attempted path: 
+2024-12-04 04:47:42 - Request: ID=22, Tab=butiran-am
+2024-12-04 04:47:42 - Request: ID=22, Tab=tarikan-acara
+2024-12-04 04:47:42 - Request: ID=22, Tab=ulasan
+File not found: Attempted /attraction-comment.html
+Current directory: C:\xampp\htdocs\MARANGUIDE\api
+Full attempted path: 
+2024-12-04 04:48:50 - Request: ID=22, Tab=general-info
+2024-12-04 04:48:50 - Request: ID=22, Tab=attractions-events
+2024-12-04 04:48:50 - Request: ID=22, Tab=reviews
+2024-12-04 04:50:03 - Request: ID=22, Tab=butiran-am
+2024-12-04 04:50:03 - Request: ID=22, Tab=tarikan-acara
+2024-12-04 04:50:03 - Request: ID=22, Tab=ulasan
+File not found: Attempted /attraction-comment.html
+Current directory: C:\xampp\htdocs\MARANGUIDE\api
+Full attempted path: 
+2024-12-04 04:50:48 - Request: ID=22, Tab=butiran-am
+2024-12-04 04:50:48 - Request: ID=22, Tab=tarikan-acara
+2024-12-04 04:50:48 - Request: ID=22, Tab=ulasan
+File not found: Attempted /attraction-comment.html
+Current directory: C:\xampp\htdocs\MARANGUIDE\api
+Full attempted path: 
+2024-12-04 04:59:56 - Request: ID=22, Tab=butiran-am
+2024-12-04 04:59:56 - Request: ID=22, Tab=tarikan-acara
+2024-12-04 04:59:56 - Request: ID=22, Tab=ulasan
+File not found: Attempted /attraction-comment.html
+Current directory: C:\xampp\htdocs\MARANGUIDE\api
+Full attempted path: 
+2024-12-04 05:00:37 - Request: ID=22, Tab=butiran-am
+2024-12-04 05:00:37 - Request: ID=22, Tab=tarikan-acara
+2024-12-04 05:00:37 - Request: ID=22, Tab=ulasan
+File not found: Attempted /attraction-comment.html
+Current directory: C:\xampp\htdocs\MARANGUIDE\api
+Full attempted path: 
+2024-12-04 05:00:41 - Request: ID=22, Tab=butiran-am
+2024-12-04 05:00:41 - Request: ID=22, Tab=tarikan-acara
+2024-12-04 05:00:41 - Request: ID=22, Tab=ulasan
+File not found: Attempted /attraction-comment.html
+Current directory: C:\xampp\htdocs\MARANGUIDE\api
+Full attempted path: 
+2024-12-04 05:00:45 - Request: ID=22, Tab=butiran-am
+2024-12-04 05:00:45 - Request: ID=22, Tab=tarikan-acara
+2024-12-04 05:00:45 - Request: ID=22, Tab=ulasan
+File not found: Attempted /attraction-comment.html
+Current directory: C:\xampp\htdocs\MARANGUIDE\api
+Full attempted path: 
+2024-12-04 05:00:50 - Request: ID=22, Tab=butiran-am
+2024-12-04 05:00:50 - Request: ID=22, Tab=tarikan-acara
+2024-12-04 05:00:50 - Request: ID=22, Tab=ulasan
+File not found: Attempted /attraction-comment.html
+Current directory: C:\xampp\htdocs\MARANGUIDE\api
+Full attempted path: 
+2024-12-04 05:01:05 - Request: ID=22, Tab=butiran-am
+2024-12-04 05:01:05 - Request: ID=22, Tab=tarikan-acara
+2024-12-04 05:01:05 - Request: ID=22, Tab=ulasan
+File not found: Attempted /attraction-comment.html
+Current directory: C:\xampp\htdocs\MARANGUIDE\api
+Full attempted path: 
+2024-12-04 05:01:27 - Request: ID=22, Tab=butiran-am
+2024-12-04 05:01:27 - Request: ID=22, Tab=tarikan-acara
+2024-12-04 05:01:27 - Request: ID=22, Tab=ulasan
+File not found: Attempted /attraction-comment.html
+Current directory: C:\xampp\htdocs\MARANGUIDE\api
+Full attempted path: 
+2024-12-04 05:03:39 - Request: ID=22, Tab=butiran-am
+2024-12-04 05:03:39 - Request: ID=22, Tab=tarikan-acara
+2024-12-04 05:03:39 - Request: ID=22, Tab=ulasan
+File not found: Attempted /attraction-comment.html
+Current directory: C:\xampp\htdocs\MARANGUIDE\api
+Full attempted path: 
+2024-12-04 05:04:07 - Request: ID=22, Tab=butiran-am
+2024-12-04 05:04:07 - Request: ID=22, Tab=tarikan-acara
+2024-12-04 05:04:07 - Request: ID=22, Tab=ulasan
+File not found: Attempted /attraction-comment.html
+Current directory: C:\xampp\htdocs\MARANGUIDE\api
+Full attempted path: 
+2024-12-04 05:04:51 - Request: ID=22, Tab=butiran-am
+2024-12-04 05:04:51 - Request: ID=22, Tab=tarikan-acara
+2024-12-04 05:04:51 - Request: ID=22, Tab=ulasan
+File not found: Attempted /attraction-comment.html
+Current directory: C:\xampp\htdocs\MARANGUIDE\api
+Full attempted path: 
+2024-12-04 05:05:54 - Request: ID=22, Tab=butiran-am
+2024-12-04 05:05:54 - Request: ID=22, Tab=tarikan-acara
+2024-12-04 05:05:54 - Request: ID=22, Tab=ulasan
+File not found: Attempted /attraction-comment.html
+Current directory: C:\xampp\htdocs\MARANGUIDE\api
+Full attempted path: 
+2024-12-04 05:10:39 - Request: ID=22, Tab=butiran-am
+2024-12-04 05:10:39 - Request: ID=22, Tab=tarikan-acara
+2024-12-04 05:10:39 - Request: ID=22, Tab=ulasan
+File not found: Attempted /attraction-comment.html
+Current directory: C:\xampp\htdocs\MARANGUIDE\api
+Full attempted path: 
+2024-12-04 05:10:53 - Request: ID=22, Tab=butiran-am
+2024-12-04 05:10:53 - Request: ID=22, Tab=tarikan-acara
+2024-12-04 05:10:53 - Request: ID=22, Tab=ulasan
+File not found: Attempted /attraction-comment.html
+Current directory: C:\xampp\htdocs\MARANGUIDE\api
+Full attempted path: 
+2024-12-04 05:10:59 - Request: ID=22, Tab=butiran-am
+2024-12-04 05:10:59 - Request: ID=22, Tab=tarikan-acara
+2024-12-04 05:10:59 - Request: ID=22, Tab=ulasan
+File not found: Attempted /attraction-comment.html
+Current directory: C:\xampp\htdocs\MARANGUIDE\api
+Full attempted path: 
+2024-12-04 05:11:05 - Request: ID=22, Tab=butiran-am
+2024-12-04 05:11:05 - Request: ID=22, Tab=tarikan-acara
+2024-12-04 05:11:05 - Request: ID=22, Tab=ulasan
+File not found: Attempted /attraction-comment.html
+Current directory: C:\xampp\htdocs\MARANGUIDE\api
+Full attempted path: 
+2024-12-04 05:11:09 - Request: ID=22, Tab=butiran-am
+2024-12-04 05:11:09 - Request: ID=22, Tab=tarikan-acara
+2024-12-04 05:11:09 - Request: ID=22, Tab=ulasan
+File not found: Attempted /attraction-comment.html
+Current directory: C:\xampp\htdocs\MARANGUIDE\api
+Full attempted path: 
+2024-12-04 05:11:13 - Request: ID=22, Tab=butiran-am
+2024-12-04 05:11:13 - Request: ID=22, Tab=tarikan-acara
+2024-12-04 05:11:13 - Request: ID=22, Tab=ulasan
+File not found: Attempted /attraction-comment.html
+Current directory: C:\xampp\htdocs\MARANGUIDE\api
+Full attempted path: 
+2024-12-04 05:11:19 - Request: ID=22, Tab=butiran-am
+2024-12-04 05:11:19 - Request: ID=22, Tab=tarikan-acara
+2024-12-04 05:11:19 - Request: ID=22, Tab=ulasan
+File not found: Attempted /attraction-comment.html
+Current directory: C:\xampp\htdocs\MARANGUIDE\api
+Full attempted path: 
+2024-12-04 05:11:26 - Request: ID=22, Tab=butiran-am
+2024-12-04 05:11:26 - Request: ID=22, Tab=tarikan-acara
+2024-12-04 05:11:26 - Request: ID=22, Tab=ulasan
+File not found: Attempted /attraction-comment.html
+Current directory: C:\xampp\htdocs\MARANGUIDE\api
+Full attempted path: 
+2024-12-04 05:11:33 - Request: ID=22, Tab=butiran-am
+2024-12-04 05:11:33 - Request: ID=22, Tab=tarikan-acara
+2024-12-04 05:11:33 - Request: ID=22, Tab=ulasan
+File not found: Attempted /attraction-comment.html
+Current directory: C:\xampp\htdocs\MARANGUIDE\api
+Full attempted path: 
+2024-12-04 05:11:38 - Request: ID=22, Tab=butiran-am
+2024-12-04 05:11:38 - Request: ID=22, Tab=tarikan-acara
+2024-12-04 05:11:38 - Request: ID=22, Tab=ulasan
+File not found: Attempted /attraction-comment.html
+Current directory: C:\xampp\htdocs\MARANGUIDE\api
+Full attempted path: 
+2024-12-04 05:11:52 - Request: ID=22, Tab=butiran-am
+2024-12-04 05:11:52 - Request: ID=22, Tab=tarikan-acara
+2024-12-04 05:11:52 - Request: ID=22, Tab=ulasan
+File not found: Attempted /attraction-comment.html
+Current directory: C:\xampp\htdocs\MARANGUIDE\api
+Full attempted path: 
+2024-12-04 05:12:02 - Request: ID=22, Tab=butiran-am
+2024-12-04 05:12:02 - Request: ID=22, Tab=tarikan-acara
+2024-12-04 05:12:02 - Request: ID=22, Tab=ulasan
+File not found: Attempted /attraction-comment.html
+Current directory: C:\xampp\htdocs\MARANGUIDE\api
+Full attempted path: 
+2024-12-04 05:12:15 - Request: ID=22, Tab=butiran-am
+2024-12-04 05:12:15 - Request: ID=22, Tab=tarikan-acara
+2024-12-04 05:12:15 - Request: ID=22, Tab=ulasan
+File not found: Attempted /attraction-comment.html
+Current directory: C:\xampp\htdocs\MARANGUIDE\api
+Full attempted path: 
+2024-12-04 05:12:46 - Request: ID=22, Tab=butiran-am
+2024-12-04 05:12:46 - Request: ID=22, Tab=tarikan-acara
+2024-12-04 05:12:46 - Request: ID=22, Tab=ulasan
+File not found: Attempted /attraction-comment.html
+Current directory: C:\xampp\htdocs\MARANGUIDE\api
+Full attempted path: 
+2024-12-04 05:12:54 - Request: ID=22, Tab=butiran-am
+2024-12-04 05:12:54 - Request: ID=22, Tab=tarikan-acara
+2024-12-04 05:12:54 - Request: ID=22, Tab=ulasan
+File not found: Attempted /attraction-comment.html
+Current directory: C:\xampp\htdocs\MARANGUIDE\api
+Full attempted path: 
+2024-12-04 05:13:09 - Request: ID=22, Tab=butiran-am
+2024-12-04 05:13:09 - Request: ID=22, Tab=tarikan-acara
+2024-12-04 05:13:09 - Request: ID=22, Tab=ulasan
+File not found: Attempted /attraction-comment.html
+Current directory: C:\xampp\htdocs\MARANGUIDE\api
+Full attempted path: 
+2024-12-04 05:13:20 - Request: ID=22, Tab=butiran-am
+2024-12-04 05:13:20 - Request: ID=22, Tab=tarikan-acara
+2024-12-04 05:13:20 - Request: ID=22, Tab=ulasan
+File not found: Attempted /attraction-comment.html
+Current directory: C:\xampp\htdocs\MARANGUIDE\api
+Full attempted path: 
+2024-12-04 05:13:28 - Request: ID=22, Tab=butiran-am
+2024-12-04 05:13:28 - Request: ID=22, Tab=tarikan-acara
+2024-12-04 05:13:28 - Request: ID=22, Tab=ulasan
+File not found: Attempted /attraction-comment.html
+Current directory: C:\xampp\htdocs\MARANGUIDE\api
+Full attempted path: 
+2024-12-04 05:14:19 - Request: ID=22, Tab=butiran-am
+2024-12-04 05:14:19 - Request: ID=22, Tab=tarikan-acara
+2024-12-04 05:14:19 - Request: ID=22, Tab=ulasan
+File not found: Attempted /attraction-comment.html
+Current directory: C:\xampp\htdocs\MARANGUIDE\api
+Full attempted path: 
+2024-12-04 05:14:36 - Request: ID=22, Tab=butiran-am
+2024-12-04 05:14:36 - Request: ID=22, Tab=tarikan-acara
+2024-12-04 05:14:36 - Request: ID=22, Tab=ulasan
+File not found: Attempted /attraction-comment.html
+Current directory: C:\xampp\htdocs\MARANGUIDE\api
+Full attempted path: 
+2024-12-04 05:15:11 - Request: ID=22, Tab=butiran-am
+2024-12-04 05:15:11 - Request: ID=22, Tab=tarikan-acara
+2024-12-04 05:15:11 - Request: ID=22, Tab=ulasan
+File not found: Attempted /attraction-comment.html
+Current directory: C:\xampp\htdocs\MARANGUIDE\api
+Full attempted path: 
+2024-12-04 05:15:34 - Request: ID=22, Tab=butiran-am
+2024-12-04 05:15:34 - Request: ID=22, Tab=tarikan-acara
+2024-12-04 05:15:34 - Request: ID=22, Tab=ulasan
+File not found: Attempted /attraction-comment.html
+Current directory: C:\xampp\htdocs\MARANGUIDE\api
+Full attempted path: 
+2024-12-04 05:16:08 - Request: ID=22, Tab=butiran-am
+2024-12-04 05:16:08 - Request: ID=22, Tab=tarikan-acara
+2024-12-04 05:16:08 - Request: ID=22, Tab=ulasan
+File not found: Attempted /attraction-comment.html
+Current directory: C:\xampp\htdocs\MARANGUIDE\api
+Full attempted path: 
+2024-12-04 05:16:40 - Request: ID=22, Tab=butiran-am
+2024-12-04 05:16:40 - Request: ID=22, Tab=tarikan-acara
+2024-12-04 05:16:40 - Request: ID=22, Tab=ulasan
+File not found: Attempted /attraction-comment.html
+Current directory: C:\xampp\htdocs\MARANGUIDE\api
+Full attempted path: 
+2024-12-04 05:17:19 - Request: ID=22, Tab=butiran-am
+2024-12-04 05:17:19 - Request: ID=22, Tab=tarikan-acara
+2024-12-04 05:17:19 - Request: ID=22, Tab=ulasan
+File not found: Attempted /attraction-comment.html
+Current directory: C:\xampp\htdocs\MARANGUIDE\api
+Full attempted path: 
+2024-12-04 05:17:23 - Request: ID=22, Tab=butiran-am
+2024-12-04 05:17:23 - Request: ID=22, Tab=tarikan-acara
+2024-12-04 05:17:23 - Request: ID=22, Tab=ulasan
+File not found: Attempted /attraction-comment.html
+Current directory: C:\xampp\htdocs\MARANGUIDE\api
+Full attempted path: 
+2024-12-04 05:19:46 - Request: ID=22, Tab=butiran-am
+2024-12-04 05:19:46 - Request: ID=22, Tab=tarikan-acara
+2024-12-04 05:19:46 - Request: ID=22, Tab=ulasan
+File not found: Attempted /attraction-comment.html
+Current directory: C:\xampp\htdocs\MARANGUIDE\api
+Full attempted path: 
+2024-12-04 05:20:07 - Request: ID=22, Tab=butiran-am
+2024-12-04 05:20:07 - Request: ID=22, Tab=tarikan-acara
+2024-12-04 05:20:07 - Request: ID=22, Tab=ulasan
+File not found: Attempted /attraction-comment.html
+Current directory: C:\xampp\htdocs\MARANGUIDE\api
+Full attempted path: 
+2024-12-04 05:20:52 - Request: ID=22, Tab=butiran-am
+2024-12-04 05:20:52 - Request: ID=22, Tab=tarikan-acara
+2024-12-04 05:20:52 - Request: ID=22, Tab=ulasan
+File not found: Attempted /attraction-comment.html
+Current directory: C:\xampp\htdocs\MARANGUIDE\api
+Full attempted path: 
+2024-12-04 05:22:06 - Request: ID=22, Tab=butiran-am
+2024-12-04 05:22:06 - Request: ID=22, Tab=tarikan-acara
+2024-12-04 05:22:06 - Request: ID=22, Tab=ulasan
+File not found: Attempted /attraction-comment.html
+Current directory: C:\xampp\htdocs\MARANGUIDE\api
+Full attempted path: 
+2024-12-04 05:34:13 - Request: ID=22, Tab=butiran-am
+2024-12-04 05:34:13 - Request: ID=22, Tab=tarikan-acara
+2024-12-04 05:34:13 - Request: ID=22, Tab=ulasan
+File not found: Attempted /attraction-comment.html
+Current directory: C:\xampp\htdocs\MARANGUIDE\api
+Full attempted path: 
+2024-12-04 09:00:25 - Request: ID=22, Tab=butiran-am
+2024-12-04 09:00:25 - Request: ID=22, Tab=ulasan
+File not found: Attempted /attraction-comment.html
+Current directory: C:\xampp\htdocs\MARANGUIDE\api
+Full attempted path: 
+2024-12-04 09:00:25 - Request: ID=22, Tab=tarikan-acara
+2024-12-04 09:01:48 - Request: ID=22, Tab=butiran-am
+2024-12-04 09:01:48 - Request: ID=22, Tab=tarikan-acara
+2024-12-04 09:01:48 - Request: ID=22, Tab=ulasan
+File not found: Attempted /attraction-comment.html
+Current directory: C:\xampp\htdocs\MARANGUIDE\api
+Full attempted path: 
+2024-12-04 09:04:30 - Request: ID=22, Tab=butiran-am
+2024-12-04 09:04:30 - Request: ID=22, Tab=tarikan-acara
+2024-12-04 09:04:30 - Request: ID=22, Tab=ulasan
+File not found: Attempted /attraction-comment.html
+Current directory: C:\xampp\htdocs\MARANGUIDE\api
+Full attempted path: 
+2024-12-04 09:07:14 - Request: ID=22, Tab=butiran-am
+2024-12-04 09:07:14 - Request: ID=22, Tab=tarikan-acara
+2024-12-04 09:07:14 - Request: ID=22, Tab=ulasan
+File not found: Attempted /attraction-comment.html
+Current directory: C:\xampp\htdocs\MARANGUIDE\api
+Full attempted path: 
+2024-12-04 09:07:17 - Request: ID=22, Tab=butiran-am
+2024-12-04 09:07:17 - Request: ID=22, Tab=tarikan-acara
+2024-12-04 09:07:17 - Request: ID=22, Tab=ulasan
+File not found: Attempted /attraction-comment.html
+Current directory: C:\xampp\htdocs\MARANGUIDE\api
+Full attempted path: 
+2024-12-04 09:08:19 - Request: ID=22, Tab=butiran-am
+2024-12-04 09:08:19 - Request: ID=22, Tab=galeri
+2024-12-04 09:08:19 - Request: ID=22, Tab=tarikan-acara
+2024-12-04 09:08:19 - Request: ID=22, Tab=ulasan
+File not found: Attempted /attraction-comment.html
+Current directory: C:\xampp\htdocs\MARANGUIDE\api
+Full attempted path: 
+2024-12-04 09:09:27 - Request: ID=22, Tab=butiran-am
+2024-12-04 09:09:27 - Request: ID=22, Tab=tarikan-acara
+2024-12-04 09:09:27 - Request: ID=22, Tab=galeri
+2024-12-04 09:09:27 - Request: ID=22, Tab=ulasan
+File not found: Attempted /attraction-comment.html
+Current directory: C:\xampp\htdocs\MARANGUIDE\api
+Full attempted path: 
+2024-12-04 09:10:26 - Request: ID=22, Tab=butiran-am
+2024-12-04 09:10:26 - Request: ID=22, Tab=tarikan-acara
+2024-12-04 09:10:26 - Request: ID=22, Tab=galeri
+2024-12-04 09:10:26 - Request: ID=22, Tab=ulasan
+File not found: Attempted /attraction-comment.html
+Current directory: C:\xampp\htdocs\MARANGUIDE\api
+Full attempted path: 
+2024-12-04 09:10:57 - Request: ID=22, Tab=butiran-am
+2024-12-04 09:10:57 - Request: ID=22, Tab=tarikan-acara
+2024-12-04 09:10:57 - Request: ID=22, Tab=galeri
+2024-12-04 09:10:57 - Request: ID=22, Tab=ulasan
+File not found: Attempted /attraction-comment.html
+Current directory: C:\xampp\htdocs\MARANGUIDE\api
+Full attempted path: 
+2024-12-04 09:18:53 - Request: ID=22, Tab=butiran-am
+2024-12-04 09:18:53 - Request: ID=22, Tab=tarikan-acara
+2024-12-04 09:18:53 - Request: ID=22, Tab=galeri
+2024-12-04 09:18:53 - Request: ID=22, Tab=ulasan
+File not found: Attempted /attraction-comment.html
+Current directory: C:\xampp\htdocs\MARANGUIDE\api
+Full attempted path: 
+2024-12-04 09:20:07 - Request: ID=22, Tab=butiran-am
+2024-12-04 09:20:07 - Request: ID=22, Tab=tarikan-acara
+2024-12-04 09:20:07 - Request: ID=22, Tab=galeri
+2024-12-04 09:20:07 - Request: ID=22, Tab=ulasan
+File not found: Attempted /attraction-comment.html
+Current directory: C:\xampp\htdocs\MARANGUIDE\api
+Full attempted path: 
+2024-12-04 09:27:43 - Request: ID=22, Tab=butiran-am
+2024-12-04 09:27:43 - Request: ID=22, Tab=ulasan
+File not found: Attempted /attraction-comment.html
+Current directory: C:\xampp\htdocs\MARANGUIDE\api
+Full attempted path: 
+2024-12-04 09:27:43 - Request: ID=22, Tab=galeri
+2024-12-04 09:27:43 - Request: ID=22, Tab=tarikan-acara
+2024-12-04 09:38:00 - Request: ID=22, Tab=butiran-am
+2024-12-04 09:38:00 - Request: ID=22, Tab=tarikan-acara
+2024-12-04 09:38:00 - Request: ID=22, Tab=galeri
+2024-12-04 09:38:00 - Request: ID=22, Tab=ulasan
+File not found: Attempted /attraction-comment.html
+Current directory: C:\xampp\htdocs\MARANGUIDE\api
+Full attempted path: 
+2024-12-05 02:02:08 - Request: ID=22, Tab=butiran-am
+2024-12-05 02:02:11 - Request: ID=22, Tab=tarikan-acara
+2024-12-05 02:02:12 - Request: ID=22, Tab=ulasan
+File not found: Attempted /attraction-comment.html
+Current directory: C:\xampp\htdocs\MARANGUIDE\api
+Full attempted path: 
+2024-12-05 02:02:15 - Request: ID=22, Tab=ulasan
+File not found: Attempted /attraction-comment.html
+Current directory: C:\xampp\htdocs\MARANGUIDE\api
+Full attempted path: 
+2024-12-05 02:02:17 - Request: ID=22, Tab=ulasan
+File not found: Attempted /attraction-comment.html
+Current directory: C:\xampp\htdocs\MARANGUIDE\api
+Full attempted path: 
+2024-12-05 02:02:17 - Request: ID=22, Tab=ulasan
+File not found: Attempted /attraction-comment.html
+Current directory: C:\xampp\htdocs\MARANGUIDE\api
+Full attempted path: 
+2024-12-05 02:02:20 - Request: ID=22, Tab=ulasan
+File not found: Attempted /attraction-comment.html
+Current directory: C:\xampp\htdocs\MARANGUIDE\api
+Full attempted path: 
+2024-12-05 02:02:49 - Request: ID=22, Tab=ulasan
+File not found: Attempted /attraction-comment.html
+Current directory: C:\xampp\htdocs\MARANGUIDE\api
+Full attempted path: 
+2024-12-05 02:03:07 - Request: ID=22, Tab=butiran-am
+2024-12-05 02:03:07 - Request: ID=22, Tab=tarikan-acara
+2024-12-05 02:03:07 - Request: ID=22, Tab=galeri
+2024-12-05 02:03:07 - Request: ID=22, Tab=ulasan
+File not found: Attempted /attraction-comment.html
+Current directory: C:\xampp\htdocs\MARANGUIDE\api
+Full attempted path: 
+2024-12-05 02:03:39 - Request: ID=22, Tab=butiran-am
+2024-12-05 02:03:39 - Request: ID=22, Tab=tarikan-acara
+2024-12-05 02:03:39 - Request: ID=22, Tab=galeri
+2024-12-05 02:03:39 - Request: ID=22, Tab=ulasan
+File not found: Attempted /attraction-comment.html
+Current directory: C:\xampp\htdocs\MARANGUIDE\api
+Full attempted path: 
+2024-12-05 03:04:50 - Request: ID=22, Tab=butiran-am
+2024-12-05 03:04:51 - Request: ID=22, Tab=tarikan-acara
+2024-12-05 03:04:51 - Request: ID=22, Tab=galeri
+2024-12-05 03:04:51 - Request: ID=22, Tab=ulasan
+File not found: Attempted /attraction-comment.html
+Current directory: C:\xampp\htdocs\MARANGUIDE\api
+Full attempted path: 
+2024-12-05 03:31:46 - Request: ID=22, Tab=butiran-am
+2024-12-05 03:31:46 - Request: ID=22, Tab=tarikan-acara
+2024-12-05 03:31:46 - Request: ID=22, Tab=galeri
+2024-12-05 03:31:46 - Request: ID=22, Tab=ulasan
+File not found: Attempted /attraction-comment.html
+Current directory: C:\xampp\htdocs\MARANGUIDE\api
+Full attempted path: 
+2024-12-05 03:32:33 - Request: ID=22, Tab=butiran-am
+2024-12-05 03:32:33 - Request: ID=22, Tab=tarikan-acara
+2024-12-05 03:32:38 - Request: ID=22, Tab=butiran-am
+2024-12-05 03:32:38 - Request: ID=22, Tab=tarikan-acara
+2024-12-05 03:32:46 - Request: ID=22, Tab=butiran-am
+2024-12-05 03:32:46 - Request: ID=22, Tab=tarikan-acara
+2024-12-05 03:32:46 - Request: ID=22, Tab=galeri
+2024-12-05 03:32:46 - Request: ID=22, Tab=ulasan
+File not found: Attempted /attraction-comment.html
+Current directory: C:\xampp\htdocs\MARANGUIDE\api
+Full attempted path: 
+2024-12-05 03:33:38 - Request: ID=22, Tab=butiran-am
+2024-12-05 03:33:45 - Request: ID=22, Tab=butiran-am
+2024-12-05 03:33:45 - Request: ID=22, Tab=butiran-am
+2024-12-05 04:22:28 - Request: ID=22, Tab=butiran-am
+2024-12-05 04:23:37 - Request: ID=22, Tab=butiran-am
+2024-12-05 04:24:04 - Request: ID=22, Tab=butiran-am
+2024-12-05 04:24:06 - Request: ID=22, Tab=butiran-am
+2024-12-05 04:26:05 - Request: ID=22, Tab=butiran-am
+2024-12-05 04:31:00 - Request: ID=22, Tab=butiran-am
+2024-12-05 04:32:32 - Request: ID=22, Tab=butiran-am
+2024-12-05 04:34:05 - Request: ID=22, Tab=butiran-am
+2024-12-05 04:34:55 - Request: ID=22, Tab=butiran-am
+2024-12-05 04:35:52 - Request: ID=22, Tab=butiran-am
+2024-12-05 04:37:41 - Request: ID=22, Tab=butiran-am
+2024-12-05 04:38:33 - Request: ID=22, Tab=butiran-am
+2024-12-05 04:38:35 - Request: ID=22, Tab=butiran-am
+2024-12-05 04:39:27 - Request: ID=22, Tab=butiran-am
+2024-12-05 04:44:01 - Request: ID=22, Tab=butiran-am
+2024-12-05 04:45:44 - Request: ID=22, Tab=butiran-am
+2024-12-05 04:45:56 - Request: ID=22, Tab=butiran-am
+2024-12-05 04:47:56 - Request: ID=22, Tab=butiran-am
+2024-12-05 04:48:20 - Request: ID=22, Tab=butiran-am
+2024-12-05 04:49:03 - Request: ID=22, Tab=butiran-am
+2024-12-05 04:49:04 - Request: ID=22, Tab=butiran-am
+2024-12-05 04:49:44 - Request: ID=22, Tab=butiran-am
+2024-12-05 04:49:44 - Request: ID=22, Tab=butiran-am
+2024-12-05 04:52:48 - Request: ID=22, Tab=butiran-am
+2024-12-05 05:03:13 - Request: ID=22, Tab=butiran-am
+2024-12-05 05:03:15 - Request: ID=22, Tab=butiran-am
+2024-12-05 05:06:11 - Request: ID=22, Tab=butiran-am
+2024-12-05 05:06:19 - Request: ID=22, Tab=butiran-am
+2024-12-05 05:06:35 - Request: ID=22, Tab=butiran-am
+2024-12-05 05:06:47 - Request: ID=22, Tab=butiran-am
+2024-12-05 05:08:20 - Request: ID=22, Tab=butiran-am
+2024-12-05 05:08:27 - Request: ID=22, Tab=butiran-am
+2024-12-05 05:11:02 - Request: ID=22, Tab=butiran-am
+2024-12-05 05:12:44 - Request: ID=22, Tab=butiran-am
+2024-12-05 05:14:13 - Request: ID=22, Tab=butiran-am
+2024-12-05 05:14:26 - Request: ID=22, Tab=butiran-am
+2024-12-05 05:15:37 - Request: ID=22, Tab=butiran-am
+2024-12-05 05:15:47 - Request: ID=22, Tab=butiran-am
+2024-12-05 05:17:43 - Request: ID=22, Tab=butiran-am
+2024-12-05 05:18:20 - Request: ID=22, Tab=butiran-am
+2024-12-05 05:19:26 - Request: ID=22, Tab=butiran-am
+2024-12-05 05:20:02 - Request: ID=22, Tab=butiran-am
+2024-12-05 05:20:12 - Request: ID=22, Tab=butiran-am
+2024-12-05 05:20:47 - Request: ID=22, Tab=butiran-am
+2024-12-05 05:21:04 - Request: ID=22, Tab=butiran-am
+2024-12-05 05:21:56 - Request: ID=22, Tab=butiran-am
+2024-12-05 05:22:05 - Request: ID=22, Tab=butiran-am
+2024-12-05 05:26:09 - Request: ID=22, Tab=butiran-am
+2024-12-05 05:29:07 - Request: ID=22, Tab=butiran-am
+2024-12-05 05:29:16 - Request: ID=22, Tab=butiran-am
+2024-12-05 05:29:38 - Request: ID=22, Tab=butiran-am
+2024-12-05 05:31:08 - Request: ID=22, Tab=butiran-am
+2024-12-05 05:35:51 - Request: ID=22, Tab=butiran-am
+2024-12-05 05:37:15 - Request: ID=22, Tab=butiran-am
+2024-12-05 05:37:44 - Request: ID=22, Tab=butiran-am
+2024-12-05 05:38:08 - Request: ID=22, Tab=butiran-am
+2024-12-05 05:42:57 - Request: ID=22, Tab=butiran-am
+2024-12-05 05:44:03 - Request: ID=22, Tab=butiran-am
+2024-12-05 05:44:18 - Request: ID=22, Tab=butiran-am
+2024-12-05 05:48:40 - Request: ID=22, Tab=butiran-am
+2024-12-05 05:49:25 - Request: ID=22, Tab=butiran-am
+2024-12-05 05:49:35 - Request: ID=22, Tab=butiran-am
+2024-12-05 05:49:41 - Request: ID=22, Tab=butiran-am
+2024-12-05 05:55:48 - Request: ID=22, Tab=butiran-am
+2024-12-05 05:56:51 - Request: ID=22, Tab=butiran-am
+2024-12-05 05:57:12 - Request: ID=22, Tab=butiran-am
+2024-12-05 05:57:32 - Request: ID=22, Tab=butiran-am
+2024-12-05 05:57:43 - Request: ID=22, Tab=butiran-am
+2024-12-05 05:57:44 - Request: ID=22, Tab=butiran-am
+2024-12-05 05:57:58 - Request: ID=22, Tab=butiran-am
+2024-12-05 08:29:01 - Request: ID=22, Tab=butiran-am
+2024-12-05 08:31:11 - Request: ID=22, Tab=butiran-am
+2024-12-05 08:31:44 - Request: ID=22, Tab=butiran-am
+2024-12-05 08:33:20 - Request: ID=22, Tab=butiran-am
+2024-12-05 08:33:32 - Request: ID=22, Tab=butiran-am
+2024-12-05 08:34:30 - Request: ID=22, Tab=butiran-am
+2024-12-05 08:34:39 - Request: ID=22, Tab=butiran-am
+2024-12-05 08:34:51 - Request: ID=22, Tab=butiran-am
+2024-12-05 08:35:30 - Request: ID=22, Tab=butiran-am
+2024-12-05 08:36:35 - Request: ID=22, Tab=butiran-am
+2024-12-05 08:57:02 - Request: ID=22, Tab=butiran-am
+2024-12-05 09:24:48 - Request: ID=22, Tab=butiran-am
+2024-12-05 09:24:48 - Request: ID=22, Tab=tarikan-acara
+2024-12-05 09:24:53 - Request: ID=22, Tab=butiran-am
+2024-12-05 09:24:53 - Request: ID=22, Tab=tarikan-acara
+2024-12-05 09:26:03 - Request: ID=22, Tab=butiran-am
+2024-12-05 09:26:03 - Request: ID=22, Tab=tarikan-acara
+2024-12-05 09:27:03 - Request: ID=22, Tab=butiran-am
+2024-12-05 09:27:03 - Request: ID=22, Tab=tarikan-acara
+2024-12-05 09:27:10 - Request: ID=22, Tab=butiran-am
+2024-12-05 09:27:10 - Request: ID=22, Tab=tarikan-acara
+2024-12-06 01:34:03 - Request: ID=22, Tab=butiran-am
+2024-12-06 01:34:03 - Request: ID=22, Tab=tarikan-acara
+2024-12-06 01:39:50 - Request: ID=22, Tab=butiran-am
+2024-12-06 01:39:50 - Request: ID=22, Tab=tarikan-acara
+2024-12-06 01:41:50 - Request: ID=22, Tab=butiran-am
+2024-12-06 01:41:50 - Request: ID=22, Tab=tarikan-acara
+2024-12-06 01:44:36 - Request: ID=22, Tab=butiran-am
+2024-12-06 01:44:36 - Request: ID=22, Tab=tarikan-acara
+2024-12-06 01:55:20 - Request: ID=22, Tab=butiran-am
+2024-12-06 01:55:20 - Request: ID=22, Tab=tarikan-acara
+2024-12-06 01:55:54 - Request: ID=22, Tab=butiran-am
+2024-12-06 01:55:54 - Request: ID=22, Tab=tarikan-acara
+2024-12-06 01:55:54 - Request: ID=22, Tab=galeri
+2024-12-06 01:58:09 - Request: ID=22, Tab=butiran-am
+2024-12-06 01:58:09 - Request: ID=22, Tab=tarikan-acara
+2024-12-06 01:58:09 - Request: ID=22, Tab=galeri
+2024-12-06 01:59:16 - Request: ID=22, Tab=butiran-am
+2024-12-06 01:59:16 - Request: ID=22, Tab=tarikan-acara
+2024-12-06 01:59:16 - Request: ID=22, Tab=galeri
+2024-12-06 03:23:04 - Request: ID=22, Tab=butiran-am
+2024-12-06 03:23:04 - Request: ID=22, Tab=tarikan-acara
+2024-12-06 03:23:04 - Request: ID=22, Tab=galeri
+2024-12-06 04:23:29 - Request: ID=22, Tab=butiran-am
+2024-12-06 04:23:29 - Request: ID=22, Tab=tarikan-acara
+2024-12-06 04:23:29 - Request: ID=22, Tab=galeri
+2024-12-06 05:27:41 - Request: ID=22, Tab=butiran-am
+2024-12-06 05:27:41 - Request: ID=22, Tab=tarikan-acara
+2024-12-06 05:27:41 - Request: ID=22, Tab=galeri
+2024-12-06 05:28:13 - Request: ID=22, Tab=butiran-am
+2024-12-06 05:28:13 - Request: ID=22, Tab=tarikan-acara
+2024-12-06 05:28:13 - Request: ID=22, Tab=galeri
+2024-12-09 01:54:27 - Request: ID=22, Tab=butiran-am
+2024-12-09 01:54:27 - Request: ID=22, Tab=galeri
+2024-12-09 01:54:27 - Request: ID=22, Tab=tarikan-acara

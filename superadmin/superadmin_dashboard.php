@@ -39,9 +39,9 @@ $stmt->close();
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MaranGuide Superadmin Dashboard</title>
  
-    <link rel="stylesheet" href="../css/superadmin_section.css">
-    <link rel="stylesheet" href="superadmin_sidenav.css">
-    <link rel="stylesheet" href="../css/project.css">
+    <link rel="stylesheet" href="src/css/superadmin_section.css">
+    <link rel="stylesheet" href="src/css/superadmin_sidenav.css">
+    <link rel="stylesheet" href="../project.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   
@@ -98,7 +98,6 @@ $stmt->close();
                         <span>Tambah Pemilik</span>
                     </a>
                 </div>
-                </div>
                 <div class="col s6 m3">
                     <a href="view_feedback.php" class="quick-action-button waves-effect">
                         <i class="material-icons">feedback</i>
@@ -110,28 +109,6 @@ $stmt->close();
     </div>
     </div>
 </div>
-    <section class="home-section2">
-    <div class="home-content">
-      <div class="dashboard-container">
-        <h1>Dashboard</h1>
-        <div class="row">
-          <div class="card attraction-card" onclick="location.href='superadmin_manage_attraction.php'">
-            <h3>Tempat Tarikan</h3>
-            <i class="material-icons">location_city</i>
-            <p>Uruskan Tempat Tarikan</p>
-          </div>
-          <div class="card admin-card" onclick="location.href='superadmin_manage_owner.php'">
-            <h3>Pemilik Tempat</h3>
-            <i class="material-icons">group</i>
-            <p>Urus Pemilik Tempat</p>
-          </div>
-        </div>
-
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>  
    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
