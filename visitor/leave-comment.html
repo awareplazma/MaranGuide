@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maklum Balas Lokasi</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <link rel="stylesheet" href="/project.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    
+    <!-- Materialize CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    
+    <!-- Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    
+    <!-- Custom Styles -->
+    <style>
+        body {
+            background-color: #f5f5f5;
+            font-family: 'Roboto', sans-serif;
+        }
+        .feedback-container {
+            max-width: 600px;
+            margin: 30px auto;
+            padding: 0 15px;
+        }
+        .attraction-feedback-form {
+            border-radius: 12px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+        .feedback-header {
+            background: linear-gradient(135deg, #1976d2 0%, #64b5f6 100%);
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .star-rating {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+        .star {
+            font-size: 2.5rem;
+            color: #bdbdbd;
+            cursor: pointer;
+            transition: color 0.2s;
+            margin: 0 5px;
+        }
+        .star.active {
+            color: #ffd700;
+        }
+        .star:hover {
+            color: #ffd700;
+        }
+        .input-field label {
+            color: #616161;
+        }
+        .input-field input[type=text]:focus,
+        .input-field textarea:focus {
+            border-bottom: 1px solid #1976d2;
+            box-shadow: 0 1px 0 0 #1976d2;
+        }
+        .submit-btn {
+            border-radius: 25px;
+            text-transform: none;
+            font-weight: 500;
+            padding: 0 30px;
+        }
+        #content {
+            min-height: 120px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Placeholder -->
+    <div id="header-html"></div>
+
+    <div class="container feedback-container">
+        <div class="card attraction-feedback-form z-depth-3">
+            <div class="feedback-header">
+                <h4 class="m-0">Berikan Maklum Balas</h4>
+                <p class="light">Kongsi pengalaman anda</p>
+            </div>
+
+            <div class="card-content">
+                <form id="attraction-feedback-form" method="POST">
+                    <!-- Hidden input for attraction ID -->
+                    <input type="hidden" id="attraction_id" name="attraction_id">
+                    
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <i class="material-icons prefix">person</i>
+                            <input id="username" name="username" type="text" class="validate" required>
+                            <label for="username">Nama Anda</label>
+                        </div>
+                    </div>
+
+                    
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <i class="material-icons prefix">mode_edit</i>
+                            <textarea id="content" name="content" class="materialize-textarea" required></textarea>
+                            <label for="content">Ulasan Anda</label>
+                        </div>
+                    </div>
+
+                    <div class="row center-align">
+                        <div class="col s12">
+                            <h5 class="grey-text text-darken-2">Penilaian Anda</h5>
+                            <div id="star-rating" class="star-rating">
+                                <span class="star material-icons" data-value="1">star_border</span>
+                                <span class="star material-icons" data-value="2">star_border</span>
+                                <span class="star material-icons" data-value="3">star_border</span>
+                                <span class="star material-icons" data-value="4">star_border</span>
+                                <span class="star material-icons" data-value="5">star_border</span>
+                            </div>
+                            <input type="hidden" id="rating" name="rating" required>
+                        </div>
+                    </div>
+                    
+                    <div class="row">
+                        <div class="col s12 center-align">
+                            <button class="btn waves-effect waves-light blue darken-2 submit-btn" type="submit">
+                                Hantar Maklum Balas
+                                <i class="material-icons right">send</i>
+                            </button>
+                        </div>
+            </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Materialize JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    
+    <!-- Custom Script -->
+    <script src="src/javacsript/attraction-feedback-form.js" defer></script>
+</body>
+</html>

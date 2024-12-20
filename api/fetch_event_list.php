@@ -1,114 +1,87 @@
 <?php
+// Disable all error output to prevent HTML errors
+error_reporting(0);
+ini_set('display_errors', 0);
 
-include '../database_config.php';
-
-// Set headers for JSON response and CORS
+// Set headers to ensure JSON response
 header('Content-Type: application/json');
 header('Access-Control-Allow-Origin: *');
-header('Access-Control-Allow-Methods: GET, OPTIONS');
-header('Access-Control-Allow-Headers: Content-Type');
 
 // Include database connection
-require_once('../maranguide_connection.php');
+require_once($_SERVER['DOCUMENT_ROOT'] . '/MARANGUIDE/maranguide_connection.php');
 
-// Error response function
-function sendErrorResponse($message, $code = 500) {
-    http_response_code($code);
+// Function to return JSON error
+function returnJsonError($message) {
+    http_response_code(500);
     echo json_encode([
         'error' => true,
         'message' => $message
     ]);
-    exit;
+    exit();
 }
 
-// Sanitize Input Function
-function sanitizeInput($input) {
-    return is_numeric($input) ? intval($input) : null;
+
+// Sanitize inputs
+$page = isset($_GET['page']) ? max(1, intval($_GET['page'])) : 1;
+$attractionId = isset($_GET['attractionId']) ? intval($_GET['attractionId']) : 0;
+
+// Validate attraction ID
+if ($attractionId <= 0) {
+    returnJsonError('Invalid attraction ID');
 }
 
-// Fetch Attraction for event-list.html
 try {
-    // Pagination parameters with validation
-    $page = isset($_GET['page']) ? sanitizeInput($_GET['page']) : 1;
-    $page = max(1, $page); // Ensure page is at least 1
-    $limit = 6; // Attractions per page
-    $offset = ($page - 1) * $limit;
+    // Pagination setup
+    $itemsPerPage = 6;
+    $offset = ($page - 1) * $itemsPerPage;
 
-    // Prepare response structure
-    $response = [
-        'events' => [],
-        'pagination' => [
-            'currentPage' => $page,
-            'totalPages' => 0,
-            'totalItems' => 0
-        ]
-    ];
+    // Prepared statement for count
+    $countStmt = mysqli_prepare($conn, 
+        "SELECT COUNT(*) AS total FROM eventlist WHERE attraction_id = ?"
+    );
+    mysqli_stmt_bind_param($countStmt, "i", $attractionId);
+    mysqli_stmt_execute($countStmt);
+    $countResult = mysqli_stmt_get_result($countStmt);
+    $countRow = mysqli_fetch_assoc($countResult);
+    $totalItems = $countRow['total'];
+    $totalPages = ceil($totalItems / $itemsPerPage);
 
-    // Count total attractions
-    $countQuery = "SELECT COUNT(*) as total FROM eventlist WHERE event_status = 'aktif'";
-    $countResult = mysqli_query($conn, $countQuery);
-    
-    if (!$countResult) {
-        throw new Exception("Failed to count events: " . mysqli_error($conn));
-    }
-
-    $totalAttractions = mysqli_fetch_assoc($countResult)['total'];
-    $response['pagination']['totalPages'] = ceil($totalEvents / $limit);
-    $response['pagination']['totalItems'] = $totalEvents;
-
-    // Fetch attractions with media
-    $query = "SELECT 
-        e.event_id, 
-        e.event_name, 
-        e.event_description, 
-        e.event_thumbnails
-    FROM eventlist
-    WHERE event_status = 'aktif'
-    ORDER BY event_created_at DESC
-    LIMIT ? OFFSET ?;
-    ";
-
-    // Prepare and execute statement
-    $stmt = mysqli_prepare($conn, $query);
-    if (!$stmt) {
-        throw new Exception("Failed to prepare statement: " . mysqli_error($conn));
-    }
-
-    mysqli_stmt_bind_param($stmt, "ii", $limit, $offset);
+    // Prepared statement for gallery fetch
+    $stmt = mysqli_prepare($conn, 
+        "SELECT 
+            *
+        FROM eventlist
+        WHERE attraction_id = ? 
+        ORDER BY event_created_at DESC 
+        LIMIT ? OFFSET ?"
+    );
+    mysqli_stmt_bind_param($stmt, "iii", $attractionId, $itemsPerPage, $offset);
     mysqli_stmt_execute($stmt);
     $result = mysqli_stmt_get_result($stmt);
 
-    // Fetch events
+   
+    $events = [];
     while ($row = mysqli_fetch_assoc($result)) {
-
-        $media_path = BASE_PATH_VISITOR . basename($row['imageUrl']);
-        $response['events'][] = [
-            'id' => $row['event_id'],
-            'name' => htmlspecialchars($row['event_name']),
-            'media_path' => htmlspecialchars($row['imageUrl'])
-        ];
+        $events[] = $row;
     }
 
-    // Handle empty results
-    if (empty($response['events'])) {
-        $response['events'][] = [
-            'id' => 0,
-            'name' => 'Tiada Tarikan/Acara',
-            'description' => 'Check back later for new attractions.',
-            'media_path' => '../media/default_attraction.png'
-        ];
-    }
+    // Prepare response
+    $response = [
+        'events' => $events,
+        'currentPage' => $page,
+        'totalPages' => $totalPages,
+        'totalItems' => $totalItems
+    ];
 
-    // Send successful response
+    // Output JSON
     echo json_encode($response);
 
 } catch (Exception $e) {
-    // Centralized error handling
-    sendErrorResponse($e->getMessage());
+    returnJsonError($e->getMessage());
 } finally {
-    // Ensure database connection is closed
-    if (isset($conn)) {
-        mysqli_close($conn);
-    }
+    // Close connections
+    if (isset($countStmt)) mysqli_stmt_close($countStmt);
+    if (isset($stmt)) mysqli_stmt_close($stmt);
+    mysqli_close($conn);
 }
 ?>

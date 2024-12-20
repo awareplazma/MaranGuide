@@ -1,7 +1,7 @@
 <?php
 error_reporting(E_ALL);
 
-include 'admin_nav.php';
+include $_SERVER['DOCUMENT_ROOT'] . '/maranguide_connection.php';
 ob_start(); 
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
@@ -15,7 +15,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             throw new Exception("All fields are required.");
         }
 
-           // Retrieve attraction ID from session
+        // Retrieve attraction ID from session
         if (isset($_SESSION['attraction_id'])) {
             $attraction_id = $_SESSION['attraction_id'];
         } else {
@@ -23,43 +23,28 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         }
 
         // Sanitize input
-        $attraction_id = htmlspecialchars(trim($_POST['attraction_id']));
+        $attraction_id = htmlspecialchars(trim($attraction_id));
         $event_name = htmlspecialchars(trim($_POST['event_name']));
         $event_description = htmlspecialchars(trim($_POST['event_description']));
         $event_start_date = htmlspecialchars(trim($_POST['event_start_date']));
         $event_end_date = htmlspecialchars(trim($_POST['event_end_date']));
         $event_thumbnails = null;
 
-        // Handle file upload
-        if (isset($_FILES['imageUpload']) && $_FILES['imageUpload']['error'] == 0) {
-            // Validate file type
-            $allowed_types = ['image/jpeg', 'image/png', 'image/gif'];
-            if (!in_array($_FILES['imageUpload']['type'], $allowed_types)) {
-                throw new Exception("Invalid file type. Only JPG, PNG, and GIF are allowed.");
-            }
+        // Fetch attraction name from database for folder creation
+        $query = "SELECT attraction_name FROM attraction WHERE attraction_id = ?";
+        $stmt = $conn->prepare($query);
+        $stmt->bind_param("i", $attraction_id);
+        $stmt->execute();
+        $result = $stmt->get_result();
+        $row = $result->fetch_assoc();
 
-            $targetDir = "../media/($attraction_id)/picture"; 
-            if (!file_exists($targetDir)) {
-                mkdir($targetDir, 0777, true);
-            }
-
-            // Generate unique filename and move file
-            $fileExtension = pathinfo($_FILES["imageUpload"]["name"], PATHINFO_EXTENSION);
-            $fileName = uniqid() . '.' . $fileExtension;
-            $targetFilePath = $targetDir . $fileName;
-
-            if (move_uploaded_file($_FILES["imageUpload"]["tmp_name"], $targetFilePath)) {
-                $event_thumbnails = $targetFilePath;
-            } else {
-                throw new Exception("Failed to upload image.");
-            }
+        if (!$row) {
+            throw new Exception("Attraction not found.");
         }
 
-        if (!$conn) {
-            throw new Exception("Database connection failed");
-        }
+        $attraction_name = $row['attraction_name'];
 
-        // Prepare SQL statement for insertion
+        // Insert event into database first to get event_id
         $stmt = $conn->prepare("INSERT INTO eventlist 
             (attraction_id, event_created_at, event_name, event_description, 
              event_start_date, event_end_date, event_thumbnails, event_status) 
@@ -69,6 +54,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             throw new Exception("Failed to prepare statement: " . $conn->error);
         }
 
+        // Initially set event_thumbnails to null
+        $initial_thumbnails = '/media/default/placeholder.jpg';
+
         // Bind parameters and execute statement
         if (!$stmt->bind_param("isssss", 
             $attraction_id,  
@@ -76,7 +64,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             $event_description, 
             $event_start_date,  
             $event_end_date,
-            $event_thumbnails        
+            $initial_thumbnails        
         )) {
             throw new Exception("Failed to bind parameters: " . $stmt->error);
         }
@@ -87,13 +75,16 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
         $event_id = $conn->insert_id;
 
-        $baseDir = "C:/xampp/htdocs/MARANGUIDE/media/attraction/{$attraction_id}/{$event_id}";
+        // Set up directory paths
+        $baseDir = "C:/xampp/htdocs/MARANGUIDE/media/attraction/{$attraction_name}/{$event_name}";
+        
         $directories = [
-            'pictures' => $baseDir . 'pictures/',
-            'videos' => $baseDir . 'videos/',
-            'thumbnail' => $baseDir . 'thumbnail/'
+            'videos' => $baseDir . '/videos/',
+            'pictures' => $baseDir . '/pictures/',
+            'thumbnail' => $baseDir . '/thumbnail/'
         ];
 
+        // Create directories if they don't exist
         foreach ($directories as $dir) {
             if (!file_exists($dir)) {
                 if (!mkdir($dir, 0777, true)) {
@@ -102,67 +93,70 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             }
         }
 
-        $uploadedFiles = [
-            'pictures' => [],
-            'videos' => [],
-            'thumbnail' => []
-        ];
-
-        if (isset($_FILES['thumbnailUpload']) && $_FILES['thumbnailUpload']['error'] == 0) {
-            $allowed_picture_types = ['image/jpeg', 'image/png', 'image/gif'];
+        // Handle thumbnail upload with validation
+        if (isset($_FILES['imageUpload']) && $_FILES['imageUpload']['error'] == 0) {
+            $allowed_picture_types = ['image/jpeg', 'image/png'];
+            $finfo = finfo_open(FILEINFO_MIME_TYPE);
+            $mime_type = finfo_file($finfo, $_FILES['imageUpload']['tmp_name']);
+            finfo_close($finfo);
             
-            if (!in_array($_FILES['thumbnailUpload']['type'], $allowed_picture_types)) {
-                throw new Exception("Invalid file type for thumbnail. Only JPG, PNG, and GIF are allowed.");
-            }
-
-            $fileExtension = pathinfo($_FILES['thumbnailUpload']['name'], PATHINFO_EXTENSION);
-            $fileName = "attraction_{$attraction_id}_thumbnail." . $fileExtension;
-            $targetFilePath = $directories['thumbnail'] . $fileName;
-            $dbFilePath = "media/attraction/{$attraction_id}/thumbnail/" . $fileName;
-
-            if (move_uploaded_file($_FILES['thumbnailUpload']['tmp_name'], $targetFilePath)) {
-                $uploadedFiles['thumbnail'] = $dbFilePath;
+            if (in_array($mime_type, $allowed_picture_types)) {
+                $fileExtension = strtolower(pathinfo($_FILES['imageUpload']['name'], PATHINFO_EXTENSION));
+                $fileName = "{$event_id}_thumbnail." . $fileExtension;
+                $targetFilePath = $directories['thumbnail'] . $fileName;
+                
+                // Create the directory structure if it doesn't exist
+                if (!file_exists(dirname($targetFilePath))) {
+                    mkdir(dirname($targetFilePath), 0777, true);
+                }
+                
+                if (move_uploaded_file($_FILES['imageUpload']['tmp_name'], $targetFilePath)) {
+                    // Store the relative path in the database
+                    $event_thumbnails = "/media/attraction/{$attraction_name}/{$event_name}/thumbnail/" . $fileName;
+                    
+                    // Update database with thumbnail path
+                    $updateStmt = $conn->prepare("UPDATE eventlist SET event_thumbnails = ? WHERE event_id = ?");
+                    
+                    if (!$updateStmt) {
+                        throw new Exception("Failed to prepare update statement: " . $conn->error);
+                    }
+                    
+                    if (!$updateStmt->bind_param("si", $event_thumbnails, $event_id)) {
+                        throw new Exception("Failed to bind update parameters: " . $updateStmt->error);
+                    }
+                    
+                    if (!$updateStmt->execute()) {
+                        throw new Exception("Failed to update thumbnail: " . $updateStmt->error);
+                    }
+                    
+                    $updateStmt->close();
+                } else {
+                    throw new Exception("Failed to move uploaded thumbnail file.");
+                }
             } else {
-                throw new Exception("Failed to upload thumbnail: " . error_get_last()['message']);
+                throw new Exception("Invalid thumbnail file type. Only JPEG and PNG are allowed.");
             }
         }
-        if (!empty($uploadedFiles['thumbnail'])) {
-            $thumbnail = $uploadedFiles['thumbnail'];
-            $updateStmt = $conn->prepare("UPDATE eventlist SET 
-                attraction_thumbnail = ?
-                WHERE event_id = ?");
 
-            if (!$updateStmt) {
-                throw new Exception("Failed to prepare update statement: " . $conn->error);
-            }
-
-            if (!$updateStmt->execute([$picturesJson, $videosJson, $thumbnail, $attraction_id])) {
-                throw new Exception("Failed to update media paths: " . $updateStmt->error);
-            }
-
-            $updateStmt->close();
-        }
-
-        // Commit transaction
-        $conn->commit();
         $stmt->close();
+        $conn->commit();
 
-        $_SESSION['success_message'] = "Event added successfully!";
-        header("Location: admin_manage_events.php");
+        $_SESSION['success_message'] = "Event added successfully with media uploads!";
+        header("Location: ../../admin_manage_events.php");
         exit();
 
     } catch (Exception $e) {
-         if (isset($conn)) {
+        // Rollback on error
+        if (isset($conn)) {
             $conn->rollback();
         }
-        error_log("Error in attraction processing: " . $e->getMessage());
+        error_log("Error in event processing: " . $e->getMessage());
         $_SESSION['error_message'] = $e->getMessage();
-        header("Location: admin_manage_events.php");
+        header("Location: ../../admin_manage_events.php");
         exit();
     } 
 } else {
     $_SESSION['error_message'] = "Invalid request method";
-    header("Location: admin_manage_events.php");
+    header("Location: ../../admin_manage_events.php");
     exit();
 }
-?>

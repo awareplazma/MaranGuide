@@ -1,630 +1,1092 @@
-[05-Dec-2024 05:15:47 Europe/Berlin] Received GET parameters: Array
+[19-Dec-2024 02:31:49 Europe/Berlin] Received GET parameters: Array
 (
-    [id] => 22
+    [id] => 29
 )
 
-[05-Dec-2024 05:15:47 Europe/Berlin] Query result: Array
+[19-Dec-2024 02:31:49 Europe/Berlin] Query result: Array
 (
-    [attraction_id] => 22
-    [attraction_name] => Di situ
-    [attraction_description] => Kemanamanamanamanamanamanamanamanamana
-    [attraction_address] => Image 2
-    [attraction_opening_hours] => 11:43:00.0000
-    [attraction_closing_hours] => 04:40:00.0000
-    [attraction_operating_days] => Monday,Tuesday,Wednesday,Thursday,Friday,Saturday,Sunday
+    [attraction_id] => 29
+    [attraction_name] => Hutan Lipur Teladas
+    [attraction_description] => Hutan Lipur Teladas
+    [attraction_address] => Hutan Lipur Teladas
+    [attraction_opening_hours] => 00:49:00.0000
+    [attraction_closing_hours] => 02:49:00.0000
+    [attraction_operating_days] => Monday
     [attraction_status] => aktif
+    [attraction_latitude] => 3.413812
+    [attraction_longitude] => 102.502441
 )
 
-[05-Dec-2024 05:17:43 Europe/Berlin] Received GET parameters: Array
+[19-Dec-2024 02:36:29 Europe/Berlin] Received GET parameters: Array
 (
-    [id] => 22
+    [id] => 29
 )
 
-[05-Dec-2024 05:17:43 Europe/Berlin] Query result: Array
+[19-Dec-2024 02:36:29 Europe/Berlin] Query result: Array
 (
-    [attraction_id] => 22
-    [attraction_name] => Di situ
-    [attraction_description] => Kemanamanamanamanamanamanamanamanamana
-    [attraction_address] => Image 2
-    [attraction_opening_hours] => 11:43:00.0000
-    [attraction_closing_hours] => 04:40:00.0000
-    [attraction_operating_days] => Monday,Tuesday,Wednesday,Thursday,Friday,Saturday,Sunday
+    [attraction_id] => 29
+    [attraction_name] => Hutan Lipur Teladas
+    [attraction_description] => Hutan Lipur Teladas
+    [attraction_address] => Hutan Lipur Teladas
+    [attraction_opening_hours] => 00:49:00.0000
+    [attraction_closing_hours] => 02:49:00.0000
+    [attraction_operating_days] => Monday
     [attraction_status] => aktif
+    [attraction_latitude] => 3.413812
+    [attraction_longitude] => 102.502441
 )
 
-[05-Dec-2024 05:18:20 Europe/Berlin] Received GET parameters: Array
+[19-Dec-2024 02:36:39 Europe/Berlin] Received GET parameters: Array
 (
-    [id] => 22
+    [id] => 29
 )
 
-[05-Dec-2024 05:18:20 Europe/Berlin] Query result: Array
+[19-Dec-2024 02:36:39 Europe/Berlin] Query result: Array
 (
-    [attraction_id] => 22
-    [attraction_name] => Di situ
-    [attraction_description] => Kemanamanamanamanamanamanamanamanamana
-    [attraction_address] => Image 2
-    [attraction_opening_hours] => 11:43:00.0000
-    [attraction_closing_hours] => 04:40:00.0000
-    [attraction_operating_days] => Monday,Tuesday,Wednesday,Thursday,Friday,Saturday,Sunday
+    [attraction_id] => 29
+    [attraction_name] => Hutan Lipur Teladas
+    [attraction_description] => Hutan Lipur Teladas
+    [attraction_address] => Hutan Lipur Teladas
+    [attraction_opening_hours] => 00:49:00.0000
+    [attraction_closing_hours] => 02:49:00.0000
+    [attraction_operating_days] => Monday
     [attraction_status] => aktif
+    [attraction_latitude] => 3.413812
+    [attraction_longitude] => 102.502441
 )
 
-[05-Dec-2024 05:19:25 Europe/Berlin] Received GET parameters: Array
+[19-Dec-2024 02:38:25 Europe/Berlin] Received GET parameters: Array
 (
-    [id] => 22
+    [id] => 29
 )
 
-[05-Dec-2024 05:19:25 Europe/Berlin] Query result: Array
+[19-Dec-2024 02:38:25 Europe/Berlin] Query result: Array
 (
-    [attraction_id] => 22
-    [attraction_name] => Di situ
-    [attraction_description] => Kemanamanamanamanamanamanamanamanamana
-    [attraction_address] => Image 2
-    [attraction_opening_hours] => 11:43:00.0000
-    [attraction_closing_hours] => 04:40:00.0000
-    [attraction_operating_days] => Monday,Tuesday,Wednesday,Thursday,Friday,Saturday,Sunday
+    [attraction_id] => 29
+    [attraction_name] => Hutan Lipur Teladas
+    [attraction_description] => Hutan Lipur Teladas
+    [attraction_address] => Hutan Lipur Teladas
+    [attraction_opening_hours] => 00:49:00.0000
+    [attraction_closing_hours] => 02:49:00.0000
+    [attraction_operating_days] => Monday
     [attraction_status] => aktif
+    [attraction_latitude] => 3.413812
+    [attraction_longitude] => 102.502441
 )
 
-[05-Dec-2024 05:20:02 Europe/Berlin] Received GET parameters: Array
+[19-Dec-2024 02:39:10 Europe/Berlin] Received GET parameters: Array
 (
-    [id] => 22
+    [id] => 29
 )
 
-[05-Dec-2024 05:20:02 Europe/Berlin] Query result: Array
+[19-Dec-2024 02:39:10 Europe/Berlin] Query result: Array
 (
-    [attraction_id] => 22
-    [attraction_name] => Di situ
-    [attraction_description] => Kemanamanamanamanamanamanamanamanamana
-    [attraction_address] => Image 2
-    [attraction_opening_hours] => 11:43:00.0000
-    [attraction_closing_hours] => 04:40:00.0000
-    [attraction_operating_days] => Monday,Tuesday,Wednesday,Thursday,Friday,Saturday,Sunday
+    [attraction_id] => 29
+    [attraction_name] => Hutan Lipur Teladas
+    [attraction_description] => Hutan Lipur Teladas
+    [attraction_address] => Hutan Lipur Teladas
+    [attraction_opening_hours] => 00:49:00.0000
+    [attraction_closing_hours] => 02:49:00.0000
+    [attraction_operating_days] => Monday
     [attraction_status] => aktif
+    [attraction_latitude] => 3.413812
+    [attraction_longitude] => 102.502441
 )
 
-[05-Dec-2024 05:20:12 Europe/Berlin] Received GET parameters: Array
+[19-Dec-2024 02:41:08 Europe/Berlin] Received GET parameters: Array
 (
-    [id] => 22
+    [id] => 29
 )
 
-[05-Dec-2024 05:20:12 Europe/Berlin] Query result: Array
+[19-Dec-2024 02:41:08 Europe/Berlin] Query result: Array
 (
-    [attraction_id] => 22
-    [attraction_name] => Di situ
-    [attraction_description] => Kemanamanamanamanamanamanamanamanamana
-    [attraction_address] => Image 2
-    [attraction_opening_hours] => 11:43:00.0000
-    [attraction_closing_hours] => 04:40:00.0000
-    [attraction_operating_days] => Monday,Tuesday,Wednesday,Thursday,Friday,Saturday,Sunday
+    [attraction_id] => 29
+    [attraction_name] => Hutan Lipur Teladas
+    [attraction_description] => Hutan Lipur Teladas
+    [attraction_address] => Hutan Lipur Teladas
+    [attraction_opening_hours] => 00:49:00.0000
+    [attraction_closing_hours] => 02:49:00.0000
+    [attraction_operating_days] => Monday
     [attraction_status] => aktif
+    [attraction_latitude] => 3.413812
+    [attraction_longitude] => 102.502441
 )
 
-[05-Dec-2024 05:21:04 Europe/Berlin] Received GET parameters: Array
+[19-Dec-2024 02:45:13 Europe/Berlin] Received GET parameters: Array
 (
-    [id] => 22
+    [id] => 29
 )
 
-[05-Dec-2024 05:21:04 Europe/Berlin] Query result: Array
+[19-Dec-2024 02:45:13 Europe/Berlin] Query result: Array
 (
-    [attraction_id] => 22
-    [attraction_name] => Di situ
-    [attraction_description] => Kemanamanamanamanamanamanamanamanamana
-    [attraction_address] => Image 2
-    [attraction_opening_hours] => 11:43:00.0000
-    [attraction_closing_hours] => 04:40:00.0000
-    [attraction_operating_days] => Monday,Tuesday,Wednesday,Thursday,Friday,Saturday,Sunday
+    [attraction_id] => 29
+    [attraction_name] => Hutan Lipur Teladas
+    [attraction_description] => Hutan Lipur Teladas
+    [attraction_address] => Hutan Lipur Teladas
+    [attraction_opening_hours] => 00:49:00.0000
+    [attraction_closing_hours] => 02:49:00.0000
+    [attraction_operating_days] => Monday
     [attraction_status] => aktif
+    [attraction_latitude] => 3.413812
+    [attraction_longitude] => 102.502441
 )
 
-[05-Dec-2024 05:21:56 Europe/Berlin] Received GET parameters: Array
+[19-Dec-2024 02:46:54 Europe/Berlin] Received GET parameters: Array
 (
-    [id] => 22
+    [id] => 29
 )
 
-[05-Dec-2024 05:21:56 Europe/Berlin] Query result: Array
+[19-Dec-2024 02:46:54 Europe/Berlin] Query result: Array
 (
-    [attraction_id] => 22
-    [attraction_name] => Di situ
-    [attraction_description] => Kemanamanamanamanamanamanamanamanamana
-    [attraction_address] => Image 2
-    [attraction_opening_hours] => 11:43:00.0000
-    [attraction_closing_hours] => 04:40:00.0000
-    [attraction_operating_days] => Monday,Tuesday,Wednesday,Thursday,Friday,Saturday,Sunday
+    [attraction_id] => 29
+    [attraction_name] => Hutan Lipur Teladas
+    [attraction_description] => Hutan Lipur Teladas
+    [attraction_address] => Hutan Lipur Teladas
+    [attraction_opening_hours] => 00:49:00.0000
+    [attraction_closing_hours] => 02:49:00.0000
+    [attraction_operating_days] => Monday
     [attraction_status] => aktif
+    [attraction_latitude] => 3.413812
+    [attraction_longitude] => 102.502441
 )
 
-[05-Dec-2024 05:25:37 Europe/Berlin] Received GET parameters: Array
+[19-Dec-2024 02:51:05 Europe/Berlin] Received GET parameters: Array
 (
-    [id] => 
+    [id] => 29
 )
 
-[05-Dec-2024 05:25:37 Europe/Berlin] Query result: 
-[05-Dec-2024 05:25:38 Europe/Berlin] Received GET parameters: Array
+[19-Dec-2024 02:51:05 Europe/Berlin] Query result: Array
 (
-    [id] => 
-)
-
-[05-Dec-2024 05:25:38 Europe/Berlin] Query result: 
-[05-Dec-2024 05:25:57 Europe/Berlin] Received GET parameters: Array
-(
-    [id] => 
-)
-
-[05-Dec-2024 05:25:57 Europe/Berlin] Query result: 
-[05-Dec-2024 05:26:09 Europe/Berlin] Received GET parameters: Array
-(
-    [id] => 22
-)
-
-[05-Dec-2024 05:26:09 Europe/Berlin] Query result: Array
-(
-    [attraction_id] => 22
-    [attraction_name] => Di situ
-    [attraction_description] => Kemanamanamanamanamanamanamanamanamana
-    [attraction_address] => Image 2
-    [attraction_opening_hours] => 11:43:00.0000
-    [attraction_closing_hours] => 04:40:00.0000
-    [attraction_operating_days] => Monday,Tuesday,Wednesday,Thursday,Friday,Saturday,Sunday
+    [attraction_id] => 29
+    [attraction_name] => Hutan Lipur Teladas
+    [attraction_description] => Hutan Lipur Teladas
+    [attraction_address] => Hutan Lipur Teladas
+    [attraction_opening_hours] => 00:49:00.0000
+    [attraction_closing_hours] => 02:49:00.0000
+    [attraction_operating_days] => Monday
     [attraction_status] => aktif
+    [attraction_latitude] => 3.413812
+    [attraction_longitude] => 102.502441
 )
 
-[05-Dec-2024 05:29:07 Europe/Berlin] Received GET parameters: Array
+[19-Dec-2024 02:53:38 Europe/Berlin] Received GET parameters: Array
 (
-    [id] => 22
+    [id] => 29
 )
 
-[05-Dec-2024 05:29:07 Europe/Berlin] Query result: Array
+[19-Dec-2024 02:53:38 Europe/Berlin] Query result: Array
 (
-    [attraction_id] => 22
-    [attraction_name] => Di situ
-    [attraction_description] => Kemanamanamanamanamanamanamanamanamana
-    [attraction_address] => Image 2
-    [attraction_opening_hours] => 11:43:00.0000
-    [attraction_closing_hours] => 04:40:00.0000
-    [attraction_operating_days] => Monday,Tuesday,Wednesday,Thursday,Friday,Saturday,Sunday
+    [attraction_id] => 29
+    [attraction_name] => Hutan Lipur Teladas
+    [attraction_description] => Hutan Lipur Teladas
+    [attraction_address] => Hutan Lipur Teladas
+    [attraction_opening_hours] => 00:49:00.0000
+    [attraction_closing_hours] => 02:49:00.0000
+    [attraction_operating_days] => Monday
     [attraction_status] => aktif
+    [attraction_latitude] => 3.413812
+    [attraction_longitude] => 102.502441
 )
 
-[05-Dec-2024 05:29:38 Europe/Berlin] Received GET parameters: Array
+[19-Dec-2024 02:55:38 Europe/Berlin] Received GET parameters: Array
 (
-    [id] => 22
+    [id] => 29
 )
 
-[05-Dec-2024 05:29:38 Europe/Berlin] Query result: Array
+[19-Dec-2024 02:55:38 Europe/Berlin] Query result: Array
 (
-    [attraction_id] => 22
-    [attraction_name] => Di situ
-    [attraction_description] => Kemanamanamanamanamanamanamanamanamana
-    [attraction_address] => Image 2
-    [attraction_opening_hours] => 11:43:00.0000
-    [attraction_closing_hours] => 04:40:00.0000
-    [attraction_operating_days] => Monday,Tuesday,Wednesday,Thursday,Friday,Saturday,Sunday
+    [attraction_id] => 29
+    [attraction_name] => Hutan Lipur Teladas
+    [attraction_description] => Hutan Lipur Teladas
+    [attraction_address] => Hutan Lipur Teladas
+    [attraction_opening_hours] => 00:49:00.0000
+    [attraction_closing_hours] => 02:49:00.0000
+    [attraction_operating_days] => Monday
     [attraction_status] => aktif
+    [attraction_latitude] => 3.413812
+    [attraction_longitude] => 102.502441
 )
 
-[05-Dec-2024 05:31:08 Europe/Berlin] Received GET parameters: Array
+[19-Dec-2024 02:57:30 Europe/Berlin] Received GET parameters: Array
 (
-    [id] => 22
+    [id] => 29
 )
 
-[05-Dec-2024 05:31:08 Europe/Berlin] Query result: Array
+[19-Dec-2024 02:57:30 Europe/Berlin] Query result: Array
 (
-    [attraction_id] => 22
-    [attraction_name] => Di situ
-    [attraction_description] => Kemanamanamanamanamanamanamanamanamana
-    [attraction_address] => Image 2
-    [attraction_opening_hours] => 11:43:00.0000
-    [attraction_closing_hours] => 04:40:00.0000
-    [attraction_operating_days] => Monday,Tuesday,Wednesday,Thursday,Friday,Saturday,Sunday
+    [attraction_id] => 29
+    [attraction_name] => Hutan Lipur Teladas
+    [attraction_description] => Hutan Lipur Teladas
+    [attraction_address] => Hutan Lipur Teladas
+    [attraction_opening_hours] => 00:49:00.0000
+    [attraction_closing_hours] => 02:49:00.0000
+    [attraction_operating_days] => Monday
     [attraction_status] => aktif
+    [attraction_latitude] => 3.413812
+    [attraction_longitude] => 102.502441
 )
 
-[05-Dec-2024 05:37:15 Europe/Berlin] Received GET parameters: Array
+[19-Dec-2024 02:57:41 Europe/Berlin] Received GET parameters: Array
 (
-    [id] => 22
+    [id] => 29
 )
 
-[05-Dec-2024 05:37:15 Europe/Berlin] Query result: Array
+[19-Dec-2024 02:57:41 Europe/Berlin] Query result: Array
 (
-    [attraction_id] => 22
-    [attraction_name] => Di situ
-    [attraction_description] => Kemanamanamanamanamanamanamanamanamana
-    [attraction_address] => Image 2
-    [attraction_opening_hours] => 11:43:00.0000
-    [attraction_closing_hours] => 04:40:00.0000
-    [attraction_operating_days] => Monday,Tuesday,Wednesday,Thursday,Friday,Saturday,Sunday
+    [attraction_id] => 29
+    [attraction_name] => Hutan Lipur Teladas
+    [attraction_description] => Hutan Lipur Teladas
+    [attraction_address] => Hutan Lipur Teladas
+    [attraction_opening_hours] => 00:49:00.0000
+    [attraction_closing_hours] => 02:49:00.0000
+    [attraction_operating_days] => Monday
     [attraction_status] => aktif
+    [attraction_latitude] => 3.413812
+    [attraction_longitude] => 102.502441
 )
 
-[05-Dec-2024 08:28:05 Europe/Berlin] Received GET parameters: Array
+[19-Dec-2024 02:58:01 Europe/Berlin] Received GET parameters: Array
 (
-    [id] => 22
+    [id] => 29
 )
 
-[05-Dec-2024 08:28:05 Europe/Berlin] Query result: Array
+[19-Dec-2024 02:58:01 Europe/Berlin] Query result: Array
 (
-    [attraction_id] => 22
-    [attraction_name] => Di situ
-    [attraction_description] => Kemanamanamanamanamanamanamanamanamana
-    [attraction_address] => Image 2
-    [attraction_opening_hours] => 11:43:00.0000
-    [attraction_closing_hours] => 04:40:00.0000
-    [attraction_operating_days] => Monday,Tuesday,Wednesday,Thursday,Friday,Saturday,Sunday
+    [attraction_id] => 29
+    [attraction_name] => Hutan Lipur Teladas
+    [attraction_description] => Hutan Lipur Teladas
+    [attraction_address] => Hutan Lipur Teladas
+    [attraction_opening_hours] => 00:49:00.0000
+    [attraction_closing_hours] => 02:49:00.0000
+    [attraction_operating_days] => Monday
     [attraction_status] => aktif
+    [attraction_latitude] => 3.413812
+    [attraction_longitude] => 102.502441
 )
 
-[05-Dec-2024 08:33:20 Europe/Berlin] Received GET parameters: Array
+[19-Dec-2024 03:00:44 Europe/Berlin] Received GET parameters: Array
 (
-    [id] => 22
+    [id] => 29
 )
 
-[05-Dec-2024 08:33:20 Europe/Berlin] Query result: Array
+[19-Dec-2024 03:00:44 Europe/Berlin] Query result: Array
 (
-    [attraction_id] => 22
-    [attraction_name] => Di situ
-    [attraction_description] => Kemanamanamanamanamanamanamanamanamana
-    [attraction_address] => Image 2
-    [attraction_opening_hours] => 11:43:00.0000
-    [attraction_closing_hours] => 04:40:00.0000
-    [attraction_operating_days] => Monday,Tuesday,Wednesday,Thursday,Friday,Saturday,Sunday
+    [attraction_id] => 29
+    [attraction_name] => Hutan Lipur Teladas
+    [attraction_description] => Hutan Lipur Teladas
+    [attraction_address] => Hutan Lipur Teladas
+    [attraction_opening_hours] => 00:49:00.0000
+    [attraction_closing_hours] => 02:49:00.0000
+    [attraction_operating_days] => Monday
     [attraction_status] => aktif
+    [attraction_latitude] => 3.413812
+    [attraction_longitude] => 102.502441
 )
 
-[05-Dec-2024 08:33:32 Europe/Berlin] Received GET parameters: Array
+[19-Dec-2024 03:01:55 Europe/Berlin] Received GET parameters: Array
 (
-    [id] => 22
+    [id] => 29
 )
 
-[05-Dec-2024 08:33:32 Europe/Berlin] Query result: Array
+[19-Dec-2024 03:01:55 Europe/Berlin] Query result: Array
 (
-    [attraction_id] => 22
-    [attraction_name] => Di situ
-    [attraction_description] => Kemanamanamanamanamanamanamanamanamana
-    [attraction_address] => Image 2
-    [attraction_opening_hours] => 11:43:00.0000
-    [attraction_closing_hours] => 04:40:00.0000
-    [attraction_operating_days] => Monday,Tuesday,Wednesday,Thursday,Friday,Saturday,Sunday
+    [attraction_id] => 29
+    [attraction_name] => Hutan Lipur Teladas
+    [attraction_description] => Hutan Lipur Teladas
+    [attraction_address] => Hutan Lipur Teladas
+    [attraction_opening_hours] => 00:49:00.0000
+    [attraction_closing_hours] => 02:49:00.0000
+    [attraction_operating_days] => Monday
     [attraction_status] => aktif
+    [attraction_latitude] => 3.413812
+    [attraction_longitude] => 102.502441
 )
 
-[05-Dec-2024 08:34:30 Europe/Berlin] Received GET parameters: Array
+[19-Dec-2024 03:03:01 Europe/Berlin] Received GET parameters: Array
 (
-    [id] => 22
+    [id] => 29
 )
 
-[05-Dec-2024 08:34:30 Europe/Berlin] Query result: Array
+[19-Dec-2024 03:03:01 Europe/Berlin] Query result: Array
 (
-    [attraction_id] => 22
-    [attraction_name] => Di situ
-    [attraction_description] => Kemanamanamanamanamanamanamanamanamana
-    [attraction_address] => Image 2
-    [attraction_opening_hours] => 11:43:00.0000
-    [attraction_closing_hours] => 04:40:00.0000
-    [attraction_operating_days] => Monday,Tuesday,Wednesday,Thursday,Friday,Saturday,Sunday
+    [attraction_id] => 29
+    [attraction_name] => Hutan Lipur Teladas
+    [attraction_description] => Hutan Lipur Teladas
+    [attraction_address] => Hutan Lipur Teladas
+    [attraction_opening_hours] => 00:49:00.0000
+    [attraction_closing_hours] => 02:49:00.0000
+    [attraction_operating_days] => Monday
     [attraction_status] => aktif
+    [attraction_latitude] => 3.413812
+    [attraction_longitude] => 102.502441
 )
 
-[05-Dec-2024 08:34:51 Europe/Berlin] Received GET parameters: Array
+[19-Dec-2024 03:23:43 Europe/Berlin] Received GET parameters: Array
 (
-    [id] => 22
+    [attractionId] => 29
+    [eventId] => 15
 )
 
-[05-Dec-2024 08:34:51 Europe/Berlin] Query result: Array
+[19-Dec-2024 03:23:43 Europe/Berlin] Attraction ID from Request: 29
+[19-Dec-2024 03:23:43 Europe/Berlin] Event ID from Request: 15
+[19-Dec-2024 03:23:43 Europe/Berlin] Prepared query: SELECT * FROM eventlist WHERE attraction_id = 29 AND event_id = 15
+[19-Dec-2024 03:23:43 Europe/Berlin] Event Data: Array
 (
-    [attraction_id] => 22
-    [attraction_name] => Di situ
-    [attraction_description] => Kemanamanamanamanamanamanamanamanamana
-    [attraction_address] => Image 2
-    [attraction_opening_hours] => 11:43:00.0000
-    [attraction_closing_hours] => 04:40:00.0000
-    [attraction_operating_days] => Monday,Tuesday,Wednesday,Thursday,Friday,Saturday,Sunday
+    [event_id] => 15
+    [attraction_id] => 29
+    [event_created_at] => 2024-12-17 17:24:04.000000
+    [event_name] => Mandi Sungai
+    [event_description] => Mandi Sungai
+    [event_thumbnails] => ../media/(29)/picture67614334d38d0.jpg
+    [event_start_date] => 2024-12-17 17:23:00.000000
+    [event_end_date] => 2024-12-18 17:23:00.000000
+    [event_status] => Perlu Dilihat
+)
+
+[19-Dec-2024 03:24:31 Europe/Berlin] Received GET parameters: Array
+(
+    [id] => 29
+)
+
+[19-Dec-2024 03:24:31 Europe/Berlin] Query result: Array
+(
+    [attraction_id] => 29
+    [attraction_name] => Hutan Lipur Teladas
+    [attraction_description] => Hutan Lipur Teladas
+    [attraction_address] => Hutan Lipur Teladas
+    [attraction_opening_hours] => 00:49:00.0000
+    [attraction_closing_hours] => 02:49:00.0000
+    [attraction_operating_days] => Monday
     [attraction_status] => aktif
+    [attraction_latitude] => 3.413812
+    [attraction_longitude] => 102.502441
 )
 
-[05-Dec-2024 08:36:35 Europe/Berlin] Received GET parameters: Array
+[19-Dec-2024 03:25:05 Europe/Berlin] Received GET parameters: Array
 (
-    [id] => 22
+    [id] => 29
 )
 
-[05-Dec-2024 08:36:35 Europe/Berlin] Query result: Array
+[19-Dec-2024 03:25:05 Europe/Berlin] Query result: Array
 (
-    [attraction_id] => 22
-    [attraction_name] => Di situ
-    [attraction_description] => Kemanamanamanamanamanamanamanamanamana
-    [attraction_address] => Image 2
-    [attraction_opening_hours] => 11:43:00.0000
-    [attraction_closing_hours] => 04:40:00.0000
-    [attraction_operating_days] => Monday,Tuesday,Wednesday,Thursday,Friday,Saturday,Sunday
+    [attraction_id] => 29
+    [attraction_name] => Hutan Lipur Teladas
+    [attraction_description] => Hutan Lipur Teladas
+    [attraction_address] => Hutan Lipur Teladas
+    [attraction_opening_hours] => 00:49:00.0000
+    [attraction_closing_hours] => 02:49:00.0000
+    [attraction_operating_days] => Monday
     [attraction_status] => aktif
+    [attraction_latitude] => 3.413812
+    [attraction_longitude] => 102.502441
 )
 
-[05-Dec-2024 08:57:02 Europe/Berlin] Received GET parameters: Array
+[20-Dec-2024 04:21:51 Europe/Berlin] PHP Warning:  require_once(/MARANGUIDE/maranguide_connection.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\MARANGUIDE\api\fetch_attraction_details.php on line 12
+[20-Dec-2024 04:21:51 Europe/Berlin] PHP Fatal error:  Uncaught Error: Failed opening required '/MARANGUIDE/maranguide_connection.php' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\MARANGUIDE\api\fetch_attraction_details.php:12
+Stack trace:
+#0 {main}
+  thrown in C:\xampp\htdocs\MARANGUIDE\api\fetch_attraction_details.php on line 12
+[20-Dec-2024 04:22:51 Europe/Berlin] PHP Warning:  require_once(/maranguide_connection.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\MARANGUIDE\api\fetch_attraction_details.php on line 12
+[20-Dec-2024 04:22:51 Europe/Berlin] PHP Fatal error:  Uncaught Error: Failed opening required '/maranguide_connection.php' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\MARANGUIDE\api\fetch_attraction_details.php:12
+Stack trace:
+#0 {main}
+  thrown in C:\xampp\htdocs\MARANGUIDE\api\fetch_attraction_details.php on line 12
+[20-Dec-2024 04:22:57 Europe/Berlin] PHP Warning:  require_once(/MARANGUIDE/maranguide_connection.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\MARANGUIDE\api\fetch_attraction_details.php on line 12
+[20-Dec-2024 04:22:57 Europe/Berlin] PHP Fatal error:  Uncaught Error: Failed opening required '/MARANGUIDE/maranguide_connection.php' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\MARANGUIDE\api\fetch_attraction_details.php:12
+Stack trace:
+#0 {main}
+  thrown in C:\xampp\htdocs\MARANGUIDE\api\fetch_attraction_details.php on line 12
+[20-Dec-2024 04:24:03 Europe/Berlin] PHP Warning:  require_once(/maranguide_connection.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\MARANGUIDE\api\fetch_attraction_details.php on line 12
+[20-Dec-2024 04:24:03 Europe/Berlin] PHP Fatal error:  Uncaught Error: Failed opening required '/maranguide_connection.php' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\MARANGUIDE\api\fetch_attraction_details.php:12
+Stack trace:
+#0 {main}
+  thrown in C:\xampp\htdocs\MARANGUIDE\api\fetch_attraction_details.php on line 12
+[20-Dec-2024 04:24:33 Europe/Berlin] PHP Warning:  require_once(../../maranguide_connection.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\MARANGUIDE\api\fetch_attraction_details.php on line 12
+[20-Dec-2024 04:24:33 Europe/Berlin] PHP Fatal error:  Uncaught Error: Failed opening required '../../maranguide_connection.php' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\MARANGUIDE\api\fetch_attraction_details.php:12
+Stack trace:
+#0 {main}
+  thrown in C:\xampp\htdocs\MARANGUIDE\api\fetch_attraction_details.php on line 12
+[20-Dec-2024 04:25:17 Europe/Berlin] PHP Warning:  require_once(/maranguide_connection.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\MARANGUIDE\api\fetch_attraction_details.php on line 12
+[20-Dec-2024 04:25:17 Europe/Berlin] PHP Fatal error:  Uncaught Error: Failed opening required '/maranguide_connection.php' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\MARANGUIDE\api\fetch_attraction_details.php:12
+Stack trace:
+#0 {main}
+  thrown in C:\xampp\htdocs\MARANGUIDE\api\fetch_attraction_details.php on line 12
+[20-Dec-2024 04:25:29 Europe/Berlin] Received GET parameters: Array
 (
-    [id] => 22
+    [id] => 29
 )
 
-[05-Dec-2024 08:57:02 Europe/Berlin] Query result: Array
+[20-Dec-2024 04:25:29 Europe/Berlin] Query result: Array
 (
-    [attraction_id] => 22
-    [attraction_name] => Di situ
-    [attraction_description] => Kemanamanamanamanamanamanamanamanamana
-    [attraction_address] => Image 2
-    [attraction_opening_hours] => 11:43:00.0000
-    [attraction_closing_hours] => 04:40:00.0000
-    [attraction_operating_days] => Monday,Tuesday,Wednesday,Thursday,Friday,Saturday,Sunday
+    [attraction_id] => 29
+    [attraction_name] => Hutan Lipur Teladas
+    [attraction_description] => Hutan Lipur Teladas
+    [attraction_address] => Hutan Lipur Teladas
+    [attraction_opening_hours] => 00:49:00.0000
+    [attraction_closing_hours] => 02:49:00.0000
+    [attraction_operating_days] => Monday
     [attraction_status] => aktif
+    [attraction_latitude] => 3.413812
+    [attraction_longitude] => 102.502441
 )
 
-[05-Dec-2024 09:24:53 Europe/Berlin] Received GET parameters: Array
+[20-Dec-2024 04:27:34 Europe/Berlin] Received GET parameters: Array
 (
-    [id] => 22
+    [id] => 29
 )
 
-[05-Dec-2024 09:24:53 Europe/Berlin] Query result: Array
+[20-Dec-2024 04:27:34 Europe/Berlin] Query result: Array
 (
-    [attraction_id] => 22
-    [attraction_name] => Di situ
-    [attraction_description] => Kemanamanamanamanamanamanamanamanamana
-    [attraction_address] => Image 2
-    [attraction_opening_hours] => 11:43:00.0000
-    [attraction_closing_hours] => 04:40:00.0000
-    [attraction_operating_days] => Monday,Tuesday,Wednesday,Thursday,Friday,Saturday,Sunday
+    [attraction_id] => 29
+    [attraction_name] => Hutan Lipur Teladas
+    [attraction_description] => Hutan Lipur Teladas
+    [attraction_address] => Hutan Lipur Teladas
+    [attraction_opening_hours] => 00:49:00.0000
+    [attraction_closing_hours] => 02:49:00.0000
+    [attraction_operating_days] => Monday
     [attraction_status] => aktif
+    [attraction_latitude] => 3.413812
+    [attraction_longitude] => 102.502441
 )
 
-[05-Dec-2024 09:27:03 Europe/Berlin] Received GET parameters: Array
+[20-Dec-2024 04:28:51 Europe/Berlin] Received GET parameters: Array
 (
-    [id] => 22
+    [id] => 29
 )
 
-[05-Dec-2024 09:27:03 Europe/Berlin] Query result: Array
+[20-Dec-2024 04:28:51 Europe/Berlin] Query result: Array
 (
-    [attraction_id] => 22
-    [attraction_name] => Di situ
-    [attraction_description] => Kemanamanamanamanamanamanamanamanamana
-    [attraction_address] => Image 2
-    [attraction_opening_hours] => 11:43:00.0000
-    [attraction_closing_hours] => 04:40:00.0000
-    [attraction_operating_days] => Monday,Tuesday,Wednesday,Thursday,Friday,Saturday,Sunday
+    [attraction_id] => 29
+    [attraction_name] => Hutan Lipur Teladas
+    [attraction_description] => Hutan Lipur Teladas
+    [attraction_address] => Hutan Lipur Teladas
+    [attraction_opening_hours] => 00:49:00.0000
+    [attraction_closing_hours] => 02:49:00.0000
+    [attraction_operating_days] => Monday
     [attraction_status] => aktif
+    [attraction_latitude] => 3.413812
+    [attraction_longitude] => 102.502441
 )
 
-[05-Dec-2024 09:27:10 Europe/Berlin] Received GET parameters: Array
+[20-Dec-2024 04:28:53 Europe/Berlin] Received GET parameters: Array
 (
-    [id] => 22
+    [id] => 29
 )
 
-[05-Dec-2024 09:27:10 Europe/Berlin] Query result: Array
+[20-Dec-2024 04:28:53 Europe/Berlin] Query result: Array
 (
-    [attraction_id] => 22
-    [attraction_name] => Di situ
-    [attraction_description] => Kemanamanamanamanamanamanamanamanamana
-    [attraction_address] => Image 2
-    [attraction_opening_hours] => 11:43:00.0000
-    [attraction_closing_hours] => 04:40:00.0000
-    [attraction_operating_days] => Monday,Tuesday,Wednesday,Thursday,Friday,Saturday,Sunday
+    [attraction_id] => 29
+    [attraction_name] => Hutan Lipur Teladas
+    [attraction_description] => Hutan Lipur Teladas
+    [attraction_address] => Hutan Lipur Teladas
+    [attraction_opening_hours] => 00:49:00.0000
+    [attraction_closing_hours] => 02:49:00.0000
+    [attraction_operating_days] => Monday
     [attraction_status] => aktif
+    [attraction_latitude] => 3.413812
+    [attraction_longitude] => 102.502441
 )
 
-[06-Dec-2024 01:34:03 Europe/Berlin] Received GET parameters: Array
+[20-Dec-2024 04:29:35 Europe/Berlin] Received GET parameters: Array
 (
-    [id] => 22
+    [id] => 29
 )
 
-[06-Dec-2024 01:34:03 Europe/Berlin] Query result: Array
+[20-Dec-2024 04:29:35 Europe/Berlin] Query result: Array
 (
-    [attraction_id] => 22
-    [attraction_name] => Di situ
-    [attraction_description] => Kemanamanamanamanamanamanamanamanamana
-    [attraction_address] => Image 2
-    [attraction_opening_hours] => 11:43:00.0000
-    [attraction_closing_hours] => 04:40:00.0000
-    [attraction_operating_days] => Monday,Tuesday,Wednesday,Thursday,Friday,Saturday,Sunday
+    [attraction_id] => 29
+    [attraction_name] => Hutan Lipur Teladas
+    [attraction_description] => Hutan Lipur Teladas
+    [attraction_address] => Hutan Lipur Teladas
+    [attraction_opening_hours] => 00:49:00.0000
+    [attraction_closing_hours] => 02:49:00.0000
+    [attraction_operating_days] => Monday
     [attraction_status] => aktif
+    [attraction_latitude] => 3.413812
+    [attraction_longitude] => 102.502441
 )
 
-[06-Dec-2024 01:39:50 Europe/Berlin] Received GET parameters: Array
+[20-Dec-2024 04:30:00 Europe/Berlin] Received GET parameters: Array
 (
-    [id] => 22
+    [id] => 29
 )
 
-[06-Dec-2024 01:39:50 Europe/Berlin] Query result: Array
+[20-Dec-2024 04:30:00 Europe/Berlin] Query result: Array
 (
-    [attraction_id] => 22
-    [attraction_name] => Di situ
-    [attraction_description] => Kemanamanamanamanamanamanamanamanamana
-    [attraction_address] => Image 2
-    [attraction_opening_hours] => 11:43:00.0000
-    [attraction_closing_hours] => 04:40:00.0000
-    [attraction_operating_days] => Monday,Tuesday,Wednesday,Thursday,Friday,Saturday,Sunday
+    [attraction_id] => 29
+    [attraction_name] => Hutan Lipur Teladas
+    [attraction_description] => Hutan Lipur Teladas
+    [attraction_address] => Hutan Lipur Teladas
+    [attraction_opening_hours] => 00:49:00.0000
+    [attraction_closing_hours] => 02:49:00.0000
+    [attraction_operating_days] => Monday
     [attraction_status] => aktif
+    [attraction_latitude] => 3.413812
+    [attraction_longitude] => 102.502441
 )
 
-[06-Dec-2024 01:41:50 Europe/Berlin] Received GET parameters: Array
+[20-Dec-2024 04:30:23 Europe/Berlin] Received GET parameters: Array
 (
-    [id] => 22
 )
 
-[06-Dec-2024 01:41:50 Europe/Berlin] Query result: Array
+[20-Dec-2024 04:30:35 Europe/Berlin] Received GET parameters: Array
 (
-    [attraction_id] => 22
-    [attraction_name] => Di situ
-    [attraction_description] => Kemanamanamanamanamanamanamanamanamana
-    [attraction_address] => Image 2
-    [attraction_opening_hours] => 11:43:00.0000
-    [attraction_closing_hours] => 04:40:00.0000
-    [attraction_operating_days] => Monday,Tuesday,Wednesday,Thursday,Friday,Saturday,Sunday
+    [id] => 29
+)
+
+[20-Dec-2024 04:30:35 Europe/Berlin] Query result: Array
+(
+    [attraction_id] => 29
+    [attraction_name] => Hutan Lipur Teladas
+    [attraction_description] => Hutan Lipur Teladas
+    [attraction_address] => Hutan Lipur Teladas
+    [attraction_opening_hours] => 00:49:00.0000
+    [attraction_closing_hours] => 02:49:00.0000
+    [attraction_operating_days] => Monday
     [attraction_status] => aktif
+    [attraction_latitude] => 3.413812
+    [attraction_longitude] => 102.502441
 )
 
-[06-Dec-2024 01:44:36 Europe/Berlin] Received GET parameters: Array
+[20-Dec-2024 04:31:15 Europe/Berlin] Received GET parameters: Array
 (
-    [id] => 22
 )
 
-[06-Dec-2024 01:44:36 Europe/Berlin] Query result: Array
+[20-Dec-2024 04:31:24 Europe/Berlin] Received GET parameters: Array
 (
-    [attraction_id] => 22
-    [attraction_name] => Di situ
-    [attraction_description] => Kemanamanamanamanamanamanamanamanamana
-    [attraction_address] => Image 2
-    [attraction_opening_hours] => 11:43:00.0000
-    [attraction_closing_hours] => 04:40:00.0000
-    [attraction_operating_days] => Monday,Tuesday,Wednesday,Thursday,Friday,Saturday,Sunday
+    [id] => 29
+)
+
+[20-Dec-2024 04:31:24 Europe/Berlin] Query result: Array
+(
+    [attraction_id] => 29
+    [attraction_name] => Hutan Lipur Teladas
+    [attraction_description] => Hutan Lipur Teladas
+    [attraction_address] => Hutan Lipur Teladas
+    [attraction_opening_hours] => 00:49:00.0000
+    [attraction_closing_hours] => 02:49:00.0000
+    [attraction_operating_days] => Monday
     [attraction_status] => aktif
+    [attraction_latitude] => 3.413812
+    [attraction_longitude] => 102.502441
 )
 
-[06-Dec-2024 01:55:21 Europe/Berlin] Received GET parameters: Array
+[20-Dec-2024 04:31:43 Europe/Berlin] Received GET parameters: Array
 (
-    [id] => 22
+    [id] => 29
 )
 
-[06-Dec-2024 01:55:21 Europe/Berlin] Query result: Array
+[20-Dec-2024 04:31:43 Europe/Berlin] Query result: Array
 (
-    [attraction_id] => 22
-    [attraction_name] => Di situ
-    [attraction_description] => Kemanamanamanamanamanamanamanamanamana
-    [attraction_address] => Image 2
-    [attraction_opening_hours] => 11:43:00.0000
-    [attraction_closing_hours] => 04:40:00.0000
-    [attraction_operating_days] => Monday,Tuesday,Wednesday,Thursday,Friday,Saturday,Sunday
+    [attraction_id] => 29
+    [attraction_name] => Hutan Lipur Teladas
+    [attraction_description] => Hutan Lipur Teladas
+    [attraction_address] => Hutan Lipur Teladas
+    [attraction_opening_hours] => 00:49:00.0000
+    [attraction_closing_hours] => 02:49:00.0000
+    [attraction_operating_days] => Monday
     [attraction_status] => aktif
+    [attraction_latitude] => 3.413812
+    [attraction_longitude] => 102.502441
 )
 
-[06-Dec-2024 01:55:54 Europe/Berlin] Received GET parameters: Array
+[20-Dec-2024 04:32:38 Europe/Berlin] Received GET parameters: Array
 (
-    [id] => 22
+    [id] => 29
 )
 
-[06-Dec-2024 01:55:54 Europe/Berlin] Query result: Array
+[20-Dec-2024 04:32:38 Europe/Berlin] Query result: Array
 (
-    [attraction_id] => 22
-    [attraction_name] => Di situ
-    [attraction_description] => Kemanamanamanamanamanamanamanamanamana
-    [attraction_address] => Image 2
-    [attraction_opening_hours] => 11:43:00.0000
-    [attraction_closing_hours] => 04:40:00.0000
-    [attraction_operating_days] => Monday,Tuesday,Wednesday,Thursday,Friday,Saturday,Sunday
+    [attraction_id] => 29
+    [attraction_name] => Hutan Lipur Teladas
+    [attraction_description] => Hutan Lipur Teladas
+    [attraction_address] => Hutan Lipur Teladas
+    [attraction_opening_hours] => 00:49:00.0000
+    [attraction_closing_hours] => 02:49:00.0000
+    [attraction_operating_days] => Monday
     [attraction_status] => aktif
+    [attraction_latitude] => 3.413812
+    [attraction_longitude] => 102.502441
 )
 
-[06-Dec-2024 01:58:09 Europe/Berlin] Received GET parameters: Array
+[20-Dec-2024 04:33:04 Europe/Berlin] Received GET parameters: Array
 (
-    [id] => 22
+    [id] => 29
 )
 
-[06-Dec-2024 01:58:09 Europe/Berlin] Query result: Array
+[20-Dec-2024 04:33:04 Europe/Berlin] Query result: Array
 (
-    [attraction_id] => 22
-    [attraction_name] => Di situ
-    [attraction_description] => Kemanamanamanamanamanamanamanamanamana
-    [attraction_address] => Image 2
-    [attraction_opening_hours] => 11:43:00.0000
-    [attraction_closing_hours] => 04:40:00.0000
-    [attraction_operating_days] => Monday,Tuesday,Wednesday,Thursday,Friday,Saturday,Sunday
+    [attraction_id] => 29
+    [attraction_name] => Hutan Lipur Teladas
+    [attraction_description] => Hutan Lipur Teladas
+    [attraction_address] => Hutan Lipur Teladas
+    [attraction_opening_hours] => 00:49:00.0000
+    [attraction_closing_hours] => 02:49:00.0000
+    [attraction_operating_days] => Monday
     [attraction_status] => aktif
+    [attraction_latitude] => 3.413812
+    [attraction_longitude] => 102.502441
 )
 
-[06-Dec-2024 01:59:16 Europe/Berlin] Received GET parameters: Array
+[20-Dec-2024 04:34:18 Europe/Berlin] Received GET parameters: Array
 (
-    [id] => 22
+    [id] => 29
 )
 
-[06-Dec-2024 01:59:16 Europe/Berlin] Query result: Array
+[20-Dec-2024 04:34:18 Europe/Berlin] Query result: Array
 (
-    [attraction_id] => 22
-    [attraction_name] => Di situ
-    [attraction_description] => Kemanamanamanamanamanamanamanamanamana
-    [attraction_address] => Image 2
-    [attraction_opening_hours] => 11:43:00.0000
-    [attraction_closing_hours] => 04:40:00.0000
-    [attraction_operating_days] => Monday,Tuesday,Wednesday,Thursday,Friday,Saturday,Sunday
+    [attraction_id] => 29
+    [attraction_name] => Hutan Lipur Teladas
+    [attraction_description] => Hutan Lipur Teladas
+    [attraction_address] => Hutan Lipur Teladas
+    [attraction_opening_hours] => 00:49:00.0000
+    [attraction_closing_hours] => 02:49:00.0000
+    [attraction_operating_days] => Monday
     [attraction_status] => aktif
+    [attraction_latitude] => 3.413812
+    [attraction_longitude] => 102.502441
 )
 
-[06-Dec-2024 03:23:04 Europe/Berlin] Received GET parameters: Array
+[20-Dec-2024 04:50:11 Europe/Berlin] Received GET parameters: Array
 (
-    [id] => 22
+    [id] => 29
 )
 
-[06-Dec-2024 03:23:04 Europe/Berlin] Query result: Array
+[20-Dec-2024 04:50:11 Europe/Berlin] Query result: Array
 (
-    [attraction_id] => 22
-    [attraction_name] => Di situ
-    [attraction_description] => Kemanamanamanamanamanamanamanamanamana
-    [attraction_address] => Image 2
-    [attraction_opening_hours] => 11:43:00.0000
-    [attraction_closing_hours] => 04:40:00.0000
-    [attraction_operating_days] => Monday,Tuesday,Wednesday,Thursday,Friday,Saturday,Sunday
+    [attraction_id] => 29
+    [attraction_name] => Hutan Lipur Teladas
+    [attraction_description] => Hutan Lipur Teladas
+    [attraction_address] => Hutan Lipur Teladas
+    [attraction_opening_hours] => 00:49:00.0000
+    [attraction_closing_hours] => 02:49:00.0000
+    [attraction_operating_days] => Monday
     [attraction_status] => aktif
+    [attraction_latitude] => 3.413812
+    [attraction_longitude] => 102.502441
 )
 
-[06-Dec-2024 04:23:29 Europe/Berlin] Received GET parameters: Array
+[20-Dec-2024 04:50:14 Europe/Berlin] Received GET parameters: Array
 (
-    [id] => 22
+    [id] => 29
 )
 
-[06-Dec-2024 04:23:29 Europe/Berlin] Query result: Array
+[20-Dec-2024 04:50:14 Europe/Berlin] Query result: Array
 (
-    [attraction_id] => 22
-    [attraction_name] => Di situ
-    [attraction_description] => Kemanamanamanamanamanamanamanamanamana
-    [attraction_address] => Image 2
-    [attraction_opening_hours] => 11:43:00.0000
-    [attraction_closing_hours] => 04:40:00.0000
-    [attraction_operating_days] => Monday,Tuesday,Wednesday,Thursday,Friday,Saturday,Sunday
+    [attraction_id] => 29
+    [attraction_name] => Hutan Lipur Teladas
+    [attraction_description] => Hutan Lipur Teladas
+    [attraction_address] => Hutan Lipur Teladas
+    [attraction_opening_hours] => 00:49:00.0000
+    [attraction_closing_hours] => 02:49:00.0000
+    [attraction_operating_days] => Monday
     [attraction_status] => aktif
+    [attraction_latitude] => 3.413812
+    [attraction_longitude] => 102.502441
 )
 
-[06-Dec-2024 05:27:41 Europe/Berlin] Received GET parameters: Array
+[20-Dec-2024 04:51:36 Europe/Berlin] Received GET parameters: Array
 (
-    [id] => 22
+    [id] => 29
 )
 
-[06-Dec-2024 05:27:41 Europe/Berlin] Query result: Array
+[20-Dec-2024 04:51:36 Europe/Berlin] Query result: Array
 (
-    [attraction_id] => 22
-    [attraction_name] => Di situ
-    [attraction_description] => Kemanamanamanamanamanamanamanamanamana
-    [attraction_address] => Image 2
-    [attraction_opening_hours] => 11:43:00.0000
-    [attraction_closing_hours] => 04:40:00.0000
-    [attraction_operating_days] => Monday,Tuesday,Wednesday,Thursday,Friday,Saturday,Sunday
+    [attraction_id] => 29
+    [attraction_name] => Hutan Lipur Teladas
+    [attraction_description] => Hutan Lipur Teladas
+    [attraction_address] => Hutan Lipur Teladas
+    [attraction_opening_hours] => 00:49:00.0000
+    [attraction_closing_hours] => 02:49:00.0000
+    [attraction_operating_days] => Monday
     [attraction_status] => aktif
+    [attraction_latitude] => 3.413812
+    [attraction_longitude] => 102.502441
 )
 
-[06-Dec-2024 05:28:13 Europe/Berlin] Received GET parameters: Array
+[20-Dec-2024 05:04:40 Europe/Berlin] Received GET parameters: Array
 (
-    [id] => 22
+    [id] => 29
 )
 
-[06-Dec-2024 05:28:13 Europe/Berlin] Query result: Array
+[20-Dec-2024 05:04:40 Europe/Berlin] Query result: Array
 (
-    [attraction_id] => 22
-    [attraction_name] => Di situ
-    [attraction_description] => Kemanamanamanamanamanamanamanamanamana
-    [attraction_address] => Image 2
-    [attraction_opening_hours] => 11:43:00.0000
-    [attraction_closing_hours] => 04:40:00.0000
-    [attraction_operating_days] => Monday,Tuesday,Wednesday,Thursday,Friday,Saturday,Sunday
+    [attraction_id] => 29
+    [attraction_name] => Hutan Lipur Teladas
+    [attraction_description] => Hutan Lipur Teladas
+    [attraction_address] => Hutan Lipur Teladas
+    [attraction_opening_hours] => 00:49:00.0000
+    [attraction_closing_hours] => 02:49:00.0000
+    [attraction_operating_days] => Monday
     [attraction_status] => aktif
+    [attraction_latitude] => 3.413812
+    [attraction_longitude] => 102.502441
 )
 
-[09-Dec-2024 01:54:27 Europe/Berlin] Received GET parameters: Array
+[20-Dec-2024 05:05:19 Europe/Berlin] Received GET parameters: Array
 (
-    [id] => 22
+    [id] => 29
 )
 
-[09-Dec-2024 01:54:27 Europe/Berlin] Query result: Array
+[20-Dec-2024 05:05:19 Europe/Berlin] Query result: Array
 (
-    [attraction_id] => 22
-    [attraction_name] => Di situ
-    [attraction_description] => Kemanamanamanamanamanamanamanamanamana
-    [attraction_address] => Image 2
-    [attraction_opening_hours] => 11:43:00.0000
-    [attraction_closing_hours] => 04:40:00.0000
-    [attraction_operating_days] => Monday,Tuesday,Wednesday,Thursday,Friday,Saturday,Sunday
+    [attraction_id] => 29
+    [attraction_name] => Hutan Lipur Teladas
+    [attraction_description] => Hutan Lipur Teladas
+    [attraction_address] => Hutan Lipur Teladas
+    [attraction_opening_hours] => 00:49:00.0000
+    [attraction_closing_hours] => 02:49:00.0000
+    [attraction_operating_days] => Monday
     [attraction_status] => aktif
+    [attraction_latitude] => 3.413812
+    [attraction_longitude] => 102.502441
+)
+
+[20-Dec-2024 05:06:54 Europe/Berlin] Received GET parameters: Array
+(
+    [id] => 29
+)
+
+[20-Dec-2024 05:06:54 Europe/Berlin] Query result: Array
+(
+    [attraction_id] => 29
+    [attraction_name] => Hutan Lipur Teladas
+    [attraction_description] => Hutan Lipur Teladas
+    [attraction_address] => Hutan Lipur Teladas
+    [attraction_opening_hours] => 00:49:00.0000
+    [attraction_closing_hours] => 02:49:00.0000
+    [attraction_operating_days] => Monday
+    [attraction_status] => aktif
+    [attraction_latitude] => 3.413812
+    [attraction_longitude] => 102.502441
+)
+
+[20-Dec-2024 05:07:54 Europe/Berlin] Received GET parameters: Array
+(
+    [id] => 29
+)
+
+[20-Dec-2024 05:07:54 Europe/Berlin] Query result: Array
+(
+    [attraction_id] => 29
+    [attraction_name] => Hutan Lipur Teladas
+    [attraction_description] => Hutan Lipur Teladas
+    [attraction_address] => Hutan Lipur Teladas
+    [attraction_opening_hours] => 00:49:00.0000
+    [attraction_closing_hours] => 02:49:00.0000
+    [attraction_operating_days] => Monday
+    [attraction_status] => aktif
+    [attraction_latitude] => 3.413812
+    [attraction_longitude] => 102.502441
+)
+
+[20-Dec-2024 05:08:09 Europe/Berlin] Received GET parameters: Array
+(
+    [id] => 29
+)
+
+[20-Dec-2024 05:08:09 Europe/Berlin] Query result: Array
+(
+    [attraction_id] => 29
+    [attraction_name] => Hutan Lipur Teladas
+    [attraction_description] => Hutan Lipur Teladas
+    [attraction_address] => Hutan Lipur Teladas
+    [attraction_opening_hours] => 00:49:00.0000
+    [attraction_closing_hours] => 02:49:00.0000
+    [attraction_operating_days] => Monday
+    [attraction_status] => aktif
+    [attraction_latitude] => 3.413812
+    [attraction_longitude] => 102.502441
+)
+
+[20-Dec-2024 05:08:30 Europe/Berlin] Received GET parameters: Array
+(
+    [id] => 29
+)
+
+[20-Dec-2024 05:08:30 Europe/Berlin] Query result: Array
+(
+    [attraction_id] => 29
+    [attraction_name] => Hutan Lipur Teladas
+    [attraction_description] => Hutan Lipur Teladas
+    [attraction_address] => Hutan Lipur Teladas
+    [attraction_opening_hours] => 00:49:00.0000
+    [attraction_closing_hours] => 02:49:00.0000
+    [attraction_operating_days] => Monday
+    [attraction_status] => aktif
+    [attraction_latitude] => 3.413812
+    [attraction_longitude] => 102.502441
+)
+
+[20-Dec-2024 05:10:54 Europe/Berlin] Received GET parameters: Array
+(
+    [attractionId] => 29
+    [eventId] => 23
+)
+
+[20-Dec-2024 05:10:54 Europe/Berlin] Attraction ID from Request: 29
+[20-Dec-2024 05:10:54 Europe/Berlin] Event ID from Request: 23
+[20-Dec-2024 05:10:54 Europe/Berlin] Prepared query: SELECT * FROM eventlist WHERE attraction_id = 29 AND event_id = 23
+[20-Dec-2024 05:10:54 Europe/Berlin] Event Data: Array
+(
+    [event_id] => 23
+    [attraction_id] => 29
+    [event_created_at] => 2024-12-19 13:37:29.582607
+    [event_name] => Sungai
+    [event_description] => ABETUL TU
+    [event_thumbnails] => /media/attraction/Hutan Lipur Teladas/Sungai/thumbnail/23_thumbnail.jpg
+    [event_start_date] => 2024-12-19 12:06:00.000000
+    [event_end_date] => 2024-12-22 12:06:00.000000
+    [event_status] => draf
+)
+
+[20-Dec-2024 05:11:49 Europe/Berlin] Received GET parameters: Array
+(
+    [attractionId] => 29
+    [eventId] => 23
+)
+
+[20-Dec-2024 05:11:49 Europe/Berlin] Attraction ID from Request: 29
+[20-Dec-2024 05:11:49 Europe/Berlin] Event ID from Request: 23
+[20-Dec-2024 05:11:49 Europe/Berlin] Prepared query: SELECT * FROM eventlist WHERE attraction_id = 29 AND event_id = 23
+[20-Dec-2024 05:11:49 Europe/Berlin] Event Data: Array
+(
+    [event_id] => 23
+    [attraction_id] => 29
+    [event_created_at] => 2024-12-19 13:37:29.582607
+    [event_name] => Sungai
+    [event_description] => ABETUL TU
+    [event_thumbnails] => /media/attraction/Hutan Lipur Teladas/Sungai/thumbnail/23_thumbnail.jpg
+    [event_start_date] => 2024-12-19 12:06:00.000000
+    [event_end_date] => 2024-12-22 12:06:00.000000
+    [event_status] => draf
+)
+
+[20-Dec-2024 05:24:33 Europe/Berlin] Received GET parameters: Array
+(
+    [id] => 29
+)
+
+[20-Dec-2024 05:24:33 Europe/Berlin] Query result: Array
+(
+    [attraction_id] => 29
+    [attraction_name] => Hutan Lipur Teladas
+    [attraction_description] => Hutan Lipur Teladas
+    [attraction_address] => Hutan Lipur Teladas
+    [attraction_opening_hours] => 00:49:00.0000
+    [attraction_closing_hours] => 02:49:00.0000
+    [attraction_operating_days] => Monday
+    [attraction_status] => aktif
+    [attraction_latitude] => 3.413812
+    [attraction_longitude] => 102.502441
+)
+
+[20-Dec-2024 05:29:21 Europe/Berlin] Received GET parameters: Array
+(
+    [id] => 29
+)
+
+[20-Dec-2024 05:29:21 Europe/Berlin] Query result: Array
+(
+    [attraction_id] => 29
+    [attraction_name] => Hutan Lipur Teladas
+    [attraction_description] => Hutan Lipur Teladas
+    [attraction_address] => Hutan Lipur Teladas
+    [attraction_opening_hours] => 00:49:00.0000
+    [attraction_closing_hours] => 02:49:00.0000
+    [attraction_operating_days] => Monday
+    [attraction_status] => aktif
+    [attraction_latitude] => 3.413812
+    [attraction_longitude] => 102.502441
+)
+
+[20-Dec-2024 05:31:06 Europe/Berlin] Received GET parameters: Array
+(
+    [id] => 29
+)
+
+[20-Dec-2024 05:31:06 Europe/Berlin] Query result: Array
+(
+    [attraction_id] => 29
+    [attraction_name] => Hutan Lipur Teladas
+    [attraction_description] => Hutan Lipur Teladas
+    [attraction_address] => Hutan Lipur Teladas
+    [attraction_opening_hours] => 00:49:00.0000
+    [attraction_closing_hours] => 02:49:00.0000
+    [attraction_operating_days] => Monday
+    [attraction_status] => aktif
+    [attraction_latitude] => 3.413812
+    [attraction_longitude] => 102.502441
+)
+
+[20-Dec-2024 05:32:10 Europe/Berlin] Received GET parameters: Array
+(
+    [id] => 29
+)
+
+[20-Dec-2024 05:32:10 Europe/Berlin] Query result: Array
+(
+    [attraction_id] => 29
+    [attraction_name] => Hutan Lipur Teladas
+    [attraction_description] => Hutan Lipur Teladas
+    [attraction_address] => Hutan Lipur Teladas
+    [attraction_opening_hours] => 00:49:00.0000
+    [attraction_closing_hours] => 02:49:00.0000
+    [attraction_operating_days] => Monday
+    [attraction_status] => aktif
+    [attraction_latitude] => 3.413812
+    [attraction_longitude] => 102.502441
+)
+
+[20-Dec-2024 05:33:32 Europe/Berlin] Received GET parameters: Array
+(
+    [id] => 29
+)
+
+[20-Dec-2024 05:33:32 Europe/Berlin] Query result: Array
+(
+    [attraction_id] => 29
+    [attraction_name] => Hutan Lipur Teladas
+    [attraction_description] => Hutan Lipur Teladas
+    [attraction_address] => Hutan Lipur Teladas
+    [attraction_opening_hours] => 00:49:00.0000
+    [attraction_closing_hours] => 02:49:00.0000
+    [attraction_operating_days] => Monday
+    [attraction_status] => aktif
+    [attraction_latitude] => 3.413812
+    [attraction_longitude] => 102.502441
+)
+
+[20-Dec-2024 05:33:46 Europe/Berlin] Received GET parameters: Array
+(
+    [id] => 29
+)
+
+[20-Dec-2024 05:33:46 Europe/Berlin] Query result: Array
+(
+    [attraction_id] => 29
+    [attraction_name] => Hutan Lipur Teladas
+    [attraction_description] => Hutan Lipur Teladas
+    [attraction_address] => Hutan Lipur Teladas
+    [attraction_opening_hours] => 00:49:00.0000
+    [attraction_closing_hours] => 02:49:00.0000
+    [attraction_operating_days] => Monday
+    [attraction_status] => aktif
+    [attraction_latitude] => 3.413812
+    [attraction_longitude] => 102.502441
+)
+
+[20-Dec-2024 05:34:29 Europe/Berlin] Received GET parameters: Array
+(
+    [id] => 29
+)
+
+[20-Dec-2024 05:34:29 Europe/Berlin] Query result: Array
+(
+    [attraction_id] => 29
+    [attraction_name] => Hutan Lipur Teladas
+    [attraction_description] => Hutan Lipur Teladas
+    [attraction_address] => Hutan Lipur Teladas
+    [attraction_opening_hours] => 00:49:00.0000
+    [attraction_closing_hours] => 02:49:00.0000
+    [attraction_operating_days] => Monday
+    [attraction_status] => aktif
+    [attraction_latitude] => 3.413812
+    [attraction_longitude] => 102.502441
+)
+
+[20-Dec-2024 05:36:12 Europe/Berlin] Received GET parameters: Array
+(
+    [id] => 29
+)
+
+[20-Dec-2024 05:36:12 Europe/Berlin] Query result: Array
+(
+    [attraction_id] => 29
+    [attraction_name] => Hutan Lipur Teladas
+    [attraction_description] => Hutan Lipur Teladas
+    [attraction_address] => Hutan Lipur Teladas
+    [attraction_opening_hours] => 00:49:00.0000
+    [attraction_closing_hours] => 02:49:00.0000
+    [attraction_operating_days] => Monday
+    [attraction_status] => aktif
+    [attraction_latitude] => 3.413812
+    [attraction_longitude] => 102.502441
+)
+
+[20-Dec-2024 05:36:45 Europe/Berlin] Received GET parameters: Array
+(
+    [id] => 29
+)
+
+[20-Dec-2024 05:36:45 Europe/Berlin] Query result: Array
+(
+    [attraction_id] => 29
+    [attraction_name] => Hutan Lipur Teladas
+    [attraction_description] => Hutan Lipur Teladas
+    [attraction_address] => Hutan Lipur Teladas
+    [attraction_opening_hours] => 00:49:00.0000
+    [attraction_closing_hours] => 02:49:00.0000
+    [attraction_operating_days] => Monday
+    [attraction_status] => aktif
+    [attraction_latitude] => 3.413812
+    [attraction_longitude] => 102.502441
+)
+
+[20-Dec-2024 05:39:02 Europe/Berlin] Received GET parameters: Array
+(
+    [id] => 29
+)
+
+[20-Dec-2024 05:39:02 Europe/Berlin] Query result: Array
+(
+    [attraction_id] => 29
+    [attraction_name] => Hutan Lipur Teladas
+    [attraction_description] => Hutan Lipur Teladas
+    [attraction_address] => Hutan Lipur Teladas
+    [attraction_opening_hours] => 00:49:00.0000
+    [attraction_closing_hours] => 02:49:00.0000
+    [attraction_operating_days] => Monday
+    [attraction_status] => aktif
+    [attraction_latitude] => 3.413812
+    [attraction_longitude] => 102.502441
+)
+
+[20-Dec-2024 05:39:10 Europe/Berlin] Received GET parameters: Array
+(
+    [id] => 29
+)
+
+[20-Dec-2024 05:39:10 Europe/Berlin] Query result: Array
+(
+    [attraction_id] => 29
+    [attraction_name] => Hutan Lipur Teladas
+    [attraction_description] => Hutan Lipur Teladas
+    [attraction_address] => Hutan Lipur Teladas
+    [attraction_opening_hours] => 00:49:00.0000
+    [attraction_closing_hours] => 02:49:00.0000
+    [attraction_operating_days] => Monday
+    [attraction_status] => aktif
+    [attraction_latitude] => 3.413812
+    [attraction_longitude] => 102.502441
+)
+
+[20-Dec-2024 05:39:19 Europe/Berlin] Received GET parameters: Array
+(
+    [id] => 29
+)
+
+[20-Dec-2024 05:39:19 Europe/Berlin] Query result: Array
+(
+    [attraction_id] => 29
+    [attraction_name] => Hutan Lipur Teladas
+    [attraction_description] => Hutan Lipur Teladas
+    [attraction_address] => Hutan Lipur Teladas
+    [attraction_opening_hours] => 00:49:00.0000
+    [attraction_closing_hours] => 02:49:00.0000
+    [attraction_operating_days] => Monday
+    [attraction_status] => aktif
+    [attraction_latitude] => 3.413812
+    [attraction_longitude] => 102.502441
 )
 

@@ -1,12 +1,11 @@
 <?php
-include '../database_config.php';
 
 header('Content-Type: application/json');
 header('Access-Control-Allow-Origin: *');
 header('Access-Control-Allow-Methods: GET, OPTIONS');
 header('Access-Control-Allow-Headers: Content-Type');
 
-require_once('../maranguide_connection.php');
+require_once($_SERVER['DOCUMENT_ROOT'] . '/MARANGUIDE/maranguide_connection.php');
 
 function sendErrorResponse($message, $code = 500) {
     http_response_code($code);

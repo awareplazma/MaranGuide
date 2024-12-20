@@ -93,11 +93,11 @@ function getDayRanges($days) {
                             getDayRanges($operating_days) : "No operating days set";
 
                         // Handle thumbnail path
-                        $thumbnail = '../placeholder.jpg';
+                        $thumbnail = '/media/default_image.png'; // Default image path
                         if (!empty($row['attraction_thumbnails'])) {
-                            $thumbnail_path = '../' . $row['attraction_thumbnails'];
+                            $thumbnail_path = $_SERVER['DOCUMENT_ROOT'] . $row['attraction_thumbnails'];
                             if (file_exists($thumbnail_path)) {
-                                $thumbnail = $thumbnail_path;
+                                $thumbnail = $row['attraction_thumbnails'];
                             }
                         }
 
@@ -113,7 +113,7 @@ function getDayRanges($days) {
                                 <img src="<?php echo htmlspecialchars($thumbnail); ?>" 
                                      alt="<?php echo htmlspecialchars($row['attraction_name']); ?>" 
                                      class="attraction-image"
-                                     onerror="this.src='../placeholder.jpg'">
+                                     onerror="this.src='/media/default_image.png'">
                             </div>
                             
                             <div class="attraction-info">
@@ -131,9 +131,7 @@ function getDayRanges($days) {
                                         // If admin_name is not set or is empty, show a default message
                                         echo 'Pemilik belum ditetapkan';
                                     } else {
-                                        // Otherwise, get the admin_name and sanitize it
                                         $description = htmlspecialchars($row['admin_name']);
-                                        // Check if the description exceeds 150 characters
                                         echo (strlen($description) > 150) ? substr($description, 0, 147) . '...' : $description;
                                     }
                                 ?>
@@ -213,8 +211,8 @@ function getDayRanges($days) {
         // Delete confirmation
         function deleteAttraction(id) {
             if (confirm('Are you sure you want to delete this attraction?')) {
-                window.location.href = `src/process/superadmin_delete_attraction_process.php?id=${id}`;
-            }
+        window.location.href = `/superadmin/src/process/superadmin_delete_attraction_process.php?id=${id}`;
+    }
         }
     </script>
 </body>

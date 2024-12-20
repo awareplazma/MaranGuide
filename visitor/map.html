@@ -3,44 +3,107 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MaranGuide - Attractions</title>
+    <title>Rabbitland - MaranGuide Attractions</title>
     
     <!-- Materialize CSS -->
     <link type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<!-- Custom CSS -->
+    <link rel="stylesheet" href="/MARANGUIDE/project.css">
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
     
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="../project.css">
-    
-    <!-- PWA Support -->
-    <link rel="manifest" href="../manifest.json">
-    <link rel="apple-touch-icon" href="/Media/Picture/img/MARANGUIDE_ICON.png">
-    <meta name="apple-mobile-web-app-status-bar" content="#ffa500">
+    <style>
+    /* Responsive Map Styling */
+    #map { 
+        height: 500px; 
+        width: 100%; 
+    }
+
+    /* Small screens (mobile) */
+    @media only screen and (max-width: 600px) {
+        #map {
+            height: 300px; /* Shorter on mobile */
+        }
+        .container {
+            width: 95%; /* Full width with small margins */
+            padding: 0 10px;
+        }
+    }
+
+    /* Medium screens */
+    @media only screen and (min-width: 601px) and (max-width: 992px) {
+        #map {
+            height: 400px; /* Medium height */
+        }
+        .container {
+            width: 90%;
+        }
+    }
+
+    /* Large screens */
+    @media only screen and (min-width: 993px) {
+        #map {
+            height: 600px; /* Full height */
+        }
+        .container {
+            width: 85%;
+        }
+    }
+
+    #loading {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 1000;
+    }
+    .attraction-popup {
+        min-width: 250px;
+    }
+
+    /* Ensure map is fully responsive */
+    .map-responsive {
+        position: relative;
+        padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+        height: 0;
+        overflow: hidden;
+    }
+    .map-responsive #map {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100% !important;
+        height: 100% !important;
+    }
+</style>
 </head>
 <body>
-<div id="header-html"></div>
-<div id="map"></div>
-</body>
-<script>
-// Load header and fetch attractions
-        document.addEventListener('DOMContentLoaded', function() {
-            fetch('header.html')
-                .then(response => response.text())
-                .then(data => {
-                    document.getElementById('header-html').innerHTML = data;
-                    
-                    // Initialize Materialize components
-                    var sidenavElems = document.querySelectorAll('.sidenav');
-                    M.Sidenav.init(sidenavElems);
+    <div id="header-html"></div>
+    <!-- Loading Indicator -->
+    <div id="loading" class="center">
+        <div class="preloader-wrapper big active">
+            <div class="spinner-layer spinner-blue-only">
+                <div class="circle-clipper left">
+                    <div class="circle"></div>
+                </div>
+                <div class="circle-clipper right">
+                    <div class="circle"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Map Container -->
+    <div class="container">
+        <div id="map"></div>
+    </div>
 
-                    var dropdownElems = document.querySelectorAll('.dropdown-trigger');
-                    M.Dropdown.init(dropdownElems, {
-                        coverTrigger: false,
-                        constrainWidth: false,
-                        alignment: 'right'
-                    });
-                })
-                .catch(error => console.error('Error loading the header:', error));
-        });
-</script>
+    <!-- Leaflet JS -->
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    
+    <!-- Materialize JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="/MARANGUIDE/visitor/src/javacsript/map.js" defer></script>
+</body>
 </html>

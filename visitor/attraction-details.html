@@ -10,14 +10,15 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="/project.css">
-    <link rel="stylesheet" href="/visitor/src/css/visitor.css">
+    <link rel="stylesheet" href="/MARANGUIDE/project.css">
+    <link rel="stylesheet" href="/MARANGUIDE/visitor/src/css/visitor.css">
 
 
-    <!-- PWA Support -->
+    <!-- PWA Support  -->
     <link rel="manifest" href="../manifest.json">
-    <link rel="apple-touch-icon" href="/Media/Picture/img/MARANGUIDE_ICON.png">
+    <link rel="apple-touch-icon" href="/MARANGUIDE/Media/Picture/img/MARANGUIDE_ICON.png">
     <meta name="apple-mobile-web-app-status-bar" content="#ffa500">
+   
 </head>
 <body>
     <!-- Header Container -->
@@ -40,7 +41,6 @@
     <!-- Main Content Container -->
     <div id="attraction-info-container" style="display:none;">
         <div class="container">
-            <!-- Attraction Name -->
         <div class="attraction-name">
          <h2 id="attraction-name"></h2>
         </div>
@@ -52,6 +52,7 @@
                         <li class="tab col s4"><a href="#butiran-am">Butiran Am</a></li>
                         <li class="tab col s4"><a href="#tarikan-acara">Tarikan dan Acara</a></li>
                         <li class="tab col s4"><a href="#galeri">Galeri</a></li>
+                        <li class="tab col s4"><a href="#ulasan">Ulasan</a></li>
                     </ul>
                 </div>
             </div>
@@ -60,27 +61,27 @@
             <div id="butiran-am" class="tab-content section"></div>
             <div id="tarikan-acara" class="tab-content section"></div>
             <div id="galeri" class="tab-content section"></div>
+            <div id="ulasan" class="tab-content section"></div>
         
     </div>
 
-    <!-- Find on Map Button -->
-    <div class="fixed-action-btn">
-        <a href="#" id="find-on-map" class="btn-floating btn-large waves-effect waves-light blue">
-            <i class="material-icons">map</i>
-        </a>
+    
     </div>
-
-   
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-
+    <script src="/MARANGUIDE/visitor/src/javacsript/attraction_detail.js" defer></script>
+    <script src="/MARANGUIDE/visitor/src/javacsript/attraction_gallery.js" defer></script>
+    <script src="/MARANGUIDE/visitor/src/javacsript/attraction_event.js" defer></script>
+    <script src="/MARANGUIDE/visitor/src/javacsript/list-comment.js" defer></script>
     <script>
+    const urlParams = new URLSearchParams(window.location.search);
+    const attractionId = urlParams.get('id');
     document.addEventListener('DOMContentLoaded', function() {
         
         const loading = document.getElementById('loading');
         const attractionInfoContainer = document.getElementById('attraction-info-container');
-        const tabs = ['butiran-am', 'tarikan-acara', 'galeri'];
+        const tabs = ['butiran-am', 'tarikan-acara', 'galeri', 'ulasan'];
 
-        // Show loading indicator
+        // Show and loading indicator
         function showLoading() {
             loading.style.display = 'block';
             attractionInfoContainer.style.display = 'none';
@@ -133,7 +134,7 @@
 
         try {
             // Fetch tab content from server
-            const response = await fetch(`/api/fetch_attraction_tab_content.php?id=${attractionId}&tab=${tabId}`);
+            const response = await fetch(`/MARANGUIDE/api/fetch_attraction_tab_content.php?id=${attractionId}&tab=${tabId}`);
             
             if (!response.ok) throw new Error(`HTTP error: ${response.status}`);
             
@@ -149,10 +150,16 @@
             {
                 attachTarikanAcaraScripts(attractionId);
             }
+            
 
             if(tabId=='galeri')
             {
                 attachGaleriScripts(attractionId);
+            }
+
+            if(tabId=='ulasan')
+            {
+                attachUlasanScripts(attractionId);
             }
 
         } catch (error) {
@@ -167,172 +174,11 @@
         }
     }
 
-    //Butiran Am
-
-    function attachButiranAmScripts(attractionId) {
-        const container = document.getElementById('butiran-am');
-        async function fetchAttractionDetails() {
-            try {
-                const response = await fetch(`/api/fetch_attraction_details.php?id=${attractionId}`);
-                
-                if (!response.ok) {
-                    throw new Error(`Attractions fetch error: ${response.status}`);
-                }
-                
-                const data = await response.json();
-                
-                // Check for API-level errors
-                if (data.error) {
-                    throw new Error(data.message);
-                }
-
-                // Update DOM elements
-                container.querySelector('#attraction_name').textContent = data.name;
-                container.querySelector('#description').textContent = data.description;
-
-                // Operating Days
-                const operatingDaysList = container.querySelector('#operatingDays');
-                operatingDaysList.innerHTML = data.operatingDays.split(',').map(day => 
-                    `<li>${day.trim()}</li>`
-                ).join('');
-                
-                // Operating Hours
-                container.querySelector('#operatingHours').textContent = data.operatingHours;
-            
-            } catch (error) {
-                console.error('Failed to fetch attractions:', error);
-                container.innerHTML = `
-                    <div class="col s12">
-                        <div class="card red lighten-2">
-                            <div class="card-content white-text">
-                                <span class="card-title">Ralat</span>
-                                <p>Tidak dapat memuatkan maklumat. ${error.message}</p>
-                                <div class="card-action">
-                                    <a href="#" onclick="attachButiranAmScripts('${attractionId}')">Cuba Semula</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                `;
-            }
-        }
-
-    // Call the fetch function
-    fetchAttractionDetails();
-}
-       function attachTarikanAcaraScripts(attractionId) {
-    const container = document.getElementById('tarikan-acara');
-    const loadingIndicator = document.getElementById('loading-indicator');
-
-    async function fetchEventLists(page = 1) {
-        const container = document.getElementById('events-container');
-        const paginationContainer = document.getElementById('pagination');
-        const eventCardTemplate = document.getElementById('event-card');
-
-        // Show loading
-        loadingIndicator.style.display = 'block';
-        container.innerHTML = '';
-        paginationContainer.innerHTML = '';
-
-        try {
-            const response = await fetch(`/api/fetch_event_list.php?page=${page}`);
-            
-            // Check if response is ok
-            if (!response.ok) throw new Error(`Event fetch error: ${response.status}`);
-            
-            const data = await response.json();
-
-            // Check for API-level errors
-            if (data.error) {
-                throw new Error(data.message);
-            }
-
-            const events = data.events;
-
-            // Handle empty attractions list
-            if (events.length === 0) {
-                container.innerHTML = `
-                    <div class="col s12">
-                        <div class="card red lighten-2">
-                            <div class="card-content white-text">
-                                <span class="card-title">No Attractions Found</span>
-                                <p>No events are currently available.</p>
-                            </div>
-                        </div>
-                    </div>
-                `;
-                return;
-            }
-
-            // Render events
-            events.forEach(event => {
-                const cardClone = eventCardTemplate.cloneNode(true);
-                cardClone.style.display = 'block';
-                cardClone.id = `event-${event.id}`; // Unique ID
-
-                // Update image
-                const imgElement = cardClone.querySelector('.card-image img');
-                imgElement.src = event.media_path; // Uncomment and use actual path
-                imgElement.alt = event.name;
-
-                // Update title
-                const titleElement = cardClone.querySelector('.card-title');
-                titleElement.textContent = event.name;
-
-                // Add click event
-                cardClone.addEventListener('click', () => {
-                    window.location.href = `event-details.html?id=${event.id}`;
-                });
-                
-                // Append to container
-                container.appendChild(cardClone);
-            });
-
-            // Render pagination
-            for (let i = 1; i <= data.totalPages; i++) {
-                const li = document.createElement('li');
-                li.className = i === data.currentPage ? 'active' : 'waves-effect';
-                li.innerHTML = `<a href="#" onclick="fetchEventLists(${i})">${i}</a>`;
-                paginationContainer.appendChild(li);
-            }
-
-            // Hide loading
-            loadingIndicator.style.display = 'none';
-
-        } catch (error) {
-            // Hide loading
-            loadingIndicator.style.display = 'none';
-
-            console.error('Failed to fetch attractions:', error);
-            container.innerHTML = `
-                <div class="col s12">
-                    <div class="card red lighten-2">
-                        <div class="card-content white-text">
-                            <span class="card-title">Connection Error</span>
-                            <p>Unable to load attractions. ${error.message}</p>
-                            <div class="card-action">
-                                <a href="#" onclick="fetchEventLists()">Retry</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            `;
-        }
-    }
-
-    // Initial fetch
-    fetchEventLists();
-}
-
-    // Initialize main page
-    document.addEventListener('DOMContentLoaded', initPage);
     // Initialize page
     async function initPage() {
 
     showLoading();
 
-    const urlParams = new URLSearchParams(window.location.search);
-    const attractionId = urlParams.get('id');
 
     if (!attractionId) {
         displayError('No attraction ID provided in the URL.');
@@ -361,14 +207,13 @@
         const tabLoadPromises = tabs.map(tab => loadTabContent(attractionId, tab));
         await Promise.all(tabLoadPromises);
 
-        // Find on map button
-        document.getElementById('find-on-map').href = `/map.html?id=${attractionId}`;
+   
 
         hideLoading();
-    } catch (error) {
-        console.error('Initialization error:', error);
-        displayError(`Failed to load page: ${error.message}`);
-    }
+        } catch (error) {
+            console.error('Initialization error:', error);
+            displayError(`Failed to load page: ${error.message}`);
+        }
 }
 
     // Call initialization

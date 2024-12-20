@@ -44,7 +44,7 @@
                 </div>
                 <div class="input-field col s12">
                     <i class="material-icons prefix">event</i>
-                    <textarea id="media_description" name="media_title" class="materialize-textarea" required></textarea>
+                    <textarea id="media_description" name="media_description" class="materialize-textarea" required></textarea>
                     <label for="media_description">Butiran Media</label>
                 </div>
             </div>

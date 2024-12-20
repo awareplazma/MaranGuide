@@ -6,18 +6,16 @@ $admin_id = $_SESSION['admin_id'];
 $admin_id = $_SESSION['admin_id'];
 
 // Owner numbers
-$owner_query = "SELECT COUNT(*) AS total_owners FROM adminlist WHERE admin_id = ?";
+$owner_query = "SELECT COUNT(*) AS total_owners FROM adminlist";
 $stmt = $conn->prepare($owner_query);
-$stmt->bind_param("i", $admin_id);
 $stmt->execute();
 $owner_result = $stmt->get_result()->fetch_assoc();
 $total_owners = $owner_result['total_owners'];
 $stmt->close();
 
 // Attraction numbers
-$attraction_query = "SELECT COUNT(*) AS total_attractions FROM attraction WHERE admin_id = ?";
+$attraction_query = "SELECT COUNT(*) AS total_attractions FROM attraction";
 $stmt = $conn->prepare($attraction_query);
-$stmt->bind_param("i", $admin_id);
 $stmt->execute();
 $attraction_result = $stmt->get_result()->fetch_assoc();
 $total_attractions = $attraction_result['total_attractions'];
@@ -40,7 +38,6 @@ $stmt->close();
     <title>MaranGuide Superadmin Dashboard</title>
  
     <link rel="stylesheet" href="src/css/superadmin_section.css">
-    <link rel="stylesheet" href="src/css/superadmin_sidenav.css">
     <link rel="stylesheet" href="../project.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">

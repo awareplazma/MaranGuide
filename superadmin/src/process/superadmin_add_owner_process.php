@@ -1,5 +1,5 @@
 <?php
-include '../maranguide_connection.php'; 
+include $_SERVER['DOCUMENT_ROOT'] . '/MARANGUIDE/maranguide_connection.php';
 ob_start(); 
 error_reporting(E_ALL);
 ini_set('display_errors', 1);

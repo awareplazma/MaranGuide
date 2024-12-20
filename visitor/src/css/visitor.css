@@ -88,3 +88,25 @@
 .media-gallery-containers {
 
 }
+
+/* Zoom */
+
+.card-zoom{
+transform: scale(1.5);
+transition: 0.3s ease-in-out;
+}
+
+/* Install */
+
+.install-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+    background-color: #ffa000;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}

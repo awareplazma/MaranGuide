@@ -17,12 +17,24 @@ $stmt->bind_param("i", $admin_id);
 $stmt->execute();
 $attraction = $stmt->get_result()->fetch_assoc();
 
-// Ratings
-$reviews_query = "SELECT * FROM reviews WHERE attraction_id = ? ORDER BY comment_created_at DESC LIMIT 5";
+// New Comment
+$reviews_query = "SELECT * FROM comments WHERE attraction_id = ? AND approval_status='Belum Dibaca' ORDER BY created_at DESC LIMIT 5";
 $stmt = $conn->prepare($reviews_query);
 $stmt->bind_param("i", $attraction['attraction_id']);
 $stmt->execute();
 $reviews = $stmt->get_result();
+
+// Ratings
+$rating_query = "SELECT AVG(rating) AS average_rating FROM comments WHERE attraction_id = ?";
+$stmt = $conn->prepare($rating_query);
+$stmt->bind_param("i", $attraction['attraction_id']);
+$stmt->execute();
+$result = $stmt->get_result();
+$average_rating = $result->fetch_assoc()['average_rating']; // Fetch the average rating
+$stmt->close();
+
+// Optional: Scale the average rating to a percentage (e.g., 4/5 → 80%)
+$scaled_rating = $average_rating !== null ? ($average_rating / 5) : 0;
 
 // Events
 $event_query = "SELECT * FROM eventlist WHERE attraction_id = ? AND event_start_date >= CURDATE() ORDER BY event_start_date LIMIT 3";
@@ -39,7 +51,6 @@ $events = $stmt->get_result();
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Owner Dashboard - <?php echo htmlspecialchars($attraction['attraction_name']); ?></title>
     <link rel="stylesheet" href="src/css/project.css">
-    <link rel="stylesheet" href="src/css/admin_section.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     
@@ -65,7 +76,11 @@ $events = $stmt->get_result();
         <div class="col s12 m4">
             <div class="stats-card">
                 <i class="material-icons medium">star</i>
-                <span class="stats-number">4.5</span>
+                <span class="stats-number"> <?php 
+            echo $average_rating !== 0 
+                ? number_format($average_rating, 1) . " / 5" 
+                : "No ratings yet"; 
+            ?></span>
                 <span>Average Rating</span>
             </div>
         </div>
@@ -73,7 +88,7 @@ $events = $stmt->get_result();
             <div class="stats-card">
                 <i class="material-icons medium">event</i>
                 <span class="stats-number"><?php echo $events->num_rows; ?></span>
-                <span>Upcoming Events</span>
+                <span>Acara</span>
             </div>
         </div>
     </div>
@@ -98,7 +113,7 @@ $events = $stmt->get_result();
                     </a>
                 </div>
                 <div class="col s6 m3">
-                    <a href="view_feedback.php" class="quick-action-button waves-effect">
+                    <a href="view_feedback.php?id=<?php echo $attraction['attraction_id']; ?>" class="quick-action-button waves-effect">
                         <i class="material-icons">feedback</i>
                         <span>View Reviews</span>
                     </a>

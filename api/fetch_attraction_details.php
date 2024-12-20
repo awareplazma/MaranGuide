@@ -9,7 +9,9 @@ header('Access-Control-Allow-Origin: *');
 header('Access-Control-Allow-Methods: GET, POST, OPTIONS');
 header('Access-Control-Allow-Headers: Content-Type');
 
-require_once('../maranguide_connection.php');
+require_once($_SERVER['DOCUMENT_ROOT'] . '/MARANGUIDE/maranguide_connection.php');
+
+
 
 // Log any connection errors
 if (!$conn) {
@@ -35,16 +37,18 @@ try {
     }
 
     $query = "SELECT 
-        a.attraction_id, 
-        a.attraction_name, 
-        a.attraction_description, 
-        a.attraction_address,
-        a.attraction_opening_hours,
-        a.attraction_closing_hours,
-        a.attraction_operating_days,
-        a.attraction_status
-    FROM attraction a
-    WHERE a.attraction_id = ? AND a.attraction_status = 'aktif'";
+        attraction_id, 
+        attraction_name, 
+        attraction_description, 
+        attraction_address,
+        attraction_opening_hours,
+        attraction_closing_hours,
+        attraction_operating_days,
+        attraction_status,
+        attraction_latitude,
+        attraction_longitude
+    FROM attraction
+    WHERE attraction_id = ? AND attraction_status = 'aktif'";
 
     $stmt = mysqli_prepare($conn, $query);
     mysqli_stmt_bind_param($stmt, "i", $attractionId);
@@ -70,7 +74,9 @@ try {
         'description' => htmlspecialchars($attraction['attraction_description']),
         'address' => htmlspecialchars($attraction['attraction_address']),
         'operatingDays' => htmlspecialchars($attraction['attraction_operating_days']),
-        'operatingHours' => htmlspecialchars($attraction['attraction_opening_hours'] . ' - ' . $attraction['attraction_closing_hours'])
+        'operatingHours' => htmlspecialchars($attraction['attraction_opening_hours'] . ' - ' . $attraction['attraction_closing_hours']),
+        'latitude'=> $attraction['attraction_latitude'],
+        'longitude'=> $attraction['attraction_longitude']
     ];
 
     echo json_encode($response);

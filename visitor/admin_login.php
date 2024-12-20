@@ -58,7 +58,7 @@ $conn->close();
   <!-- Materialize JS CDN -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
   <script src="script.js?v=<?php echo time(); ?>"></script>
-  <link rel="stylesheet" href="../project.css">
+  <link rel="stylesheet" href="/MARANGUIDE/project.css">
 </head>
 <body>
   <!-- Header -->
@@ -102,7 +102,7 @@ $conn->close();
     //Fetch header
   document.addEventListener('DOMContentLoaded', function() {
     // Fetch header and initialize dropdown after it's loaded
-    fetch('/visitor/header.html')
+    fetch('/MARANGUIDE/visitor/header.html')
       .then(response => response.text())
       .then(data => {
         document.getElementById('header-html').innerHTML = data;

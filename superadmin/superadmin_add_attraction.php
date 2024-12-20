@@ -35,6 +35,7 @@ $admin_result = $conn->query($admin_sql);
     <div class="dashboard-container">
         <h1 class="form-title">Tambah Lokasi Baru</h1>
         <form id="locationForm" class="form-card" action="src/process/superadmin_add_attraction_process.php" method="POST" enctype="multipart/form-data">
+            <!-- Photo -->
             <div class="upload-container">
                 <label class="upload-icon" for="ThumbnailUpload">
                     <i class="material-icons">add_photo_alternate</i>
@@ -48,6 +49,7 @@ $admin_result = $conn->query($admin_sql);
                     </button>
                 </div>
             </div>
+            <!-- -->
 
             <div class="form-group">
                 <label class="form-label" for="attraction_name">Nama Lokasi</label>
@@ -141,6 +143,8 @@ $admin_result = $conn->query($admin_sql);
 
     <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
     <script>
+
+        //Map
         let map, marker;
 
         document.addEventListener('DOMContentLoaded', function() {
@@ -172,6 +176,22 @@ $admin_result = $conn->query($admin_sql);
 
             } catch (error) {
                 console.error("Error initializing map:", error);
+            }
+        }
+        document.getElementById('attraction_latitude').addEventListener('input', handleManualCoordinates);
+        document.getElementById('attraction_longitude').addEventListener('input', handleManualCoordinates);
+
+
+        function handleManualCoordinates() {
+            const latInput = document.getElementById('attraction_latitude').value;
+            const lngInput = document.getElementById('attraction_longitude').value;
+
+            const lat = parseFloat(latInput);
+            const lng = parseFloat(lngInput);
+
+            if (!isNaN(lat) && !isNaN(lng)) {
+                setMarkerAndCoordinates(lat, lng);
+                map.setView([lat, lng], 12); // Optionally, center the map on the marker
             }
         }
 

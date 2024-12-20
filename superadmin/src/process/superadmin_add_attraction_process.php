@@ -14,7 +14,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             throw new Exception("All fields are required");
         }
 
-        // Handle operating days array - NEW
+        // Handle operating days array
         $operating_days = is_array($_POST['operating_days']) 
             ? implode(', ', $_POST['operating_days']) 
             : $_POST['operating_days'];
@@ -34,13 +34,17 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         // Start transaction
         $conn->begin_transaction();
 
+        // Default thumbnail path
+        $attraction_thumbnails = realpath($targetFilePath);
+
+
         // Modified SQL to use proper parameter count
         $stmt = $conn->prepare("INSERT INTO attraction 
-            (admin_id, attraction_name, attraction_description, attraction_created_at, 
-             attraction_address, attraction_operating_days, attraction_opening_hours, 
-             attraction_closing_hours, attraction_status, attraction_latitude, 
-             attraction_longitude, attraction_thumbnail) 
-            VALUES (NULL, ?, ?, NOW(), ?, ?, ?, ?, 'Perlu Dilihat', ?, ?, NULL, NULL)");
+        (attraction_name, attraction_description, attraction_created_at, 
+        attraction_address, attraction_operating_days, attraction_opening_hours, 
+        attraction_closing_hours, attraction_status, attraction_thumbnails, attraction_latitude, 
+        attraction_longitude, admin_id) 
+        VALUES (?, ?, NOW(), ?, ?, ?, ?, 'Perlu Dilihat', ?, ?, ?, NULL)");
 
         if (!$stmt) {
             throw new Exception("Failed to prepare statement: " . $conn->error);
@@ -50,15 +54,16 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $latitude = !empty($_POST['attraction_latitude']) ? floatval($_POST['attraction_latitude']) : null;
         $longitude = !empty($_POST['attraction_longitude']) ? floatval($_POST['attraction_longitude']) : null;
 
-        if (!$stmt->bind_param("ssssssdd", 
-            $attraction_name, 
-            $attraction_description, 
-            $attraction_address, 
-            $attraction_operating_days,
-            $attraction_opening_hours,
-            $attraction_closing_hours,
-            $latitude,
-            $longitude
+        if (!$stmt->bind_param("sssssssdd", 
+        $attraction_name, 
+        $attraction_description, 
+        $attraction_address, 
+        $attraction_operating_days,
+        $attraction_opening_hours,
+        $attraction_closing_hours,
+        $attraction_thumbnails, // Always set to default
+        $latitude, 
+        $longitude
         )) {
             throw new Exception("Failed to bind parameters: " . $stmt->error);
         }
@@ -71,9 +76,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $attraction_id = $conn->insert_id;
 
         // Base directory paths with improved security
-        $baseDir = realpath("C:/xampp/htdocs/MARANGUIDE/media/attraction/") . DIRECTORY_SEPARATOR . $attraction_id . DIRECTORY_SEPARATOR;
+        $baseDir = realpath("C:/xampp/htdocs/MARANGUIDE/media/attraction/") . DIRECTORY_SEPARATOR . preg_replace('/[^a-zA-Z0-9_\s-]/', '', $attraction_name) . DIRECTORY_SEPARATOR;
         $directories = [
             'videos' => $baseDir . 'videos' . DIRECTORY_SEPARATOR,
+            'pictures' => $baseDir . 'pictures' . DIRECTORY_SEPARATOR,
             'thumbnail' => $baseDir . 'thumbnail' . DIRECTORY_SEPARATOR
         ];
 
@@ -86,58 +92,40 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             }
         }
 
-        $uploadedFiles = [
-
-            'thumbnail' => null // Changed from array to null
-        ];
-
         // Handle thumbnail upload with improved validation
         if (isset($_FILES['ThumbnailUpload']) && $_FILES['ThumbnailUpload']['error'] == 0) {
-            $allowed_picture_types = ['image/jpeg', 'image/png', 'image/gif'];
+            $allowed_picture_types = ['image/jpeg', 'image/png'];
             $finfo = finfo_open(FILEINFO_MIME_TYPE);
             $mime_type = finfo_file($finfo, $_FILES['ThumbnailUpload']['tmp_name']);
             finfo_close($finfo);
             
-            if (!in_array($mime_type, $allowed_picture_types)) {
-                throw new Exception("Invalid file type for thumbnail. Only JPG, PNG, and GIF are allowed.");
-            }
+            if (in_array($mime_type, $allowed_picture_types)) {
+                $fileExtension = strtolower(pathinfo($_FILES['ThumbnailUpload']['name'], PATHINFO_EXTENSION));
+                $fileName = "{$attraction_id}_thumbnail." . $fileExtension;
+                $targetFilePath = $directories['thumbnail'] . $fileName;
+                $dbFilePath = "/media/attraction/{$attraction_name}/thumbnail/" . $fileName;
 
-            $fileExtension = strtolower(pathinfo($_FILES['ThumbnailUpload']['name'], PATHINFO_EXTENSION));
-            $fileName = "attraction_{$attraction_id}_thumbnail." . $fileExtension;
-            $targetFilePath = $directories['thumbnail'] . $fileName;
-            $dbFilePath = "media/attraction/{$attraction_id}/thumbnail/" . $fileName;
-
-            if (move_uploaded_file($_FILES['ThumbnailUpload']['tmp_name'], $targetFilePath)) {
-                $uploadedFiles['thumbnail'] = $dbFilePath;
-            } else {
-                throw new Exception("Failed to upload thumbnail: " . error_get_last()['message']);
+                if (move_uploaded_file($_FILES['ThumbnailUpload']['tmp_name'], $targetFilePath)) {
+                    $attraction_thumbnails = $dbFilePath;
+                }
             }
         }
 
-        // Update database with file paths using prepared statement
-        if (!empty($uploadedFiles['thumbnail'])) {
-            $thumbnail = $uploadedFiles['thumbnail'];
+        // Update database with file path if changed
+        $updateStmt = $conn->prepare("UPDATE attraction SET attraction_thumbnails = ? WHERE attraction_id = ?");
 
-            $updateStmt = $conn->prepare("UPDATE attraction SET 
-                attraction_thumbnails = ?
-                WHERE attraction_id = ?");
-
-            if (!$updateStmt) {
-                throw new Exception("Failed to prepare update statement: " . $conn->error);
-            }
-
-            if (!$updateStmt->bind_param("sssi", $picturesJson, $videosJson, $thumbnail, $attraction_id)) {
-                throw new Exception("Failed to bind parameters for update: " . $updateStmt->error);
-            }
-
-            if (!$updateStmt->execute()) {
-                throw new Exception("Failed to update media paths: " . $updateStmt->error);
-            }
-
-            $updateStmt->close();
+        if (!$updateStmt) {
+            throw new Exception("Failed to prepare update statement: " . $conn->error);
         }
 
-        // Commit transaction
+        if (!$updateStmt->bind_param("si", $attraction_thumbnails, $attraction_id)) {
+            throw new Exception("Failed to bind update parameters: " . $updateStmt->error);
+        }
+        if (!$updateStmt->execute()) {
+            throw new Exception("Failed to update thumbnail: " . $updateStmt->error);
+        }
+
+        $updateStmt->close();
         $conn->commit();
         $stmt->close();
 
@@ -146,20 +134,19 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         exit();
 
     } catch (Exception $e) {
-        // Rollback transaction on error
+
+        // Rollback on error
         if (isset($conn)) {
             $conn->rollback();
         }
         error_log("Error in attraction processing: " . $e->getMessage());
         $_SESSION['error_message'] = $e->getMessage();
-        header("Location: ../../superadmin_manage_attraction.php");
+        header("Location: /superadmin/superadmin_manage_attraction.php");
         exit();
     } 
 } else {
     $_SESSION['error_message'] = "Invalid request method";
-    header("Location: ../../superadmin_add_attraction.php");
+    header("Location: /superadmin/superadmin_add_attraction.php");
     exit();
 }
-
-
 ?>

@@ -1,5 +1,5 @@
 <?php
-include 'admin_nav.php'; // Assuming this file sets up the MySQLi connection
+include $_SERVER['DOCUMENT_ROOT'] . '/maranguide_connection.php';
 
 // Check if user is logged in and has necessary permissions
 if (!isset($_SESSION['admin_id'])) {
@@ -85,16 +85,16 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         mysqli_stmt_close($stmt);
 
         $_SESSION['success'] = "Event updated successfully";
-        header("Location: admin_manage_events.php");
+        header("Location: ../../admin_manage_events.php");
         exit();
 
     } catch (Exception $e) {
         $_SESSION['error'] = $e->getMessage();
-        header("Location: admin_edit_event.php?id=" . $event_id);
+        header("Location: ../../admin_edit_event.php?id=" . $event_id);
         exit();
     }
 } else {
     $_SESSION['error'] = "Invalid request method";
-    header("Location: admin_manage_events.php");
+    header("Location: ../../admin_manage_events.php");
     exit();
 }

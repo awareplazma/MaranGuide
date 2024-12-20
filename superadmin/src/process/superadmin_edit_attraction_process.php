@@ -1,6 +1,6 @@
 <?php
 session_start();
-include '../maranguide_connection.php';
+include $_SERVER['DOCUMENT_ROOT'] . '/MARANGUIDE/maranguide_connection.php';
 error_reporting(E_ALL);
 ini_set('display_errors', 1);
 
@@ -12,6 +12,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             throw new Exception("All fields are required");
         }
 
+        
         $attraction_id = $_POST['attraction_id'];
         $admin_id = $_POST['admin_id'];
         $attraction_name = htmlspecialchars(trim($_POST['attraction_name']));
@@ -27,11 +28,16 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         
         $attraction_thumbnails = null;
         
-        // Handle image upload
+        //Edit Gambar
+        if($remove_thumbnail)
+        {
+            print "Perlu Muka Depan!";
+        }
+        // Proses image
         if (isset($_FILES['ThumbnailUpload']) && $_FILES['ThumbnailUpload']['error'] == 0) {
-            $allowed_types = ['image/jpeg', 'image/png', 'image/gif'];
+            $allowed_types = ['image/jpeg', 'image/png'];
             if (!in_array($_FILES['ThumbnailUpload']['type'], $allowed_types)) {
-                throw new Exception("Invalid file type. Only JPG, PNG, and GIF are allowed.");
+                throw new Exception("Invalid file type. Hanya JPG dan PNG dibenarkan.");
             }
 
             $targetDir = "../Media/Picture/";
@@ -88,8 +94,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 $attraction_thumbnails,
                 $attraction_id
             );
-        } else {
-            $stmt->bind_param("isssssssssi", 
+        
+            $params = ['isssssssss', 
                 $admin_id,
                 $attraction_name,
                 $attraction_description,
@@ -99,9 +105,16 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 $attraction_status,
                 $latitude,
                 $longitude,
-                $operating_days,
-                $attraction_id
-            );
+                $operating_days
+            ];
+
+            if ($attraction_thumbnails !== false) {
+            $sql .= ", attraction_thumbnails = ?";
+            $params[0] .= 's';
+            $params[] = $attraction_thumbnails;
+            }
+
+            
         }
 
         if (!$stmt->execute()) {
@@ -109,16 +122,16 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         }
 
         $_SESSION['success_message'] = "Attraction updated successfully!";
-        header("Location: superadmin_manage_attraction.php");
+        header("Location: ../../superadmin_manage_attraction.php");
         exit();
 
     } catch (Exception $e) {
         $_SESSION['error_message'] = $e->getMessage();
-        header("Location: superadmin_manage_attraction.php");
+        header("Location: ../../superadmin_manage_attraction.php");
         exit();
     }
 } else {
-    header("Location: superadmin_manage_attraction.php");
+    header("Location: ../../superadmin_manage_attraction.php");
     exit();
 }
 ?>

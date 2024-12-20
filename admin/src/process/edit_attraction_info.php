@@ -1,5 +1,5 @@
 <?php
-include 'admin_nav.php'; 
+include $_SERVER['DOCUMENT_ROOT'] . '/maranguide_connection.php';
 
 if (!isset($_SESSION['admin_id'])) {
     $_SESSION['error'] = "Unauthorized access";

@@ -1,7 +1,12 @@
 <?php 
 
 include 'superadmin_sidenav.php';
-$sql = "SELECT * FROM adminlist WHERE admin_role='owner' ORDER BY admin_id DESC";
+$sql = "SELECT a.*, b.attraction_name
+FROM adminlist a
+LEFT JOIN attraction b ON a.admin_id = b.admin_id
+WHERE a.admin_role = 'owner'
+ORDER BY admin_id DESC";
+
 $result = $conn->query($sql);
 
 ?>
@@ -52,45 +57,49 @@ $result = $conn->query($sql);
             </div>
 
             <!-- Attraction List -->
-            <div class="admin-list">
+            <div class="attraction-list">
                 <?php
-                if ($result && $result->num_rows > 0) {
+                if ($result->num_rows > 0) {
                     while($row = $result->fetch_assoc()) {
                         ?>
-                        <div class="admin-card">
+                        <div class="attraction-card">
                         <div class="attraction-image-container">
                             <img src="<?php echo !empty($row['admin_profile_picture']) ? $row['admin_profile_picture'] : 'placeholder.jpg'; ?>" 
                             alt="<?php echo htmlspecialchars($row['admin_name']); ?>" 
-                            class="attraction-image">
+                            class="attraction-image"
+                            onerror="this.src='../placeholder.jpg'">
                         </div>
-                            <div class="admin-info">
-                                <h2 class="admin-name"><?php echo htmlspecialchars($row['admin_id']); ?></h2>
-                                <h2 class="admin-name"><?php echo htmlspecialchars($row['admin_name']); ?></h2>
-                                
-                                <span class="role-badge">
-                                    <?php echo htmlspecialchars($row['admin_role']); ?>
-                                </span>
-                                
-                                <p class="owner-meta">
-                                    <i class='bx bx-envelope'></i>
-                                    <?php echo htmlspecialchars($row['admin_email']); ?>
-                                </p>
-                                
-                                <p class="owner-meta">
-                                    <i class='bx bx-phone'></i>
-                                    <?php echo htmlspecialchars($row['admin_phone_number']); ?>
-                                </p>
 
-                                <?php if (!empty($row['attraction_id'])): ?>
-                                <p class="admin-meta">
-                                    <i class='bx bx-map-pin'></i>
-                                    Attraction ID: <?php echo htmlspecialchars($row['attraction_id']); ?>
-                                </p>
-                                <?php endif; ?>
-                            </div>
+                        <div class="attraction-info">
+                            <h2 class="attraction-title">
+                                <span class="admin-id"><?php echo htmlspecialchars($row['admin_id']); ?></span>
+                                <span class="admin-name"><?php echo htmlspecialchars($row['admin_name']); ?></span>
+                            </h2>
+                            
+                            <span class="status-badge">
+                                <?php echo htmlspecialchars($row['admin_role']); ?>
+                            </span>
+                            
+                            <p class="attraction-description">
+                                <i class='bx bx-envelope'></i>
+                                <?php echo htmlspecialchars($row['admin_email']); ?>
+                            </p>
+                            
+                            <p class="owner-meta">
+                                <i class='bx bx-phone'></i>
+                                <?php echo htmlspecialchars($row['admin_phone_number']); ?>
+                            </p>
+
+                            <?php if (!empty($row['attraction_id'])): ?>
+                            <p class="admin-meta">
+                                <i class='bx bx-map-pin'></i>
+                                Attraction ID: <?php echo htmlspecialchars($row['attraction_id']); ?>
+                            </p>
+                            <?php endif; ?>
+                        </div>
 
                             <div class="action-buttons">
-                                <a href="superadmin_edit_owner.php?id=<?php echo $row['admin_id']; ?>" class="edit-btn">
+                                <a href="superadmin_edit_owner.php?owner_id=<?php echo $row['admin_id']; ?>" class="edit-btn">
                                     <i class='bx bx-edit-alt'></i>
                                 </a>
                                 <button onclick="deleteAdmin(<?php echo $row['admin_id']; ?>)" class="delete-btn">

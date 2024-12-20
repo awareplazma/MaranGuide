@@ -1,34 +1,41 @@
-<div class="tarikan-acara">
-        <!-- Loading Indicator -->
-        <div id="loading" class="center" style="display:none;">
-            <div class="preloader-wrapper big active">
-                <div class="spinner-layer spinner-blue-only">
-                    <div class="circle-clipper left">
-                        <div class="circle"></div>
-                    </div>
-                    <div class="circle-clipper right">
-                        <div class="circle"></div>
-                    </div>
+<div id="event-container" class="row"></div> 
+    <!-- Loading Indicator -->
+    <div id="loading" class="center" style="display:none;">
+        <div class="preloader-wrapper big active">
+            <div class="spinner-layer spinner-blue-only">
+                <div class="circle-clipper left">
+                    <div class="circle"></div>
+                </div>
+                <div class="circle-clipper right">
+                    <div class="circle"></div>
                 </div>
             </div>
         </div>
-
-        <!-- Attractions Container -->
-        <div id="event-list-container" class="container">
-            <div class="row">
-                <div class="col s12 m4" id="event-card" style="display: none">
-                    <div class="card">
-                        <div class="card-image">
-                        <img src="" alt="event-image">
-                        <span class="card-title"></span>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-
-        <!-- Pagination -->
-        <ul id="pagination" class="pagination center"></ul>
     </div>
 
+    <!-- Gallery Container -->
+    <div id="event-container" class="container">
+        <div class="row" id="event-row">
+            <!-- Template Card -->
+            <template id="event-card-template">
+                <div class="col s12 m4 event-card">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="" alt="Attraction Image" class="materialboxed">
+                        </div>
+                        <div class="card-content">
+                            <span class="card-title"></span>
+                            <p class="card-description"></p>
+                        </div>
+                        <div class="card-action">
+                            <span class="media-type"></span>
+                        </div>
+                    </div>
+                </div>
+            </template>
+        </div>
+    </div>
+
+    <!-- Pagination -->
+    <ul id="pagination" class="pagination center"></ul>
 </div>

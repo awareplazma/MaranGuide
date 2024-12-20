@@ -1,5 +1,5 @@
 <?php
-include '../../../maranguide_connection.php';
+include $_SERVER['DOCUMENT_ROOT'] . '/maranguide_connection.php';
 
 function isValidFileType($file) {
     $allowed_types = ['image/jpeg', 'image/png', 'image/gif', 'video/mp4', 'video/webm'];
@@ -20,7 +20,20 @@ try {
         }
         
         $attraction_id = intval($_POST['attraction_id']);
+
+        // Fetch attraction name from database
+        $stmt = mysqli_prepare($conn, "SELECT attraction_name FROM attraction WHERE attraction_id = ?");
+        mysqli_stmt_bind_param($stmt, 'i', $attraction_id);
+        mysqli_stmt_execute($stmt);
+        $result = mysqli_stmt_get_result($stmt);
         
+         if (!($row = mysqli_fetch_assoc($result))) {
+            throw new Exception('Attraction not found');
+        }
+
+        $attraction_name = $row['attraction_name'];
+
+
         // Use the media title and description from the form
         $media_title = trim($_POST['media_title']);
         $media_description = trim($_POST['media_description']); // Fix: use media_description, not media_title
@@ -54,8 +67,8 @@ try {
         }
         
         // Define separate upload directories for images and videos
-        $image_upload_dir = '../../../media/attraction/' . $attraction_id . '/pictures';
-        $video_upload_dir = '../../../media/attraction/' . $attraction_id . '/videos';
+        $image_upload_dir = $_SERVER['DOCUMENT_ROOT']. '/media/attraction/' .$attraction_name . '/pictures';
+        $video_upload_dir = $_SERVER['DOCUMENT_ROOT'] . '/media/attraction/'. $attraction_name . '/videos';
         
         // Determine media type and upload directory
         $is_video = strpos($file['type'], 'video/') === 0;
@@ -67,7 +80,7 @@ try {
             throw new Exception('Failed to create upload directory');
         }
         
-        // Generate unique filename
+        // Generate unique filename Ubah nanti ikut nama
         $file_extension = pathinfo($file['name'], PATHINFO_EXTENSION);
         $new_filename = generateUniqueFilename($file['name'], $file_extension);
         $file_path = $upload_dir . '/' . $new_filename;

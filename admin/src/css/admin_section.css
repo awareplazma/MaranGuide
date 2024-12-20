@@ -81,6 +81,8 @@
     margin: 0 auto;
 }
 
+
+
 .page-header {
     background: white;
     padding: 20px;
@@ -361,6 +363,13 @@
     padding: 20px;
 }
 
+.event-form-container h1 {
+    padding: 16px 0; /* Adjust vertical padding */
+    text-align: center; /* Center-align the title */
+    font-size: 0.5rem; /* Optional: Define font size */
+    color: #333; /* Optional: Set title color */
+}
+
 .event-form-section, 
 .attraction-form-section {
     background: white;
@@ -424,6 +433,13 @@
     background-color: white;
     border-radius: 12px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.form-container h1 {
+    padding: 0.2px; /* Adjust vertical padding */
+    text-align: center; /* Center-align the title */
+    font-size: 2rem; /* Optional: Define font size */
+    color: #333; /* Optional: Set title color */
 }
 
 .form-title {

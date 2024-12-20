@@ -85,6 +85,8 @@ if (isset($_SESSION['attraction_id'])) {
         var selects = document.querySelectorAll('select');
         M.FormSelect.init(selects);
     });
+    const tabs = M.Tabs.getInstance(document.querySelector('.tabs'));
+    console.log(tabs); // Should return a Tabs instance 
 </script>
 </body>
 </html>

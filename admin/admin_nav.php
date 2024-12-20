@@ -39,11 +39,12 @@ if ($attraction) {
 <head>
     <title>Owner Dashboard - <?php echo htmlspecialchars($attraction['attraction_name']); ?></title>
     <link rel="stylesheet" href="../project.css">
+     <link rel="stylesheet" href="src/css/admin_section.css">
 </head>
 <body>
 <nav class="nav-wrapper">
     <a href="admin_dashboard.php" class="brand-logo">
-        <img src="/media/icons/MARANGUIDE_ICON.png" alt="MaranGuide Logo">
+        <img src="/MARANGUIDE/media/icons/MARANGUIDE_ICON.png" alt="MaranGuide Logo">
     </a>
     <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
 

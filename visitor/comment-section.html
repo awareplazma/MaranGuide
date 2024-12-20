@@ -1,0 +1,43 @@
+<div id="comment-container" class="row"></div> 
+    <!-- Loading Indicator -->
+    <div id="loading" class="center" style="display:none;">
+        <div class="preloader-wrapper big active">
+            <div class="spinner-layer spinner-blue-only">
+                <div class="circle-clipper left">
+                    <div class="circle"></div>
+                </div>
+                <div class="circle-clipper right">
+                    <div class="circle"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Comment Container -->
+    <div id="comment-container" class="container">
+        <div class="row" id="event-row">
+            <!-- Comment Card Need Edit-->
+            <template id="comment-card-template">
+                <div class="col s12 m4 event-card">
+                    <div class="card">
+                        <div class="card-content">
+                            <div class="card-username"></div>
+                            <span class="card-title"></span>
+                            <p class="card-description"></p>
+                            <p class="card-rating"></p>
+                        </div>
+                    </div>
+                </div>
+            </template>
+        </div>
+    </div>
+
+    <!-- Pagination -->
+    <ul id="pagination" class="pagination center"></ul>
+
+    <!-- Comment Button -->
+    <div class="fixed-action-btn">
+        <a href="#" id="write-comment" class="btn-floating btn-large waves-effect waves-light blue">
+            <i class="material-icons">comment</i>
+        </a>
+</div>

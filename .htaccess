@@ -1,0 +1,3 @@
+RewriteEngine On 
+RewriteBase /MARANGUIDE/ 
+RewriteRule api/(.*)$ api/$1 [L] 

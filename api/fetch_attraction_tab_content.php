@@ -1,3 +1,4 @@
+<!-- ATTRACTION VIEW -->
 <?php
 // Enable comprehensive error reporting
 ini_set('display_errors', 1);
@@ -7,22 +8,24 @@ error_reporting(E_ALL);
 // Set content type to HTML
 header('Content-Type: text/html; charset=utf-8');
 
-// Get attraction ID and tab from request
 $AttractionId = $_GET['id'] ?? null;
 $tabId = $_GET['tab'] ?? null;
 
-// Log debugging information
+// Debugging 
 file_put_contents('debug_log.txt', 
     date('Y-m-d H:i:s') . 
     " - Request: ID=$AttractionId, Tab=$tabId\n", 
     FILE_APPEND
 );
 
-// Define paths to included files - use absolute or relative paths carefully
+// Absolute Paths c
 $tabFiles = [
     'butiran-am' => 'C:\\xampp\\htdocs\\MARANGUIDE\\visitor\\attraction-details-complete.html',
     'tarikan-acara' => 'C:\\xampp\\htdocs\\MARANGUIDE\\visitor\\event-list.html',
-    'ulasan' => '/attraction-comment.html'
+    'galeri' => 'C:\\xampp\\htdocs\\MARANGUIDE\\visitor\\gallery.html',
+    'ulasan' => 'C:\\xampp\\htdocs\\MARANGUIDE\\visitor\\comment-section.html',
+    
+    //ulasan' => '/attraction-comment.html'
 ];
 
 // Validate input

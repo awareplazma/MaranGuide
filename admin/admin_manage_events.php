@@ -34,6 +34,7 @@ $result = $conn->query($sql);
                 </div>
             <?php endif; ?>
             <div class="form-container">
+                <h1>Urus Acara</h1>
                 <div class="search-wrapper-mobile">
                     <div class="search-input-container">
                         <input type="text" id="searchInput" placeholder="Cari Acara...">
@@ -53,7 +54,7 @@ $result = $conn->query($sql);
                             ?>
                             <div class="event-card">
                                 <div class="event-image-container">
-                                <img src="<?php echo !empty($row['event_media']) ? $row['event_media'] : 'placeholder.jpg'; ?>" 
+                                <img src="<?php echo !empty($row['event_thumbnails']) ? $row['event_thumbnails'] : '/MARANGUIDE/media/default_image.png'; ?>" 
                                     alt="<?php echo htmlspecialchars($row['event_name']); ?>">
                                 </div>
                                 
@@ -93,6 +94,7 @@ $result = $conn->query($sql);
             </div>
         </div>
     </div>
+</body>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 <script>
@@ -100,10 +102,8 @@ $result = $conn->query($sql);
 // Delete confirmation
 function deleteEvent(id) {
     if (confirm('Are you sure you want to delete this event?')) {
-        window.location.href = `admin_delete_event_process.php?id=${id}`;
+        window.location.href = `src/process/admin_delete_event_process.php?id=${id}`;
     }
 }
 </script>
-
-</body>
 </html>

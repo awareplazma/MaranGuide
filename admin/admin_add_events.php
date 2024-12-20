@@ -8,14 +8,12 @@ include 'admin_nav.php';
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tambah Acara Baru</title>
-    <link rel="stylesheet" href="../css/project.css">
-    <link rel="stylesheet" href="../css/admin_section.css">
+    <link rel="stylesheet" href="src/css/project.css">
+    <link rel="stylesheet" href="src/css/admin_section.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
-
 <body>
-    <div class="home-content">
         <div class="dashboard-container">
             <!-- Status Messages -->
             <?php if (isset($_SESSION['error_message'])): ?>
@@ -35,7 +33,7 @@ include 'admin_nav.php';
             <div class="form-container">
                 <h4 class="form-title">Tambah Acara Baru</h4>
                 <input type="hidden" name="attraction_id" value="<?php echo isset($_SESSION['attraction_id']) ? htmlspecialchars($_SESSION['attraction_id']) : ''; ?>">
-                <form id="eventForm" action="admin_add_event_process.php" method="POST" enctype="multipart/form-data">
+                <form id="eventForm" action="src/process/admin_add_event_process.php" method="POST" enctype="multipart/form-data">
                     <!-- Image Upload Section -->
                     <div class="upload-section">
                         <div class="file-field input-field">
@@ -87,7 +85,6 @@ include 'admin_nav.php';
                 </form>
             </div>
         </div>
-    </div>
 
 <script>
 document.addEventListener('DOMContentLoaded', function() {

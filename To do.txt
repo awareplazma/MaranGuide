@@ -118,3 +118,111 @@ Acara
 Galeri
 
 Ulasan
+
+
+ //Tarikan Acara
+    
+    /*function attachTarikanAcaraScripts(attractionId) {
+    const container = document.getElementById('tarikan-acara');
+    const loadingIndicator = document.getElementById('loading-indicator');
+
+    async function fetchEventLists(page = 1) {
+        const container = document.getElementById('events-container');
+        const paginationContainer = document.getElementById('pagination');
+        const eventCardTemplate = document.getElementById('event-card');
+
+        // Show loading
+        loadingIndicator.style.display = 'block';
+        container.innerHTML = '';
+        paginationContainer.innerHTML = '';
+
+        try {
+            const response = await fetch(`/api/fetch_event_list.php?page=${page}`);
+            
+            // Check if response is ok
+            if (!response.ok) throw new Error(`Event fetch error: ${response.status}`);
+            
+            const data = await response.json();
+
+            // Check for API-level errors
+            if (data.error) {
+                throw new Error(data.message);
+            }
+
+            const events = data.events;
+
+            // Handle empty attractions list
+            if (events.length === 0) {
+                container.innerHTML = `
+                    <div class="col s12">
+                        <div class="card red lighten-2">
+                            <div class="card-content white-text">
+                                <span class="card-title">No Attractions Found</span>
+                                <p>No events are currently available.</p>
+                            </div>
+                        </div>
+                    </div>
+                `;
+                return;
+            }
+
+            // Render events
+            events.forEach(event => {
+                const cardClone = eventCardTemplate.cloneNode(true);
+                cardClone.style.display = 'block';
+                cardClone.id = `event-${event.id}`; // Unique ID
+
+                // Update image
+                const imgElement = cardClone.querySelector('.card-image img');
+                imgElement.src = event.media_path; // Uncomment and use actual path
+                imgElement.alt = event.name;
+
+                // Update title
+                const titleElement = cardClone.querySelector('.card-title');
+                titleElement.textContent = event.name;
+
+                // Add click event
+                cardClone.addEventListener('click', () => {
+                    window.location.href = `event-details.html?id=${event.id}`;
+                });
+                
+                // Append to container
+                container.appendChild(cardClone);
+            });
+
+            // Render pagination
+            for (let i = 1; i <= data.totalPages; i++) {
+                const li = document.createElement('li');
+                li.className = i === data.currentPage ? 'active' : 'waves-effect';
+                li.innerHTML = `<a href="#" onclick="fetchEventLists(${i})">${i}</a>`;
+                paginationContainer.appendChild(li);
+            }
+
+            // Hide loading
+            loadingIndicator.style.display = 'none';
+
+        } catch (error) {
+            // Hide loading
+            loadingIndicator.style.display = 'none';
+
+            console.error('Failed to fetch attractions:', error);
+            container.innerHTML = `
+                <div class="col s12">
+                    <div class="card red lighten-2">
+                        <div class="card-content white-text">
+                            <span class="card-title">Connection Error</span>
+                            <p>Unable to load attractions. ${error.message}</p>
+                            <div class="card-action">
+                                <a href="#" onclick="fetchEventLists()">Retry</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            `;
+        }
+    }
+
+    // Initial fetch
+    fetchEventLists();
+    }
+    */

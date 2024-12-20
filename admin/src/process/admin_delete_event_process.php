@@ -1,12 +1,12 @@
 <?php
-include '../maranguide_connection.php';
+include $_SERVER['DOCUMENT_ROOT'] . '/maranguide_connection.php';
 
 $event_id = (int)$_GET['id'];
 
 try {
 
     $conn->begin_transaction();
-    $stmt = $conn->prepare("SELECT event_media FROM eventlist WHERE event_id = ?");
+    $stmt = $conn->prepare("SELECT media_id FROM event_media WHERE event_id = ?");
     if (!$stmt) {
         throw new Exception("Failed to prepare select statement: " . $conn->error);
     }
@@ -61,6 +61,6 @@ try {
     $conn->close();
 }
 
-header("Location: admin_manage_events.php");
+header("Location: ../../admin_manage_events.php");
 exit();
 ?>

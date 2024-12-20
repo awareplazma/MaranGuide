@@ -14,7 +14,6 @@
     <link rel="stylesheet" href="../project.css">
     
     <!-- PWA Support -->
-    <link rel="manifest" href="../manifest.json">
     <link rel="apple-touch-icon" href="/Media/Picture/img/MARANGUIDE_ICON.png">
     <meta name="apple-mobile-web-app-status-bar" content="#ffa500">
 </head>
@@ -123,7 +122,7 @@ async function fetchAttractions(page = 1) {
     paginationContainer.innerHTML = '';
 
     try {
-        const response = await fetch(`/api/fetch_attraction.php?page=${page}`);
+        const response = await fetch(`/MARANGUIDE/api/fetch_attraction.php?page=${page}`);
         
         // Check if response is ok
         if (!response.ok) throw new Error(`Attractions fetch error: ${response.status}`);

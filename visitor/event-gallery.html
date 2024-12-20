@@ -1,0 +1,42 @@
+
+<div id="gallery-container" class="row"></div> 
+    <!-- Loading Indicator -->
+    <div id="loading" class="center" style="display:none;">
+        <div class="preloader-wrapper big active">
+            <div class="spinner-layer spinner-blue-only">
+                <div class="circle-clipper left">
+                    <div class="circle"></div>
+                </div>
+                <div class="circle-clipper right">
+                    <div class="circle"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Gallery Container -->
+    <div id="gallery-container" class="container">
+        <div class="row" id="gallery-row">
+            <!-- Template Card -->
+            <template id="gallery-card-template">
+                <div class="col s12 m4 gallery-card">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="" alt="Attraction Image" class="materialboxed">
+                        </div>
+                        <div class="card-content">
+                            <span class="card-title"></span>
+                            <p class="card-description"></p>
+                        </div>
+                        <div class="card-action">
+                            <span class="media-type"></span>
+                        </div>
+                    </div>
+                </div>
+            </template>
+        </div>
+    </div>
+
+    <!-- Pagination -->
+    <ul id="pagination" class="pagination center"></ul>
+</div>

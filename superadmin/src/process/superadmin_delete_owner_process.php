@@ -1,5 +1,5 @@
 <?php
-include '../../maranguide_connection.php';
+include $_SERVER['DOCUMENT_ROOT'] . '/maranguide_connection.php';
 
 if (!isset($_SESSION['admin_id']) || !isset($_SESSION['role']) || $_SESSION['role'] !== 'superadmin') {
     $_SESSION['error_message'] = "Unauthorized access";
