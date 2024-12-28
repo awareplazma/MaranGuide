@@ -4,7 +4,7 @@ include 'admin_nav.php';
 if (isset($_SESSION['attraction_id'])) {
     $attraction_id = $_SESSION['attraction_id'];
 
-    // Correct the SQL query
+    // Correct the SQL query to fetch attraction data
     $sql = "SELECT * FROM attraction WHERE attraction_id = ?";
     $stmt = $conn->prepare($sql);
     $stmt->bind_param("i", $attraction_id);
@@ -20,6 +20,18 @@ if (isset($_SESSION['attraction_id'])) {
 
     if (!empty($attraction_data['attraction_thumbnails'])) {
         $attraction_data['attraction_thumbnails'] = '../' . ltrim($attraction_data['attraction_thumbnails'], '/');
+    }
+
+    // Fetch media data from attraction_media table
+    $media_sql = "SELECT * FROM attraction_media WHERE attraction_id = ?";
+    $media_stmt = $conn->prepare($media_sql);
+    $media_stmt->bind_param("i", $attraction_id);
+    $media_stmt->execute();
+    $media_result = $media_stmt->get_result();
+    $media_paths = [];
+
+    while ($media = $media_result->fetch_assoc()) {
+        $media_paths[] = $media['media_path']; 
     }
 
 } else {
@@ -56,7 +68,7 @@ if (isset($_SESSION['attraction_id'])) {
                 <?php echo $_SESSION['success_message']; unset($_SESSION['success_message']); ?>
             </div>
         <?php endif; ?>
-
+<!-- Main Content -->
     <ul class="tabs">
         <li class="tab col s3"><a class="active" href="#event_info">Event Info</a></li>
         <li class="tab col s3"><a href="#media_section">Add Picture</a></li>
@@ -86,7 +98,8 @@ if (isset($_SESSION['attraction_id'])) {
         M.FormSelect.init(selects);
     });
     const tabs = M.Tabs.getInstance(document.querySelector('.tabs'));
-    console.log(tabs); // Should return a Tabs instance 
+    //Log in ChromeDevTool console in case tabs isn't working
+    console.log(tabs); 
 </script>
 </body>
 </html>

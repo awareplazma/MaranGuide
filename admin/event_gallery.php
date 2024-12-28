@@ -1,4 +1,4 @@
- <?php
+ <!-- <?php
         $media_paths = explode(',', $event_data['event_media']); // Split if comma-separated
         ?>
 
@@ -25,4 +25,4 @@
                     <?php endforeach; ?>
                 </div>
             </div>
-        </div>
+        </div> -->

@@ -39,7 +39,7 @@ function attachTarikanAcaraScripts(attractionId) {
                 }
             });
 
-            // [FIX 5] Comprehensive error handling
+            // 
             if (!response.ok) {
                 throw new Error(`HTTP error! status: ${response.status}`);
             }
@@ -47,7 +47,7 @@ function attachTarikanAcaraScripts(attractionId) {
             // Parse JSON safely
             const data = await response.json();
 
-            // [FIX 6] API-level error checking
+            // API-level error checking
             if (data.error) {
                 displayErrorMessage(data.message || 'Unknown error occurred');
                 return;
@@ -61,15 +61,6 @@ function attachTarikanAcaraScripts(attractionId) {
                 return;
             }
 
-             // Create modal container if it doesn't exist
-            let modalContainer = document.getElementById('gallery-modal');
-            if (!modalContainer) {
-                modalContainer = document.createElement('div');
-                modalContainer.id = 'gallery-modal';
-                modalContainer.className = 'gallery-modal';
-                modalContainer.style.display = 'none';
-                document.body.appendChild(modalContainer);
-            }
 
             events.forEach(event => {
                 try {
@@ -79,10 +70,11 @@ function attachTarikanAcaraScripts(attractionId) {
                     // Image handling
                    const imgElement = cardClone.querySelector('.card-image img');
                     if (imgElement) {
-                        imgElement.src = event.event_thumbnails || '../media/default_image.png';
+                        const basePath = '/MARANGUIDE/';
+                        imgElement.src = basePath + (event.event_thumbnails || 'media/default_image.png');
                         imgElement.alt = event.event_name || 'Gallery Image';
                         imgElement.onerror = () => {
-                            imgElement.src = '../media/default_image.png';
+                            imgElement.src = basePath + 'media/default_image.png';
                         };
                     }
 
@@ -93,7 +85,7 @@ function attachTarikanAcaraScripts(attractionId) {
                     titleElement.textContent = event.event_name || 'Untitled';
                     descriptionElement.textContent = event.event_description || 'No description';
 
-                    // [FIX 9] Add interaction
+               
                    cardElement.addEventListener('click', () => {
                         const url = `event-details.html?eventId=${event.event_id}&attractionId=${attractionId}`;
                         window.location.href = url;
@@ -107,11 +99,11 @@ function attachTarikanAcaraScripts(attractionId) {
                 }
             });
 
-            // [FIX 10] Improved pagination rendering
+            // Pagination rendering
             renderPagination(data.currentPage, data.totalPages);
 
         } catch (error) {
-            // [FIX 11] Comprehensive error handling
+            // Error handling
             console.error('Gallery fetch error:', error);
             
             if (error.name === 'AbortError') {
@@ -127,7 +119,7 @@ function attachTarikanAcaraScripts(attractionId) {
         }
     }
 
-    // Helper functions remain mostly the same
+    // Display Error message
     function displayErrorMessage(message) {
         const container = document.getElementById('event-container');
         if (container) {
@@ -143,7 +135,7 @@ function attachTarikanAcaraScripts(attractionId) {
             `;
         }
     }
-
+    //Display no media message
     function displayNoMediaMessage() {
         const container = document.getElementById('event-container');
         if (container) {
@@ -159,7 +151,7 @@ function attachTarikanAcaraScripts(attractionId) {
             `;
         }
     }
-
+    //Render page
     function renderPagination(currentPage, totalPages) {
         const paginationContainer = document.getElementById('pagination');
         if (!paginationContainer) return;

@@ -25,7 +25,7 @@ $stmt->execute();
 $reviews = $stmt->get_result();
 
 // Ratings
-$rating_query = "SELECT AVG(rating) AS average_rating FROM comments WHERE attraction_id = ?";
+$rating_query = "SELECT AVG(rating) AS average_rating FROM comments WHERE attraction_id = ? AND approval_status = 'Lulus'";
 $stmt = $conn->prepare($rating_query);
 $stmt->bind_param("i", $attraction['attraction_id']);
 $stmt->execute();

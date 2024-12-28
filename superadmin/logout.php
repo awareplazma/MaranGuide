@@ -4,6 +4,6 @@ $_SESSION = array();
 
 session_destroy();
 
-header("Location: ../visitor/admin_login.php");
+header("Location: /MARANGUIDE/visitor/admin_login.php");
 exit();
 ?>

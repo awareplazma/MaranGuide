@@ -39,7 +39,7 @@ else {
 }
 
 //Thumbnail
-// HIGHLIGHTED CHANGES START
+
 $thumbnail = '/media/default_image.png'; 
 if (!empty($row['attraction_thumbnails'])) {
     // Strip any leading slashes and use a consistent path construction
@@ -52,14 +52,13 @@ if (!empty($row['attraction_thumbnails'])) {
     // Debug information
     error_log("Thumbnail Path: " . $thumbnail_path);
     
-    // Check file existence with realpath for additional security
+    // Check file existence with realpath 
     $real_path = realpath($thumbnail_path);
     if ($real_path && file_exists($real_path)) {
-        // Use web-accessible path
         $thumbnail = '/' . $relative_path;
     }
 }
-// HIGHLIGHTED CHANGES END
+
 ?>
 
 <!DOCTYPE html>
@@ -290,7 +289,7 @@ if (!empty($row['attraction_thumbnails'])) {
         M.FormSelect.init(elems);
         });
 
-        // Add console logging for debugging
+        // Console logging for debugging
         document.getElementById('locationForm').addEventListener('submit', function(event) {
             const lat = document.getElementById('attraction_latitude').value;
             const lng = document.getElementById('attraction_longitude').value;
@@ -303,7 +302,7 @@ if (!empty($row['attraction_thumbnails'])) {
                 return;
             }
 
-            // Add debugging console logs
+            // Dbugging console logs
             console.log('Form submitted');
             console.log('Latitude:', lat);
             console.log('Longitude:', lng);

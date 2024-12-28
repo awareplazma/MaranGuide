@@ -28,7 +28,7 @@ if (isset($_SESSION['success_message'])) {
 <body>
 <div class="dashboard-container">
         <h1 class="form-title">Tambah Pemilik Baru</h1>
-        <form id="locationForm" class="form-card" action="process/superadmin_add_owner_process.php" method="POST" enctype="multipart/form-data">
+        <form id="locationForm" class="form-card" action="src/process/superadmin_add_owner_process.php" method="POST" enctype="multipart/form-data">
             <div class="upload-container">
                 <label class="upload-icon" for="profilepictureUpload">
                     <i class="material-icons">add_photo_alternate</i>

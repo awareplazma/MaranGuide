@@ -1,4 +1,4 @@
-<form id="eventForm" action="src/process/admin_edit_event_process.php" method="POST" enctype="multipart/form-data">
+<form id="eventForm" action="/MARANGUIDE/admin/src/process/admin_edit_event_process.php" method="POST" enctype="multipart/form-data">
     <input type="hidden" name="event_id" value="<?php echo htmlspecialchars($event_data['event_id']); ?>">
 
         <!-- Event Info Tab -->

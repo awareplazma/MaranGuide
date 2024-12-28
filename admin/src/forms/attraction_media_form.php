@@ -69,6 +69,7 @@ document.addEventListener('DOMContentLoaded', function() {
     
     fileInputs.forEach(function(fileInput) {
         fileInput.addEventListener('change', function(event) {
+        
             // Find the closest form and related preview elements
             const form = event.target.closest('form');
             const imagePreviewContainer = form.querySelector('.image-preview');

@@ -20,13 +20,14 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
         
         if (isset($_FILES['profilepictureUpload']) && $_FILES['profilepictureUpload']['error'] == 0) {
-            $targetDir = "..\media\owner_pfp";
+            $targetDir = $_SERVER['DOCUMENT_ROOT'] . "/MARANGUIDE/media/owner_pfp/";
             $fileName = basename($_FILES["profilepictureUpload"]["name"]);
             $targetFilePath = $targetDir . $fileName;
 
             
             if (move_uploaded_file($_FILES["profilepictureUpload"]["tmp_name"], $targetFilePath)) {
                 $admin_profile_picture = $targetFilePath;
+                $admin_profile_picture = "/media/owner_pfp/" . $fileName;
             } else {
                 throw new Exception("Failed to upload profile picture");
             }
@@ -47,17 +48,17 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
         
         $_SESSION['success_message'] = "Admin added successfully!";
-        header("Location: superadmin_manage_owner.php");
+        header("Location: ../../superadmin_manage_owner.php");
         exit();
 
     } catch (Exception $e) {
         $_SESSION['error_message'] = $e->getMessage();
-        header("Location: superadmin_manage_owner.php");
+        header("Location: ../../superadmin_manage_owner.php");
         exit();
     }
 } else {
     $_SESSION['error_message'] = "Invalid request method";
-    header("Location: superadmin_manage_owner.php");
+    header("Location: ../../superadmin_manage_owner.php");
     exit();
 }
 ?>

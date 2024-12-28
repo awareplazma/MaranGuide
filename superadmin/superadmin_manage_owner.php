@@ -61,13 +61,25 @@ $result = $conn->query($sql);
                 <?php
                 if ($result->num_rows > 0) {
                     while($row = $result->fetch_assoc()) {
+
+                    // Handle thumbnail path
+                       $profile_picture = '/MARANGUIDE/media/default_image.png'; // Default image path
+                        if (!empty($row['admin_profile_picture'])) {
+                            $profile_picture_path = $_SERVER['DOCUMENT_ROOT'] . '/MARANGUIDE' . $row['admin_profile_picture'];
+                            if (file_exists($profile_picture_path)) {
+                                $profile_picture = '/MARANGUIDE' . $row['admin_profile_picture']; // Use relative path
+                            }
+                        }
+                        
                         ?>
                         <div class="attraction-card">
-                        <div class="attraction-image-container">
-                            <img src="<?php echo !empty($row['admin_profile_picture']) ? $row['admin_profile_picture'] : 'placeholder.jpg'; ?>" 
-                            alt="<?php echo htmlspecialchars($row['admin_name']); ?>" 
-                            class="attraction-image"
-                            onerror="this.src='../placeholder.jpg'">
+                        <div class="attraction-card">
+                            <div class="attraction-image-container">
+                                <img src="<?php echo htmlspecialchars($profile_picture); ?>" 
+                                alt="<?php echo htmlspecialchars($row['admin_name']); ?>" 
+                                class="attraction-image"
+                                onerror="this.src='../placeholder.jpg'">
+                            </div>
                         </div>
 
                         <div class="attraction-info">
@@ -139,7 +151,7 @@ document.getElementById('searchInput').addEventListener('keyup', function() {
 // Delete confirmation
 function deleteAdmin(id) {
     if (confirm('Are you sure you want to delete this admin?')) {
-        window.location.href = `/src/process/superadmin_delete_owner_process.php?id=${id}`;
+        window.location.href = `/MARANGUIDE/superadmin/src/process/superadmin_delete_owner_process.php?id=${id}`;
     }
 }
 </script>

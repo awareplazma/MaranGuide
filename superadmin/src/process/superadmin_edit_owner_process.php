@@ -1,6 +1,6 @@
 <?php
 session_start();
-include $_SERVER['DOCUMENT_ROOT'] . '/maranguide_connection.php';
+include $_SERVER['DOCUMENT_ROOT'] . '/MARANGUIDE/maranguide_connection.php';
 error_reporting(E_ALL);
 ini_set('display_errors', 1);
 

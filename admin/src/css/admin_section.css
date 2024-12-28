@@ -364,10 +364,10 @@
 }
 
 .event-form-container h1 {
-    padding: 16px 0; /* Adjust vertical padding */
-    text-align: center; /* Center-align the title */
-    font-size: 0.5rem; /* Optional: Define font size */
-    color: #333; /* Optional: Set title color */
+    padding: 16px 0; 
+    text-align: center; 
+    font-size: 0.5rem; 
+    color: #333; 
 }
 
 .event-form-section, 
@@ -436,10 +436,10 @@
 }
 
 .form-container h1 {
-    padding: 0.2px; /* Adjust vertical padding */
-    text-align: center; /* Center-align the title */
-    font-size: 2rem; /* Optional: Define font size */
-    color: #333; /* Optional: Set title color */
+    padding: 0.2px; 
+    text-align: center; 
+    font-size: 2rem;
+    color: #333; 
 }
 
 .form-title {
@@ -525,6 +525,7 @@
 }
 
 /* Status message styling */
+
 .message {
     padding: 1rem;
     border-radius: 8px;

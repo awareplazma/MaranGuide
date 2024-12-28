@@ -5,7 +5,7 @@ if (!isset($_SESSION['admin_id']) || !isset($_SESSION['role']) || $_SESSION['rol
     exit();
 }
 
-// Get owner's attraction details
+// Get owner's attraction details tp be set in session
 $owner_id = $_SESSION['admin_id'];
 $attraction_query = "SELECT * FROM attraction WHERE admin_id = ?";
 $stmt = $conn->prepare($attraction_query);
@@ -14,7 +14,7 @@ $stmt->execute();
 $result = $stmt->get_result();
 $attraction = $result->fetch_assoc();
 
-// Owner's detail
+// Owner's detail to be set in session
 $admin_id = $_SESSION['admin_id'];
 $owner_detail = "SELECT * FROM adminlist WHERE admin_id = ?";
 $stmt = $conn->prepare($owner_detail);

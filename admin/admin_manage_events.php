@@ -1,7 +1,8 @@
 <?php
 include 'admin_nav.php';
 
-$sql = "SELECT * FROM eventlist ORDER BY event_created_at DESC";
+$attraction_id = ($_SESSION['attraction_id']);
+$sql = "SELECT * FROM eventlist WHERE attraction_id = $attraction_id ORDER BY event_created_at DESC";
 $result = $conn->query($sql);
 ?>
 
@@ -54,8 +55,7 @@ $result = $conn->query($sql);
                             ?>
                             <div class="event-card">
                                 <div class="event-image-container">
-                                <img src="<?php echo !empty($row['event_thumbnails']) ? $row['event_thumbnails'] : '/MARANGUIDE/media/default_image.png'; ?>" 
-                                    alt="<?php echo htmlspecialchars($row['event_name']); ?>">
+                                <img src="<?php echo '/MARANGUIDE/' . htmlspecialchars($row['event_thumbnails']); ?>" alt="Gambar Laman Depan">
                                 </div>
                                 
                                 <div class="event-info">

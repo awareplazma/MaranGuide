@@ -40,6 +40,6 @@ function attachButiranAcaraScripts(attractionId, eventId) {
         }
     }
 
-    // Call the fetch function
+
     fetchEventDetails();
 }

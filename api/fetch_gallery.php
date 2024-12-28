@@ -1,15 +1,26 @@
 <?php
 ob_start();
+// Include database connection
+require_once($_SERVER['DOCUMENT_ROOT'] . '/MARANGUIDE/maranguide_connection.php');
+
 // Enable error reporting for debugging
 error_reporting(E_ALL);
 ini_set('display_errors', 1);
+
+// Set up error log file
+ini_set('log_errors', 1);
+ini_set('error_log', $_SERVER['DOCUMENT_ROOT'] . '/MARANGUIDE/logs/api_errors.log');
 
 // Set headers to ensure JSON response
 header('Content-Type: application/json');
 header('Access-Control-Allow-Origin: *');
 
-// Include database connection
-require_once($_SERVER['DOCUMENT_ROOT'] . '/MARANGUIDE/maranguide_connection.php');
+
+
+// Check database connection
+if (!isset($conn) || !$conn) {
+    returnJsonError('Database connection failed.');
+}
 
 // Function to return JSON error
 function returnJsonError($message) {
@@ -121,11 +132,11 @@ try {
     echo json_encode($response);
 
 } catch (Exception $e) {
-    // DEBUG POINT 7: Catch and log any exceptions
+    // Catch and log any exceptions
     error_log("Exception occurred: " . $e->getMessage());
     returnJsonError($e->getMessage());
 } finally {
-    // Close connections
+ 
     if (isset($countStmt)) mysqli_stmt_close($countStmt);
     if (isset($stmt)) mysqli_stmt_close($stmt);
     mysqli_close($conn);

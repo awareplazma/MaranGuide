@@ -1,4 +1,4 @@
-<form id="AttractionForm" action="src/process/edit_attraction_info.php" method="POST" enctype="multipart/form-data">
+<form id="AttractionForm" action="/MARANGUIDE/admin/src/process/edit_attraction_info.php" method="POST" enctype="multipart/form-data">
 <input type="hidden" name="attraction_id" value="<?php echo htmlspecialchars($attraction_data['attraction_id']); ?>">
 
 
@@ -22,17 +22,17 @@
         <!-- Maklumat Ringkas-->
 
         <div class="row">
-            <div class="input-field col s12">
-                <i class="material-icons prefix">event</i>
-                <textarea id="event_name" name="event_name" class="materialize-textarea" required><?php echo htmlspecialchars($attraction_data['attraction_name']); ?></textarea>
-                <label for="event_name">Nama Tempat Tarikan</label>
-            </div>
+                <div class="input-field col s12">
+                    <i class="material-icons prefix">event</i>
+                    <textarea id="attraction_name" name="attraction_name" class="materialize-textarea"><?php echo htmlspecialchars($attraction_data['attraction_name']); ?></textarea>
+                    <label for="attraction_name">Nama Tempat Tarikan</label>
+                </div>
 
-            <div class="input-field col s12">
-                <i class="material-icons prefix">description</i>
-                <textarea id="event_description" name="event_description" class="materialize-textarea" required><?php echo htmlspecialchars($attraction_data['attraction_description']); ?></textarea>
-                <label for="event_description">Butiran Ringkas</label>
-            </div>
+                <div class="input-field col s12">
+                    <i class="material-icons prefix">description</i>
+                    <textarea id="attraction_description" name="attraction_description" class="materialize-textarea"><?php echo htmlspecialchars($attraction_data['attraction_description']); ?></textarea>
+                    <label for="attraction_description">Butiran Ringkas</label>
+                </div>
         </div>
 
           <!-- Hari Operasi -->
@@ -80,40 +80,36 @@
         
          <!-- Waktu Operasi -->
 
-        <div class="row">
-            <div class="col s12 m6">
-                <div class="datetime-wrapper">
-                    <label>Waktu Buka</label>
-                    <input type="time" name="event_start_date" class="validate" value="<?php echo date('H:i', strtotime($attraction_data['attraction_opening_hours'])); ?>" required>
+        < <div class="row">
+                <div class="col s12 m6">
+                    <div class="datetime-wrapper">
+                        <label>Waktu Buka</label>
+                        <input type="time" name="attraction_start_hours" class="validate" value="<?php echo date('H:i', strtotime($attraction_data['attraction_opening_hours'])); ?>">
+                    </div>
+                </div>
+                
+                <div class="col s12 m6">
+                    <div class="datetime-wrapper">
+                        <label>Waktu Tutup</label>
+                        <input type="time" name="attraction_closing_hours" class="validate" value="<?php echo date('H:i', strtotime($attraction_data['attraction_closing_hours'])); ?>">
+                    </div>
                 </div>
             </div>
-            
-            <div class="col s12 m6">
-                <div class="datetime-wrapper">
-                    <label>Waktu Tutup</label>
-                    <input type="time" name="event_end_date" class="validate" value="<?php echo date('H:i', strtotime($attraction_data['attraction_closing_hours'])); ?>" required>
+
+            <div class="row">
+                <div class="col s12">
+                    <div class="input-field">
+                        <select name="attraction_status">
+                            <option value="" disabled>Choose event status</option>
+                            <option value="draf">Draf</option>
+                            <option value="aktif">Aktif</option>
+                            <option value="completed">Selesai</option>
+                        </select>
+                        <label>Event Status</label>
+                    </div>
                 </div>
             </div>
         </div>
-    
-
-    <!-- Status  -->
-    
-        <div class="row">
-            <div class="col s12">
-                <div class="input-field">
-                    <select name="event_status" required>
-                        <option value="" disabled>Choose event status</option>
-                        <option value="draf">Draf</option>
-                        <option value="active">Aktif</option>
-                        <option value="completed">Selesai</option>
-                    </select>
-                    <label>Event Status</label>
-                </div>
-            </div>
-        </div>
-    </div>
-
     <!-- Hidden Fields -->
     
     <input type="hidden" name="event_created_at" value="<?php echo date('Y-m-d H:i:s'); ?>">

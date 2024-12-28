@@ -3,6 +3,16 @@ function attachUlasanScripts(attractionId) {
         fetchComment: fetchComment
     };
 
+     //Write comment button
+    const writeCommentBtn = document.getElementById('write-comment');
+    if (writeCommentBtn) {
+        writeCommentBtn.addEventListener('click', function(e) {
+            e.preventDefault();
+            // Redirect to the comment form page with the attraction ID
+            window.location.href = `/MARANGUIDE/visitor/leave-comment.html?id=${attractionId}`;
+        });
+    }
+
     async function fetchComment(page = 1) {
         if (!attractionId) {
             displayErrorMessage('Invalid attraction selection');
@@ -45,7 +55,6 @@ function attachUlasanScripts(attractionId) {
                 return;
             }
 
-            // Fix: Use data.comments instead of undefined comments variable
             if (!data.comments || data.comments.length === 0) {
                 displayNoMediaMessage();
                 return;
@@ -113,7 +122,7 @@ function attachUlasanScripts(attractionId) {
         }
     }
 
-    // Helper functions remain the same...
+    
     function displayErrorMessage(message) {
         const container = document.getElementById('comment-container');
         if (container) {
@@ -163,3 +172,4 @@ function attachUlasanScripts(attractionId) {
     // Initialize the first fetch
     fetchComment();
 }
+

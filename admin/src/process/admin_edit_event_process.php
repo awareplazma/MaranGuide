@@ -1,7 +1,7 @@
 <?php
-include $_SERVER['DOCUMENT_ROOT'] . '/maranguide_connection.php';
+include $_SERVER['DOCUMENT_ROOT'] . '/MARANGUIDE/maranguide_connection.php';
 
-// Check if user is logged in and has necessary permissions
+
 if (!isset($_SESSION['admin_id'])) {
     $_SESSION['error'] = "Unauthorized access";
     header("Location: admin_login.php");

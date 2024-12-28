@@ -1,12 +1,12 @@
 <?php
-include $_SERVER['DOCUMENT_ROOT'] . '/maranguide_connection.php';
+include $_SERVER['DOCUMENT_ROOT'] . '/MARANGUIDE/maranguide_connection.php';
 
 function isValidFileType($file) {
     $allowed_types = ['image/jpeg', 'image/png', 'image/gif', 'video/mp4', 'video/webm'];
     return in_array($file['type'], $allowed_types);
 }
 
-// Function to generate unique filename
+// Function to generate unique filename. Change if needed
 function generateUniqueFilename($original_name, $file_extension) {
     return uniqid() . '_' . time() . '.' . $file_extension;
 }
@@ -36,7 +36,7 @@ try {
 
         // Use the media title and description from the form
         $media_title = trim($_POST['media_title']);
-        $media_description = trim($_POST['media_description']); // Fix: use media_description, not media_title
+        $media_description = trim($_POST['media_description']); 
         
         // Validate media title
         if (empty($media_title)) {
@@ -66,21 +66,21 @@ try {
             throw new Exception('File size exceeds maximum limit of 10MB');
         }
         
-        // Define separate upload directories for images and videos
-        $image_upload_dir = $_SERVER['DOCUMENT_ROOT']. '/media/attraction/' .$attraction_name . '/pictures';
-        $video_upload_dir = $_SERVER['DOCUMENT_ROOT'] . '/media/attraction/'. $attraction_name . '/videos';
+        // Defining separate upload directories for images and videos
+        $image_upload_dir = $_SERVER['DOCUMENT_ROOT']. '/MARANGUIDE/media/attraction/' .$attraction_name . '/pictures';
+        $video_upload_dir = $_SERVER['DOCUMENT_ROOT'] . '/MARANGUIDE/media/attraction/'. $attraction_name . '/videos';
         
-        // Determine media type and upload directory
+        // Determining media type and upload directory
         $is_video = strpos($file['type'], 'video/') === 0;
         $media_type = $is_video ? 'video' : 'image';
         $upload_dir = $is_video ? $video_upload_dir : $image_upload_dir;
         
-        // Ensure upload directory exists
+        // Check upload directory exists
         if (!is_dir($upload_dir) && !mkdir($upload_dir, 0755, true)) {
             throw new Exception('Failed to create upload directory');
         }
         
-        // Generate unique filename Ubah nanti ikut nama
+        // Generate unique filename. UChange name if necessary
         $file_extension = pathinfo($file['name'], PATHINFO_EXTENSION);
         $new_filename = generateUniqueFilename($file['name'], $file_extension);
         $file_path = $upload_dir . '/' . $new_filename;
@@ -105,24 +105,24 @@ try {
 
         $stmt = mysqli_prepare($conn, $sql);
         
-        // Check if preparation was successful
+     
         if ($stmt === false) {
             die('MySQLi prepare error: ' . mysqli_error($conn));
         }
 
-        // Bind parameters to the statement
+      
         mysqli_stmt_bind_param($stmt, 'issss', $attraction_id, $media_path, $media_type, $media_title, $media_description);
 
-        // Execute the statement
+        
         if (!mysqli_stmt_execute($stmt)) {
             die('MySQLi execute error: ' . mysqli_error($conn));
         }
         
-        // Set success message
+        // Success message and redirection
         $_SESSION['success_message'] = 'Media uploaded successfully';
         
-        // Redirect back to attraction page
-        header("Location: /admin/admin_manage_attraction.php?id=" . $attraction_id);
+        
+        header("Location: ../../admin_manage_attraction.php?id=" . $attraction_id);
         exit();
         
     } else {
@@ -130,17 +130,17 @@ try {
     }
     
 } catch (Exception $e) {
-    // Log the error (optional but recommended)
+    // Error log just in case
     error_log('Media Upload Error: ' . $e->getMessage());
     
-    // Set error message
+    // Error message and redirection
     $_SESSION['error_message'] = $e->getMessage();
     
-    // Redirect back to form with attraction ID
+    
     if (isset($attraction_id)) {
-        header("Location: /admin/admin_manage_attraction.php?id=" . $attraction_id);
+        header("Location: ../../admin_manage_attraction.php?id=" . $attraction_id);
     } else {
-        header("Location: /admin/admin_manage_attraction.php");
+        header("Location: ../../admin/admin_manage_attraction.php");
     }
     exit();
 }

@@ -1,17 +1,18 @@
-function attachGaleriAcaraScripts(attractionId) {
-    // [FIX 1] Ensure function is globally accessible for pagination
+function attachGaleriAcaraScripts(attractionId, eventId) {
+    // Ensure function is globally accessible for pagination
     window.attachGaleriAcaraScripts = {
         fetchGallery: fetchGallery
     };
 
     async function fetchGallery(page = 1) {
-        // [FIX 2] Consistent error handling and input validation
+    
+        // Error handling and input validation
         if (!attractionId) {
             displayErrorMessage('Invalid attraction selection');
             return;
         }
 
-        // [FIX 3] Select DOM elements with more robust error checking
+        
         const container = document.getElementById('gallery-container');
         const paginationContainer = document.getElementById('pagination');
         const loadingIndicator = document.getElementById('loading');
@@ -30,8 +31,8 @@ function attachGaleriAcaraScripts(attractionId) {
         paginationContainer.innerHTML = '';
 
         try {
-            // [FIX 4] Improved URL construction and fetch configuration
-            const url = `/MARANGUIDE/api/fetch_event_gallery.php?page=${page}&eventId=${eventId}`;
+            
+            const url = `/MARANGUIDE/api/fetch_event_gallery.php?page=${page}&eventId=${eventId}&attractionId=${attractionId}`;
             
             const response = await fetch(url, {
                 method: 'GET',
@@ -40,29 +41,32 @@ function attachGaleriAcaraScripts(attractionId) {
                 }
             });
 
-            // [FIX 5] Comprehensive error handling
+            // Error handling
             if (!response.ok) {
                 throw new Error(`HTTP error! status: ${response.status}`);
             }
 
-            // Parse JSON safely
+            // Parse JSON 
             const data = await response.json();
+            console.log('API Response:', data);
 
-            // [FIX 6] API-level error checking
+            // API-level error checking
             if (data.error) {
                 displayErrorMessage(data.message || 'Unknown error occurred');
                 return;
             }
 
-            const galleries = data.galleries || [];
-
-            // [FIX 7] Handle empty galleries
+            const galleries = Array.isArray(data) ? data : [];
+            console.log('Number of galleries:', galleries.length);
+            // Handle empty galleries
             if (galleries.length === 0) {
                 displayNoMediaMessage();
                 return;
             }
 
-            // [FIX 8] Improved gallery rendering with error handling
+            console.log('Fetched Galleries:', galleries);
+
+            // Gallery rendering with error handling
             galleries.forEach(gallery => {
                 try {
                     const cardClone = galleryCardTemplate.content.cloneNode(true);
@@ -73,7 +77,7 @@ function attachGaleriAcaraScripts(attractionId) {
                     imgElement.src = gallery.media_path || '../media/default_image.png';
                     imgElement.alt = gallery.media_title || 'Gallery Image';
                     imgElement.onerror = () => {
-                        imgElement.src = '../media/default_image.png';
+                        imgElement.src = '/MARANGUIDE/media/default_image.png';
                     };
 
                     // Title and description
@@ -85,7 +89,7 @@ function attachGaleriAcaraScripts(attractionId) {
                     descriptionElement.textContent = gallery.media_description || 'No description';
                     mediaTypeElement.textContent = gallery.media_type || 'Media';
 
-                    // [FIX 9] Add interaction
+                    // Click interaction
                     cardElement.addEventListener('click', () => {
                         cardElement.classList.toggle('card-zoomed');
                     });
@@ -96,11 +100,11 @@ function attachGaleriAcaraScripts(attractionId) {
                 }
             });
 
-            // [FIX 10] Improved pagination rendering
+            // Pagination rendering
             renderPagination(data.currentPage, data.totalPages);
 
         } catch (error) {
-            // [FIX 11] Comprehensive error handling
+            // Error handling
             console.error('Gallery fetch error:', error);
             
             if (error.name === 'AbortError') {
@@ -116,7 +120,6 @@ function attachGaleriAcaraScripts(attractionId) {
         }
     }
 
-    // Helper functions remain mostly the same
     function displayErrorMessage(message) {
         const container = document.getElementById('gallery-container');
         if (container) {
@@ -163,6 +166,6 @@ function attachGaleriAcaraScripts(attractionId) {
         }
     }
 
-    // Initial gallery fetch
+   
     fetchGallery();
 }

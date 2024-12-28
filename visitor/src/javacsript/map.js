@@ -5,7 +5,7 @@ const MapState = {
     currentUserLocation: null
 };
 
-// ORIGINAL: Utility Functions
+// Utility Functions
 const MapUtils = {
     showLoading() {
         const loader = document.getElementById('loading');
@@ -33,7 +33,7 @@ const MapUtils = {
     }
 };
 
-// ORIGINAL: Attractions Fetcher
+// Attractions Fetcher
 async function fetchAttractions() {
     try {
         MapUtils.showLoading();
@@ -59,7 +59,7 @@ async function fetchAttractions() {
     }
 }
 
-// ORIGINAL: Add Attractions to Map
+// Add Attractions to Map
 function renderAttractions(attractions) {
     // Clear existing markers
     MapState.attractionMarkers.forEach(marker => MapState.map.removeLayer(marker));
@@ -94,7 +94,7 @@ function renderAttractions(attractions) {
     }
 }
 
-// UPDATED: Page Initialization
+// UPage Initialization
 async function initPage() {
     try {
         // Show loading indicator
@@ -141,7 +141,7 @@ async function initPage() {
     }
 }
 
-// UPDATED: Map Initialization
+// Map Initialization
 function initializeMap() {
     try {
         MapState.map = L.map('map', {
@@ -202,7 +202,7 @@ function initializeMap() {
     }
 }
 
-// UPDATED: Document Ready Event
+
 document.addEventListener('DOMContentLoaded', () => {
     initPage();
     initializeMap();

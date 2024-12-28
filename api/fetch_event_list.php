@@ -1,4 +1,6 @@
 <?php
+require_once($_SERVER['DOCUMENT_ROOT'] . '/MARANGUIDE/maranguide_connection.php');
+
 // Disable all error output to prevent HTML errors
 error_reporting(0);
 ini_set('display_errors', 0);
@@ -7,8 +9,7 @@ ini_set('display_errors', 0);
 header('Content-Type: application/json');
 header('Access-Control-Allow-Origin: *');
 
-// Include database connection
-require_once($_SERVER['DOCUMENT_ROOT'] . '/MARANGUIDE/maranguide_connection.php');
+
 
 // Function to return JSON error
 function returnJsonError($message) {
@@ -37,7 +38,7 @@ try {
 
     // Prepared statement for count
     $countStmt = mysqli_prepare($conn, 
-        "SELECT COUNT(*) AS total FROM eventlist WHERE attraction_id = ?"
+        "SELECT COUNT(*) AS total FROM eventlist WHERE attraction_id = ? AND event_status ='active'"
     );
     mysqli_stmt_bind_param($countStmt, "i", $attractionId);
     mysqli_stmt_execute($countStmt);
@@ -51,7 +52,7 @@ try {
         "SELECT 
             *
         FROM eventlist
-        WHERE attraction_id = ? 
+        WHERE attraction_id = ? AND event_status ='active'
         ORDER BY event_created_at DESC 
         LIMIT ? OFFSET ?"
     );
@@ -79,7 +80,7 @@ try {
 } catch (Exception $e) {
     returnJsonError($e->getMessage());
 } finally {
-    // Close connections
+    
     if (isset($countStmt)) mysqli_stmt_close($countStmt);
     if (isset($stmt)) mysqli_stmt_close($stmt);
     mysqli_close($conn);

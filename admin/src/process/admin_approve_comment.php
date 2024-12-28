@@ -12,7 +12,6 @@ include $_SERVER['DOCUMENT_ROOT'] . '/MARANGUIDE/maranguide_connection.php';
 
 if ($_SERVER['REQUEST_METHOD'] === 'GET') {
     try {
-        // Ensure comment_id is provided
         if (empty($_GET['comment_id'])) {
             throw new Exception("Comment ID not provided.");
         }
@@ -20,7 +19,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
         // Sanitize input
         $comment_id = intval($_GET['comment_id']);
 
-        // Begin transaction
+
         $conn->begin_transaction();
 
         // Update approval_status in the comments table
@@ -41,13 +40,13 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
         $stmt->close();
         $conn->commit();
 
-        // Set success message and redirect
+        // Success message and redirect
         $_SESSION['success_message'] = "Comment approved successfully!";
         header("Location: ../../view_feedback.php");
         exit();
 
     } catch (Exception $e) {
-        // Rollback on error
+        // Rollback if error
         if (isset($conn)) {
             $conn->rollback();
         }

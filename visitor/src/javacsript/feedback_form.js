@@ -38,7 +38,7 @@ document.addEventListener('DOMContentLoaded', function () {
             const username = document.getElementById('title');
             const content = document.getElementById('content');
 
-            // Basic client-side validation
+            // Client-side validation
             if (!username.value.trim()) {
                 M.toast({ html: 'Tajuk isu yang dihadapi semasa melayari' });
                 username.focus();
@@ -59,7 +59,7 @@ document.addEventListener('DOMContentLoaded', function () {
             const formData = new FormData(form);
 
             try {
-                const response = await fetch('/api/feedback.php', {
+                const response = await fetch('/MARANGUIDE/api/feedback.php', {
                     method: "POST",
                     body: formData
                 });

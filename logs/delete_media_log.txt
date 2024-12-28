@@ -1,0 +1,13 @@
+Log file created: 2024-12-22 14:11:10
+Attempting to delete media with ID: 67680b284e665_1734871848.mp4
+Media file not found: C:/xampp/htdocs/MARANGUIDE/media/attraction/Hutan Lipur Teladas/67680b284e665_1734871848.mp4
+Attempting to delete media with ID: 67680b284e665_1734871848.mp4
+Media file not found: C:/xampp/htdocs/MARANGUIDE/media/attraction/Hutan Lipur Teladas/67680b284e665_1734871848.mp4
+Attempting to delete media with ID: 67680b284e665_1734871848.mp4
+Media file not found: C:/xampp/htdocs/MARANGUIDE/media/attraction/Hutan Lipur Teladas/67680b284e665_1734871848.mp4
+Attempting to delete media with ID: 67680b284e665_1734871848.mp4
+Media file not found: C:/xampp/htdocs/MARANGUIDE/media/attraction/Hutan Lipur Teladas/67680b284e665_1734871848.mp4
+Attempting to delete media with ID: 67680b284e665_1734871848.mp4
+Media file not found: C:/xampp/htdocs/MARANGUIDE/media/attraction/Hutan Lipur Teladas/67680b284e665_1734871848.mp4
+Attempting to delete media with ID: 67680b284e665_1734871848.mp4
+Media file not found: C:/xampp/htdocs/MARANGUIDE/media/attraction/Hutan Lipur Teladas/67680b284e665_1734871848.mp4

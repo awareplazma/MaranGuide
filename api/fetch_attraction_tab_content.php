@@ -25,7 +25,7 @@ $tabFiles = [
     'galeri' => 'C:\\xampp\\htdocs\\MARANGUIDE\\visitor\\gallery.html',
     'ulasan' => 'C:\\xampp\\htdocs\\MARANGUIDE\\visitor\\comment-section.html',
     
-    //ulasan' => '/attraction-comment.html'
+    
 ];
 
 // Validate input
@@ -45,7 +45,7 @@ if (!isset($tabFiles[$tabId])) {
 // Get file path
 $filePath = $tabFiles[$tabId];
 
-// Check file existence with absolute path
+// Check file existence with absolute path in case of errors
 $fullPath = realpath($filePath);
 
 if (!$fullPath || !file_exists($fullPath)) {

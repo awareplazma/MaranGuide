@@ -64,7 +64,7 @@ document.addEventListener('DOMContentLoaded', function () {
             // Prevent Default submission
             event.preventDefault();
 
-            // IMPORTANT: Add hidden input for attraction ID if not already present
+            // IMPORTANT: Hidden input for attraction ID 
             let idInput = form.querySelector('input[name="id"]');
             if (!idInput && attractionId) {
                 idInput = document.createElement('input');
@@ -79,7 +79,7 @@ document.addEventListener('DOMContentLoaded', function () {
             const content = document.getElementById('content');
             const rating = document.getElementById('rating');
 
-            // Basic client-side validation
+            // Client-side validation
             if (!username.value.trim()) {
                 M.toast({ html: 'Sila masukkan nama anda' });
                 username.focus();
@@ -105,7 +105,7 @@ document.addEventListener('DOMContentLoaded', function () {
             const formData = new FormData(form);
 
             try {
-                const response = await fetch('/api/insert_comment.php', {
+                const response = await fetch('/MARANGUIDE/api/insert_comment.php', {
                     method: "POST",
                     body: formData
                 });

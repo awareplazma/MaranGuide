@@ -743,3 +743,1680 @@ TabID: galeri-acara
 2024-12-20 05:39:18 - Request: ID=29, Tab=tarikan-acara
 2024-12-20 05:39:18 - Request: ID=29, Tab=galeri
 2024-12-20 05:39:18 - Request: ID=29, Tab=ulasan
+2024-12-20 08:09:54 - Request: ID=29, Tab=butiran-am
+2024-12-20 08:09:54 - Request: ID=29, Tab=galeri
+2024-12-20 08:09:54 - Request: ID=29, Tab=ulasan
+2024-12-20 08:09:54 - Request: ID=29, Tab=tarikan-acara
+2024-12-20 08:10:11 - Raw GET Parameters:
+Array
+(
+    [attractionId] => 29
+    [eventId] => 23
+    [tab] => butiran-acara
+)
+
+2024-12-20 08:10:11 - Parsed Parameters:
+AttractionID: 29
+EventID: 23
+TabID: butiran-acara
+2024-12-20 08:10:11 - Raw GET Parameters:
+Array
+(
+    [attractionId] => 29
+    [eventId] => 23
+    [tab] => galeri-acara
+)
+
+2024-12-20 08:10:11 - Parsed Parameters:
+AttractionID: 29
+EventID: 23
+TabID: galeri-acara
+2024-12-20 08:10:13 - Request: ID=29, Tab=butiran-am
+2024-12-20 08:10:13 - Request: ID=29, Tab=tarikan-acara
+2024-12-20 08:10:13 - Request: ID=29, Tab=galeri
+2024-12-20 08:10:13 - Request: ID=29, Tab=ulasan
+2024-12-20 08:13:55 - Raw GET Parameters:
+Array
+(
+    [attractionId] => 29
+    [eventId] => 23
+    [tab] => butiran-acara
+)
+
+2024-12-20 08:13:55 - Parsed Parameters:
+AttractionID: 29
+EventID: 23
+TabID: butiran-acara
+2024-12-20 08:13:55 - Raw GET Parameters:
+Array
+(
+    [attractionId] => 29
+    [eventId] => 23
+    [tab] => galeri-acara
+)
+
+2024-12-20 08:13:55 - Parsed Parameters:
+AttractionID: 29
+EventID: 23
+TabID: galeri-acara
+2024-12-20 08:16:15 - Request: ID=29, Tab=butiran-am
+2024-12-20 08:16:15 - Request: ID=29, Tab=tarikan-acara
+2024-12-20 08:16:15 - Request: ID=29, Tab=galeri
+2024-12-20 08:16:15 - Request: ID=29, Tab=ulasan
+2024-12-20 08:16:22 - Raw GET Parameters:
+Array
+(
+    [attractionId] => 29
+    [eventId] => 23
+    [tab] => butiran-acara
+)
+
+2024-12-20 08:16:22 - Parsed Parameters:
+AttractionID: 29
+EventID: 23
+TabID: butiran-acara
+2024-12-20 08:16:22 - Raw GET Parameters:
+Array
+(
+    [attractionId] => 29
+    [eventId] => 23
+    [tab] => galeri-acara
+)
+
+2024-12-20 08:16:22 - Parsed Parameters:
+AttractionID: 29
+EventID: 23
+TabID: galeri-acara
+2024-12-20 08:16:26 - Request: ID=29, Tab=butiran-am
+2024-12-20 08:16:26 - Request: ID=29, Tab=tarikan-acara
+2024-12-20 08:16:26 - Request: ID=29, Tab=galeri
+2024-12-20 08:16:26 - Request: ID=29, Tab=ulasan
+2024-12-20 08:41:54 - Request: ID=29, Tab=butiran-am
+2024-12-20 08:41:54 - Request: ID=29, Tab=tarikan-acara
+2024-12-20 08:41:54 - Request: ID=29, Tab=galeri
+2024-12-20 08:41:54 - Request: ID=29, Tab=ulasan
+2024-12-20 08:42:33 - Request: ID=29, Tab=butiran-am
+2024-12-20 08:42:33 - Request: ID=29, Tab=tarikan-acara
+2024-12-20 08:42:33 - Request: ID=29, Tab=galeri
+2024-12-20 08:42:33 - Request: ID=29, Tab=ulasan
+2024-12-20 08:42:46 - Raw GET Parameters:
+Array
+(
+    [attractionId] => 29
+    [eventId] => 23
+    [tab] => butiran-acara
+)
+
+2024-12-20 08:42:46 - Parsed Parameters:
+AttractionID: 29
+EventID: 23
+TabID: butiran-acara
+2024-12-20 08:42:46 - Raw GET Parameters:
+Array
+(
+    [attractionId] => 29
+    [eventId] => 23
+    [tab] => galeri-acara
+)
+
+2024-12-20 08:42:46 - Parsed Parameters:
+AttractionID: 29
+EventID: 23
+TabID: galeri-acara
+2024-12-20 08:42:52 - Request: ID=29, Tab=butiran-am
+2024-12-20 08:42:52 - Request: ID=29, Tab=tarikan-acara
+2024-12-20 08:42:52 - Request: ID=29, Tab=galeri
+2024-12-20 08:42:52 - Request: ID=29, Tab=ulasan
+2024-12-20 08:43:54 - Request: ID=29, Tab=butiran-am
+2024-12-20 08:43:54 - Request: ID=29, Tab=tarikan-acara
+2024-12-20 08:43:54 - Request: ID=29, Tab=galeri
+2024-12-20 08:43:54 - Request: ID=29, Tab=ulasan
+2024-12-20 08:48:29 - Request: ID=29, Tab=butiran-am
+2024-12-20 08:48:29 - Request: ID=29, Tab=tarikan-acara
+2024-12-20 08:48:29 - Request: ID=29, Tab=galeri
+2024-12-20 08:48:29 - Request: ID=29, Tab=ulasan
+2024-12-20 08:48:33 - Request: ID=29, Tab=butiran-am
+2024-12-20 08:48:33 - Request: ID=29, Tab=tarikan-acara
+2024-12-20 08:48:33 - Request: ID=29, Tab=galeri
+2024-12-20 08:48:33 - Request: ID=29, Tab=ulasan
+2024-12-20 08:50:13 - Request: ID=29, Tab=butiran-am
+2024-12-20 08:50:13 - Request: ID=29, Tab=tarikan-acara
+2024-12-20 08:50:13 - Request: ID=29, Tab=galeri
+2024-12-20 08:50:13 - Request: ID=29, Tab=ulasan
+2024-12-20 08:52:47 - Request: ID=29, Tab=butiran-am
+2024-12-20 08:52:47 - Request: ID=29, Tab=tarikan-acara
+2024-12-20 08:52:47 - Request: ID=29, Tab=galeri
+2024-12-20 08:52:47 - Request: ID=29, Tab=ulasan
+2024-12-20 08:53:13 - Request: ID=29, Tab=butiran-am
+2024-12-20 08:53:13 - Request: ID=29, Tab=tarikan-acara
+2024-12-20 08:53:13 - Request: ID=29, Tab=galeri
+2024-12-20 08:53:13 - Request: ID=29, Tab=ulasan
+2024-12-20 09:03:20 - Request: ID=29, Tab=butiran-am
+2024-12-20 09:03:20 - Request: ID=29, Tab=tarikan-acara
+2024-12-20 09:03:20 - Request: ID=29, Tab=galeri
+2024-12-20 09:03:20 - Request: ID=29, Tab=ulasan
+2024-12-20 09:04:20 - Request: ID=29, Tab=butiran-am
+2024-12-20 09:04:20 - Request: ID=29, Tab=tarikan-acara
+2024-12-20 09:04:20 - Request: ID=29, Tab=galeri
+2024-12-20 09:04:20 - Request: ID=29, Tab=ulasan
+2024-12-20 09:08:04 - Request: ID=32, Tab=butiran-am
+2024-12-20 09:08:04 - Request: ID=32, Tab=tarikan-acara
+2024-12-20 09:08:04 - Request: ID=32, Tab=ulasan
+2024-12-20 09:08:04 - Request: ID=32, Tab=galeri
+2024-12-20 09:08:13 - Request: ID=32, Tab=butiran-am
+2024-12-20 09:08:13 - Request: ID=32, Tab=tarikan-acara
+2024-12-20 09:08:13 - Request: ID=32, Tab=galeri
+2024-12-20 09:08:13 - Request: ID=32, Tab=ulasan
+2024-12-20 09:08:35 - Request: ID=29, Tab=butiran-am
+2024-12-20 09:08:35 - Request: ID=29, Tab=tarikan-acara
+2024-12-20 09:08:35 - Request: ID=29, Tab=galeri
+2024-12-20 09:08:35 - Request: ID=29, Tab=ulasan
+2024-12-20 09:08:39 - Request: ID=32, Tab=butiran-am
+2024-12-20 09:08:39 - Request: ID=32, Tab=tarikan-acara
+2024-12-20 09:08:39 - Request: ID=32, Tab=galeri
+2024-12-20 09:08:39 - Request: ID=32, Tab=ulasan
+2024-12-20 09:08:42 - Request: ID=29, Tab=butiran-am
+2024-12-20 09:08:42 - Request: ID=29, Tab=tarikan-acara
+2024-12-20 09:08:42 - Request: ID=29, Tab=galeri
+2024-12-20 09:08:42 - Request: ID=29, Tab=ulasan
+2024-12-20 09:19:26 - Request: ID=32, Tab=butiran-am
+2024-12-20 09:19:26 - Request: ID=32, Tab=tarikan-acara
+2024-12-20 09:19:26 - Request: ID=32, Tab=galeri
+2024-12-20 09:19:26 - Request: ID=32, Tab=ulasan
+2024-12-20 09:22:47 - Request: ID=32, Tab=butiran-am
+2024-12-20 09:22:47 - Request: ID=32, Tab=tarikan-acara
+2024-12-20 09:22:47 - Request: ID=32, Tab=galeri
+2024-12-20 09:22:47 - Request: ID=32, Tab=ulasan
+2024-12-20 09:23:02 - Request: ID=32, Tab=butiran-am
+2024-12-20 09:23:02 - Request: ID=32, Tab=tarikan-acara
+2024-12-20 09:23:02 - Request: ID=32, Tab=galeri
+2024-12-20 09:23:02 - Request: ID=32, Tab=ulasan
+2024-12-20 09:23:19 - Request: ID=32, Tab=butiran-am
+2024-12-20 09:23:19 - Request: ID=32, Tab=tarikan-acara
+2024-12-20 09:23:19 - Request: ID=32, Tab=galeri
+2024-12-20 09:23:19 - Request: ID=32, Tab=ulasan
+2024-12-20 09:23:22 - Request: ID=29, Tab=butiran-am
+2024-12-20 09:23:22 - Request: ID=29, Tab=tarikan-acara
+2024-12-20 09:23:22 - Request: ID=29, Tab=galeri
+2024-12-20 09:23:22 - Request: ID=29, Tab=ulasan
+2024-12-20 09:23:31 - Request: ID=29, Tab=butiran-am
+2024-12-20 09:23:31 - Request: ID=29, Tab=tarikan-acara
+2024-12-20 09:23:31 - Request: ID=29, Tab=galeri
+2024-12-20 09:23:31 - Request: ID=29, Tab=ulasan
+2024-12-20 09:23:40 - Request: ID=29, Tab=butiran-am
+2024-12-20 09:23:40 - Request: ID=29, Tab=tarikan-acara
+2024-12-20 09:23:40 - Request: ID=29, Tab=galeri
+2024-12-20 09:23:40 - Request: ID=29, Tab=ulasan
+2024-12-20 09:23:41 - Request: ID=29, Tab=butiran-am
+2024-12-20 09:23:41 - Request: ID=29, Tab=tarikan-acara
+2024-12-20 09:23:41 - Request: ID=29, Tab=galeri
+2024-12-20 09:23:41 - Request: ID=29, Tab=ulasan
+2024-12-20 09:23:41 - Request: ID=29, Tab=butiran-am
+2024-12-20 09:23:41 - Request: ID=29, Tab=tarikan-acara
+2024-12-20 09:23:41 - Request: ID=29, Tab=galeri
+2024-12-20 09:23:41 - Request: ID=29, Tab=ulasan
+2024-12-20 09:23:42 - Request: ID=29, Tab=butiran-am
+2024-12-20 09:23:42 - Request: ID=29, Tab=tarikan-acara
+2024-12-20 09:23:42 - Request: ID=29, Tab=galeri
+2024-12-20 09:23:42 - Request: ID=29, Tab=ulasan
+2024-12-20 09:24:33 - Request: ID=29, Tab=butiran-am
+2024-12-20 09:24:33 - Request: ID=29, Tab=tarikan-acara
+2024-12-20 09:24:33 - Request: ID=29, Tab=galeri
+2024-12-20 09:24:33 - Request: ID=29, Tab=ulasan
+2024-12-20 09:24:46 - Request: ID=29, Tab=butiran-am
+2024-12-20 09:24:46 - Request: ID=29, Tab=tarikan-acara
+2024-12-20 09:24:46 - Request: ID=29, Tab=galeri
+2024-12-20 09:24:46 - Request: ID=29, Tab=ulasan
+2024-12-20 09:24:56 - Request: ID=29, Tab=butiran-am
+2024-12-20 09:24:56 - Request: ID=29, Tab=tarikan-acara
+2024-12-20 09:24:56 - Request: ID=29, Tab=galeri
+2024-12-20 09:24:56 - Request: ID=29, Tab=ulasan
+2024-12-20 09:24:59 - Request: ID=32, Tab=butiran-am
+2024-12-20 09:24:59 - Request: ID=32, Tab=tarikan-acara
+2024-12-20 09:24:59 - Request: ID=32, Tab=galeri
+2024-12-20 09:24:59 - Request: ID=32, Tab=ulasan
+2024-12-20 09:25:00 - Raw GET Parameters:
+Array
+(
+    [attractionId] => 32
+    [eventId] => 24
+    [tab] => butiran-acara
+)
+
+2024-12-20 09:25:00 - Parsed Parameters:
+AttractionID: 32
+EventID: 24
+TabID: butiran-acara
+2024-12-20 09:25:00 - Raw GET Parameters:
+Array
+(
+    [attractionId] => 32
+    [eventId] => 24
+    [tab] => galeri-acara
+)
+
+2024-12-20 09:25:00 - Parsed Parameters:
+AttractionID: 32
+EventID: 24
+TabID: galeri-acara
+2024-12-20 09:40:50 - Raw GET Parameters:
+Array
+(
+    [attractionId] => 32
+    [eventId] => 24
+    [tab] => butiran-acara
+)
+
+2024-12-20 09:40:50 - Parsed Parameters:
+AttractionID: 32
+EventID: 24
+TabID: butiran-acara
+2024-12-20 09:40:50 - Raw GET Parameters:
+Array
+(
+    [attractionId] => 32
+    [eventId] => 24
+    [tab] => galeri-acara
+)
+
+2024-12-20 09:40:50 - Parsed Parameters:
+AttractionID: 32
+EventID: 24
+TabID: galeri-acara
+2024-12-20 09:42:31 - Raw GET Parameters:
+Array
+(
+    [attractionId] => 32
+    [eventId] => 24
+    [tab] => butiran-acara
+)
+
+2024-12-20 09:42:31 - Parsed Parameters:
+AttractionID: 32
+EventID: 24
+TabID: butiran-acara
+2024-12-20 09:42:31 - Raw GET Parameters:
+Array
+(
+    [attractionId] => 32
+    [eventId] => 24
+    [tab] => galeri-acara
+)
+
+2024-12-20 09:42:31 - Parsed Parameters:
+AttractionID: 32
+EventID: 24
+TabID: galeri-acara
+2024-12-20 09:45:25 - Raw GET Parameters:
+Array
+(
+    [attractionId] => 32
+    [eventId] => 24
+    [tab] => butiran-acara
+)
+
+2024-12-20 09:45:25 - Parsed Parameters:
+AttractionID: 32
+EventID: 24
+TabID: butiran-acara
+2024-12-20 09:45:25 - Raw GET Parameters:
+Array
+(
+    [attractionId] => 32
+    [eventId] => 24
+    [tab] => galeri-acara
+)
+
+2024-12-20 09:45:25 - Parsed Parameters:
+AttractionID: 32
+EventID: 24
+TabID: galeri-acara
+2024-12-20 09:50:24 - Raw GET Parameters:
+Array
+(
+    [attractionId] => 32
+    [eventId] => 24
+    [tab] => butiran-acara
+)
+
+2024-12-20 09:50:24 - Parsed Parameters:
+AttractionID: 32
+EventID: 24
+TabID: butiran-acara
+2024-12-20 09:50:24 - Raw GET Parameters:
+Array
+(
+    [attractionId] => 32
+    [eventId] => 24
+    [tab] => galeri-acara
+)
+
+2024-12-20 09:50:24 - Parsed Parameters:
+AttractionID: 32
+EventID: 24
+TabID: galeri-acara
+2024-12-20 09:52:59 - Raw GET Parameters:
+Array
+(
+    [attractionId] => 32
+    [eventId] => 24
+    [tab] => butiran-acara
+)
+
+2024-12-20 09:52:59 - Parsed Parameters:
+AttractionID: 32
+EventID: 24
+TabID: butiran-acara
+2024-12-20 09:52:59 - Raw GET Parameters:
+Array
+(
+    [attractionId] => 32
+    [eventId] => 24
+    [tab] => galeri-acara
+)
+
+2024-12-20 09:52:59 - Parsed Parameters:
+AttractionID: 32
+EventID: 24
+TabID: galeri-acara
+2024-12-20 09:53:19 - Raw GET Parameters:
+Array
+(
+    [attractionId] => 32
+    [eventId] => 24
+    [tab] => butiran-acara
+)
+
+2024-12-20 09:53:19 - Parsed Parameters:
+AttractionID: 32
+EventID: 24
+TabID: butiran-acara
+2024-12-20 09:53:19 - Raw GET Parameters:
+Array
+(
+    [attractionId] => 32
+    [eventId] => 24
+    [tab] => galeri-acara
+)
+
+2024-12-20 09:53:19 - Parsed Parameters:
+AttractionID: 32
+EventID: 24
+TabID: galeri-acara
+2024-12-20 09:53:58 - Raw GET Parameters:
+Array
+(
+    [attractionId] => 32
+    [eventId] => 24
+    [tab] => butiran-acara
+)
+
+2024-12-20 09:53:58 - Parsed Parameters:
+AttractionID: 32
+EventID: 24
+TabID: butiran-acara
+2024-12-20 09:53:58 - Raw GET Parameters:
+Array
+(
+    [attractionId] => 32
+    [eventId] => 24
+    [tab] => galeri-acara
+)
+
+2024-12-20 09:53:58 - Parsed Parameters:
+AttractionID: 32
+EventID: 24
+TabID: galeri-acara
+2024-12-20 09:54:44 - Raw GET Parameters:
+Array
+(
+    [attractionId] => 32
+    [eventId] => 24
+    [tab] => butiran-acara
+)
+
+2024-12-20 09:54:44 - Parsed Parameters:
+AttractionID: 32
+EventID: 24
+TabID: butiran-acara
+2024-12-20 09:54:44 - Raw GET Parameters:
+Array
+(
+    [attractionId] => 32
+    [eventId] => 24
+    [tab] => galeri-acara
+)
+
+2024-12-20 09:54:44 - Parsed Parameters:
+AttractionID: 32
+EventID: 24
+TabID: galeri-acara
+2024-12-20 09:57:34 - Raw GET Parameters:
+Array
+(
+    [attractionId] => 32
+    [eventId] => 24
+    [tab] => butiran-acara
+)
+
+2024-12-20 09:57:34 - Parsed Parameters:
+AttractionID: 32
+EventID: 24
+TabID: butiran-acara
+2024-12-20 09:57:34 - Raw GET Parameters:
+Array
+(
+    [attractionId] => 32
+    [eventId] => 24
+    [tab] => galeri-acara
+)
+
+2024-12-20 09:57:34 - Parsed Parameters:
+AttractionID: 32
+EventID: 24
+TabID: galeri-acara
+2024-12-20 09:58:06 - Raw GET Parameters:
+Array
+(
+    [attractionId] => 32
+    [eventId] => 24
+    [tab] => butiran-acara
+)
+
+2024-12-20 09:58:06 - Parsed Parameters:
+AttractionID: 32
+EventID: 24
+TabID: butiran-acara
+2024-12-20 09:58:06 - Raw GET Parameters:
+Array
+(
+    [attractionId] => 32
+    [eventId] => 24
+    [tab] => galeri-acara
+)
+
+2024-12-20 09:58:06 - Parsed Parameters:
+AttractionID: 32
+EventID: 24
+TabID: galeri-acara
+2024-12-20 10:00:38 - Raw GET Parameters:
+Array
+(
+    [attractionId] => 32
+    [eventId] => 24
+    [tab] => butiran-acara
+)
+
+2024-12-20 10:00:38 - Parsed Parameters:
+AttractionID: 32
+EventID: 24
+TabID: butiran-acara
+2024-12-20 10:00:38 - Raw GET Parameters:
+Array
+(
+    [attractionId] => 32
+    [eventId] => 24
+    [tab] => galeri-acara
+)
+
+2024-12-20 10:00:38 - Parsed Parameters:
+AttractionID: 32
+EventID: 24
+TabID: galeri-acara
+2024-12-20 10:01:48 - Raw GET Parameters:
+Array
+(
+    [attractionId] => 32
+    [eventId] => 24
+    [tab] => butiran-acara
+)
+
+2024-12-20 10:01:48 - Parsed Parameters:
+AttractionID: 32
+EventID: 24
+TabID: butiran-acara
+2024-12-20 10:01:48 - Raw GET Parameters:
+Array
+(
+    [attractionId] => 32
+    [eventId] => 24
+    [tab] => galeri-acara
+)
+
+2024-12-20 10:01:48 - Parsed Parameters:
+AttractionID: 32
+EventID: 24
+TabID: galeri-acara
+2024-12-20 10:02:57 - Raw GET Parameters:
+Array
+(
+    [attractionId] => 32
+    [eventId] => 24
+    [tab] => butiran-acara
+)
+
+2024-12-20 10:02:57 - Parsed Parameters:
+AttractionID: 32
+EventID: 24
+TabID: butiran-acara
+2024-12-20 10:02:57 - Raw GET Parameters:
+Array
+(
+    [attractionId] => 32
+    [eventId] => 24
+    [tab] => galeri-acara
+)
+
+2024-12-20 10:02:57 - Parsed Parameters:
+AttractionID: 32
+EventID: 24
+TabID: galeri-acara
+2024-12-22 10:12:58 - Request: ID=29, Tab=galeri
+-am
+ra
+2024-12-22 10:12:58 - Request: ID=29, Tab=ulasan
+2024-12-22 12:30:21 - Request: ID=29, Tab=galeri
+-acara
+2024-12-22 12:32:32 - Request: ID=29, Tab=butiran-am
+2024-12-22 12:32:32 - Request: ID=29, Tab=tarikan-acara
+2024-12-22 12:32:32 - Request: ID=29, Tab=galeri
+2024-12-22 12:32:32 - Request: ID=29, Tab=ulasan
+2024-12-22 12:33:57 - Request: ID=29, Tab=butiran-am
+2024-12-22 12:33:57 - Request: ID=29, Tab=tarikan-acara
+2024-12-22 12:33:57 - Request: ID=29, Tab=galeri
+2024-12-22 12:33:57 - Request: ID=29, Tab=ulasan
+2024-12-22 12:34:49 - Request: ID=32, Tab=butiran-am
+2024-12-22 12:34:49 - Request: ID=32, Tab=tarikan-acara
+2024-12-22 12:34:49 - Request: ID=32, Tab=ulasan
+2024-12-22 12:34:49 - Request: ID=32, Tab=galeri
+2024-12-22 12:34:56 - Request: ID=29, Tab=butiran-am
+2024-12-22 12:34:56 - Request: ID=29, Tab=tarikan-acara
+2024-12-22 12:34:56 - Request: ID=29, Tab=galeri
+2024-12-22 12:34:56 - Request: ID=29, Tab=ulasan
+2024-12-22 12:34:59 - Raw GET Parameters:
+Array
+(
+    [attractionId] => 29
+    [eventId] => 25
+    [tab] => galeri-acara
+)
+
+
+2024-12-22 12:34:59 - Parsed Parameters:
+AttractionID: 29
+EventID: 25
+TabID: galeri-acara
+2024-12-22 12:34:59 - Parsed Parameters:
+AttractionID: 29
+EventID: 25
+TabID: butiran-acara
+2024-12-22 12:35:28 - Request: ID=29, Tab=butiran-am
+2024-12-22 12:35:28 - Request: ID=29, Tab=tarikan-acara
+2024-12-22 12:35:28 - Request: ID=29, Tab=ulasan
+2024-12-22 12:35:30 - Raw GET Parameters:
+Array
+(
+    [attractionId] => 29
+    [eventId] => 25
+    [tab] => butiran-acara
+)
+
+2024-12-22 12:35:30 - Parsed Parameters:
+AttractionID: 29
+EventID: 25
+TabID: galeri-acara
+2024-12-22 12:35:30 - Parsed Parameters:
+AttractionID: 29
+EventID: 25
+TabID: butiran-acara
+2024-12-22 12:36:48 - Raw GET Parameters:
+Array
+(
+    [attractionId] => 29
+    [eventId] => 25
+    [tab] => galeri-acara
+)
+
+
+2024-12-22 12:36:48 - Parsed Parameters:
+AttractionID: 29
+EventID: 25
+TabID: galeri-acara
+
+2024-12-22 12:38:39 - Raw GET Parameters:
+Array
+(
+    [attractionId] => 29
+    [eventId] => 25
+    [tab] => butiran-acara
+)
+
+2024-12-22 12:38:39 - Parsed Parameters:
+AttractionID: 29
+EventID: 25
+TabID: butiran-acara
+2024-12-22 12:38:39 - Raw GET Parameters:
+Array
+(
+    [attractionId] => 29
+    [eventId] => 25
+    [tab] => galeri-acara
+)
+
+2024-12-22 12:38:39 - Parsed Parameters:
+AttractionID: 29
+EventID: 25
+TabID: galeri-acara
+2024-12-22 12:48:40 - Raw GET Parameters:
+Array
+(
+    [attractionId] => 29
+    [eventId] => 25
+    [tab] => butiran-acara
+)
+
+2024-12-22 12:48:40 - Raw GET Parameters:
+Array
+(
+    [attractionId] => 29
+    [eventId] => 25
+    [tab] => galeri-acara
+)
+
+2024-12-22 12:48:40 - Parsed Parameters:
+AttractionID: 29
+EventID: 25
+TabID: galeri-acara
+
+2024-12-22 12:48:41 - Request: ID=29, Tab=tarikan-acara
+2024-12-22 12:48:41 - Request: ID=29, Tab=butiran-am
+2024-12-22 12:48:41 - Request: ID=29, Tab=galeri
+2024-12-22 12:48:41 - Request: ID=29, Tab=ulasan
+2024-12-22 12:48:42 - Request: ID=29, Tab=butiran-am
+2024-12-22 12:48:42 - Request: ID=29, Tab=tarikan-acara
+2024-12-22 12:48:42 - Request: ID=29, Tab=galeri
+2024-12-22 12:48:42 - Request: ID=29, Tab=ulasan
+2024-12-22 12:51:10 - Request: ID=29, Tab=butiran-am
+ra
+2024-12-22 12:51:10 - Request: ID=29, Tab=galeri
+2024-12-22 12:51:10 - Request: ID=29, Tab=ulasan
+2024-12-22 12:51:12 - Raw GET Parameters:
+Array
+(
+    [attractionId] => 29
+    [eventId] => 25
+    [tab] => butiran-acara
+)
+
+2024-12-22 12:51:12 - Parsed Parameters:
+AttractionID: 29
+EventID: 25
+TabID: butiran-acara
+2024-12-22 12:51:12 - Raw GET Parameters:
+Array
+(
+    [attractionId] => 29
+    [eventId] => 25
+    [tab] => galeri-acara
+)
+
+2024-12-22 12:51:12 - Parsed Parameters:
+AttractionID: 29
+EventID: 25
+TabID: galeri-acara
+2024-12-22 12:51:24 - Raw GET Parameters:
+Array
+(
+    [attractionId] => 29
+    [eventId] => 25
+    [tab] => butiran-acara
+)
+
+2024-12-22 12:51:24 - Parsed Parameters:
+AttractionID: 29
+EventID: 25
+TabID: butiran-acara
+2024-12-22 12:51:24 - Raw GET Parameters:
+Array
+(
+    [attractionId] => 29
+    [eventId] => 25
+    [tab] => galeri-acara
+)
+
+2024-12-22 12:51:24 - Parsed Parameters:
+AttractionID: 29
+EventID: 25
+TabID: galeri-acara
+2024-12-22 12:52:51 - Raw GET Parameters:
+Array
+(
+    [attractionId] => 29
+    [eventId] => 25
+    [tab] => butiran-acara
+)
+
+2024-12-22 12:52:51 - Parsed Parameters:
+AttractionID: 29
+EventID: 25
+TabID: butiran-acara
+2024-12-22 12:52:51 - Raw GET Parameters:
+Array
+(
+    [attractionId] => 29
+    [eventId] => 25
+    [tab] => galeri-acara
+)
+
+2024-12-22 12:52:51 - Parsed Parameters:
+AttractionID: 29
+EventID: 25
+TabID: galeri-acara
+2024-12-22 12:54:45 - Raw GET Parameters:
+Array
+(
+    [attractionId] => 29
+    [eventId] => 25
+    [tab] => galeri-acara
+)
+
+2024-12-22 12:54:45 - Raw GET Parameters:
+Array
+(
+    [attractionId] => 29
+    [eventId] => 25
+    [tab] => butiran-acara
+)
+
+2024-12-22 12:54:45 - Parsed Parameters:
+AttractionID: 29
+EventID: 25
+TabID: galeri-acara
+2024-12-22 12:54:45 - Parsed Parameters:
+AttractionID: 29
+EventID: 25
+TabID: butiran-acara
+2024-12-22 12:57:06 - Raw GET Parameters:
+Array
+(
+    [attractionId] => 29
+    [eventId] => 25
+    [tab] => butiran-acara
+)
+
+2024-12-22 12:57:06 - Parsed Parameters:
+AttractionID: 29
+EventID: 25
+TabID: butiran-acara
+2024-12-22 12:57:06 - Raw GET Parameters:
+Array
+(
+    [attractionId] => 29
+    [eventId] => 25
+    [tab] => galeri-acara
+)
+
+2024-12-22 12:57:06 - Parsed Parameters:
+AttractionID: 29
+EventID: 25
+TabID: galeri-acara
+2024-12-22 12:57:41 - Raw GET Parameters:
+Array
+(
+    [attractionId] => 29
+    [eventId] => 25
+    [tab] => butiran-acara
+)
+
+2024-12-22 12:57:41 - Parsed Parameters:
+AttractionID: 29
+EventID: 25
+TabID: butiran-acara
+2024-12-22 12:57:41 - Raw GET Parameters:
+Array
+(
+    [attractionId] => 29
+    [eventId] => 25
+    [tab] => galeri-acara
+)
+
+2024-12-22 12:57:41 - Parsed Parameters:
+AttractionID: 29
+EventID: 25
+TabID: galeri-acara
+2024-12-22 13:00:53 - Raw GET Parameters:
+Array
+(
+    [attractionId] => 29
+    [eventId] => 25
+    [tab] => butiran-acara
+)
+
+2024-12-22 13:00:53 - Parsed Parameters:
+AttractionID: 29
+EventID: 25
+TabID: butiran-acara
+2024-12-22 13:00:53 - Raw GET Parameters:
+Array
+(
+    [attractionId] => 29
+    [eventId] => 25
+    [tab] => galeri-acara
+)
+
+2024-12-22 13:00:53 - Parsed Parameters:
+AttractionID: 29
+EventID: 25
+TabID: galeri-acara
+2024-12-22 13:03:40 - Raw GET Parameters:
+Array
+(
+    [attractionId] => 29
+    [eventId] => 25
+    [tab] => butiran-acara
+)
+
+2024-12-22 13:03:40 - Parsed Parameters:
+AttractionID: 29
+EventID: 25
+TabID: butiran-acara
+2024-12-22 13:03:40 - Raw GET Parameters:
+Array
+(
+    [attractionId] => 29
+    [eventId] => 25
+    [tab] => galeri-acara
+)
+
+2024-12-22 13:03:40 - Parsed Parameters:
+AttractionID: 29
+EventID: 25
+TabID: galeri-acara
+2024-12-22 13:04:26 - Raw GET Parameters:
+Array
+(
+    [attractionId] => 29
+    [eventId] => 25
+    [tab] => butiran-acara
+)
+
+2024-12-22 13:04:26 - Parsed Parameters:
+AttractionID: 29
+EventID: 25
+TabID: butiran-acara
+ 25
+    [tab] => galeri-acara
+)
+
+2024-12-22 13:04:26 - Parsed Parameters:
+AttractionID: 29
+EventID: 25
+TabID: galeri-acara
+2024-12-22 13:04:47 - Raw GET Parameters:
+Array
+(
+    [attractionId] => 29
+    [eventId] => 25
+    [tab] => butiran-acara
+)
+
+2024-12-22 13:04:47 - Parsed Parameters:
+AttractionID: 29
+EventID: 25
+TabID: butiran-acara
+2024-12-22 13:04:47 - Raw GET Parameters:
+Array
+(
+    [attractionId] => 29
+    [eventId] => 25
+    [tab] => galeri-acara
+)
+
+2024-12-22 13:04:47 - Parsed Parameters:
+AttractionID: 29
+EventID: 25
+TabID: galeri-acara
+2024-12-22 13:07:15 - Raw GET Parameters:
+Array
+(
+    [attractionId] => 29
+    [eventId] => 25
+    [tab] => butiran-acara
+)
+
+2024-12-22 13:07:15 - Parsed Parameters:
+AttractionID: 29
+EventID: 25
+TabID: butiran-acara
+2024-12-22 13:07:15 - Raw GET Parameters:
+Array
+(
+    [attractionId] => 29
+    [eventId] => 25
+    [tab] => galeri-acara
+)
+
+2024-12-22 13:07:15 - Parsed Parameters:
+AttractionID: 29
+EventID: 25
+TabID: galeri-acara
+2024-12-22 13:09:05 - Raw GET Parameters:
+Array
+(
+    [attractionId] => 29
+    [eventId] => 25
+    [tab] => galeri-acara
+)
+
+2024-12-22 13:09:05 - Parsed Parameters:
+AttractionID: 29
+EventID: 25
+TabID: galeri-acara
+2024-12-22 13:09:05 - Raw GET Parameters:
+Array
+(
+    [attractionId] => 29
+    [eventId] => 25
+    [tab] => butiran-acara
+)
+
+2024-12-22 13:09:05 - Parsed Parameters:
+AttractionID: 29
+EventID: 25
+TabID: butiran-acara
+2024-12-22 13:09:09 - Raw GET Parameters:
+Array
+(
+    [attractionId] => 29
+    [eventId] => 25
+    [tab] => butiran-acara
+)
+
+2024-12-22 13:09:09 - Parsed Parameters:
+AttractionID: 29
+EventID: 25
+TabID: butiran-acara
+2024-12-22 13:09:09 - Raw GET Parameters:
+Array
+(
+    [attractionId] => 29
+    [eventId] => 25
+    [tab] => galeri-acara
+)
+
+2024-12-22 13:09:09 - Parsed Parameters:
+AttractionID: 29
+EventID: 25
+TabID: galeri-acara
+2024-12-22 13:09:11 - Raw GET Parameters:
+Array
+(
+    [attractionId] => 29
+    [eventId] => 25
+    [tab] => butiran-acara
+)
+
+2024-12-22 13:09:11 - Parsed Parameters:
+AttractionID: 29
+EventID: 25
+TabID: butiran-acara
+2024-12-22 13:09:11 - Raw GET Parameters:
+Array
+(
+    [attractionId] => 29
+    [eventId] => 25
+    [tab] => galeri-acara
+)
+
+2024-12-22 13:09:11 - Parsed Parameters:
+AttractionID: 29
+EventID: 25
+TabID: galeri-acara
+2024-12-22 13:09:32 - Raw GET Parameters:
+Array
+(
+    [attractionId] => 29
+    [eventId] => 25
+    [tab] => galeri-acara
+)
+
+2024-12-22 13:09:32 - Parsed Parameters:
+AttractionID: 29
+EventID: 25
+TabID: galeri-acara
+> 25
+    [tab] => butiran-acara
+)
+
+2024-12-22 13:09:32 - Parsed Parameters:
+AttractionID: 29
+EventID: 25
+TabID: butiran-acara
+2024-12-22 13:09:34 - Raw GET Parameters:
+Array
+(
+    [attractionId] => 29
+    [eventId] => 25
+    [tab] => butiran-acara
+)
+
+2024-12-22 13:09:34 - Parsed Parameters:
+AttractionID: 29
+EventID: 25
+TabID: butiran-acara
+2024-12-22 13:09:34 - Raw GET Parameters:
+Array
+(
+    [attractionId] => 29
+    [eventId] => 25
+    [tab] => galeri-acara
+)
+
+2024-12-22 13:09:34 - Parsed Parameters:
+AttractionID: 29
+EventID: 25
+TabID: galeri-acara
+2024-12-22 13:11:52 - Raw GET Parameters:
+Array
+(
+    [attractionId] => 29
+    [eventId] => 25
+    [tab] => butiran-acara
+)
+
+2024-12-22 13:11:52 - Parsed Parameters:
+AttractionID: 29
+EventID: 25
+TabID: butiran-acara
+2024-12-22 13:11:52 - Raw GET Parameters:
+Array
+(
+    [attractionId] => 29
+    [eventId] => 25
+    [tab] => galeri-acara
+)
+
+2024-12-22 13:11:52 - Parsed Parameters:
+AttractionID: 29
+EventID: 25
+TabID: galeri-acara
+2024-12-22 13:12:26 - Raw GET Parameters:
+Array
+(
+    [attractionId] => 29
+    [eventId] => 25
+    [tab] => butiran-acara
+)
+
+2024-12-22 13:12:26 - Parsed Parameters:
+AttractionID: 29
+EventID: 25
+TabID: butiran-acara
+2024-12-22 13:12:26 - Raw GET Parameters:
+Array
+(
+    [attractionId] => 29
+    [eventId] => 25
+    [tab] => galeri-acara
+)
+
+2024-12-22 13:12:26 - Parsed Parameters:
+AttractionID: 29
+EventID: 25
+TabID: galeri-acara
+2024-12-22 13:12:26 - Raw GET Parameters:
+Array
+(
+    [attractionId] => 29
+    [eventId] => 25
+    [tab] => butiran-acara
+)
+
+2024-12-22 13:12:26 - Raw GET Parameters:
+Array
+(
+    [attractionId] => 29
+    [eventId] => 25
+    [tab] => galeri-acara
+)
+
+2024-12-22 13:12:26 - Parsed Parameters:
+AttractionID: 29
+EventID: 25
+TabID: butiran-acara
+2024-12-22 13:12:26 - Parsed Parameters:
+AttractionID: 29
+EventID: 25
+TabID: galeri-acara
+2024-12-22 13:12:52 - Raw GET Parameters:
+Array
+(
+    [attractionId] => 29
+    [eventId] => 25
+    [tab] => galeri-acara
+)
+
+
+2024-12-22 13:12:52 - Parsed Parameters:
+AttractionID: 29
+EventID: 25
+TabID: butiran-acara
+2024-12-22 13:12:52 - Parsed Parameters:
+AttractionID: 29
+EventID: 25
+TabID: galeri-acara
+2024-12-22 13:13:46 - Raw GET Parameters:
+Array
+(
+    [attractionId] => 29
+    [eventId] => 25
+    [tab] => butiran-acara
+)
+
+2024-12-22 13:13:46 - Parsed Parameters:
+AttractionID: 29
+EventID: 25
+TabID: butiran-acara
+2024-12-22 13:13:46 - Raw GET Parameters:
+Array
+(
+    [attractionId] => 29
+    [eventId] => 25
+    [tab] => galeri-acara
+)
+
+2024-12-22 13:13:46 - Parsed Parameters:
+AttractionID: 29
+EventID: 25
+TabID: galeri-acara
+2024-12-22 13:14:33 - Raw GET Parameters:
+Array
+(
+    [attractionId] => 29
+    [eventId] => 25
+    [tab] => galeri-acara
+)
+
+2024-12-22 13:14:33 - Parsed Parameters:
+AttractionID: 29
+EventID: 25
+TabID: galeri-acara
+2024-12-22 13:14:33 - Raw GET Parameters:
+Array
+(
+    [attractionId] => 29
+    [eventId] => 25
+    [tab] => butiran-acara
+)
+
+2024-12-22 13:14:33 - Parsed Parameters:
+AttractionID: 29
+EventID: 25
+TabID: butiran-acara
+2024-12-22 13:22:06 - Raw GET Parameters:
+Array
+(
+    [attractionId] => 29
+    [eventId] => 25
+    [tab] => galeri-acara
+)
+
+
+2024-12-22 13:22:06 - Parsed Parameters:
+AttractionID: 29
+EventID: 25
+TabID: galeri-acara
+
+2024-12-22 13:23:26 - Raw GET Parameters:
+Array
+(
+    [attractionId] => 29
+    [eventId] => 25
+    [tab] => galeri-acara
+)
+
+2024-12-22 13:23:26 - Raw GET Parameters:
+Array
+(
+    [attractionId] => 29
+    [eventId] => 25
+    [tab] => butiran-acara
+)
+
+2024-12-22 13:23:26 - Parsed Parameters:
+AttractionID: 29
+EventID: 25
+TabID: galeri-acara
+2024-12-22 13:23:26 - Parsed Parameters:
+AttractionID: 29
+EventID: 25
+TabID: butiran-acara
+2024-12-22 13:25:45 - Raw GET Parameters:
+Array
+(
+    [attractionId] => 29
+    [eventId] => 25
+    [tab] => butiran-acara
+)
+
+2024-12-22 13:25:45 - Parsed Parameters:
+AttractionID: 29
+EventID: 25
+TabID: galeri-acara
+2024-12-22 13:25:45 - Parsed Parameters:
+AttractionID: 29
+EventID: 25
+TabID: butiran-acara
+2024-12-22 13:25:54 - Raw GET Parameters:
+Array
+(
+    [attractionId] => 29
+    [eventId] => 25
+    [tab] => butiran-acara
+)
+
+2024-12-22 13:25:54 - Parsed Parameters:
+AttractionID: 29
+EventID: 25
+TabID: butiran-acara
+2024-12-22 13:26:03 - Raw GET Parameters:
+Array
+(
+    [attractionId] => 29
+    [eventId] => 25
+    [tab] => galeri-acara
+)
+
+
+2024-12-22 13:26:03 - Parsed Parameters:
+AttractionID: 29
+EventID: 25
+TabID: butiran-acara
+2024-12-22 13:26:12 - Raw GET Parameters:
+Array
+(
+    [attractionId] => 29
+    [eventId] => 25
+    [tab] => galeri-acara
+)
+
+2024-12-22 13:26:12 - Raw GET Parameters:
+Array
+(
+    [attractionId] => 29
+    [eventId] => 25
+    [tab] => butiran-acara
+)
+
+2024-12-22 13:26:12 - Parsed Parameters:
+AttractionID: 29
+EventID: 25
+TabID: butiran-acara
+2024-12-22 13:26:17 - Raw GET Parameters:
+Array
+(
+    [attractionId] => 29
+    [eventId] => 25
+    [tab] => galeri-acara
+)
+
+
+2024-12-22 13:26:17 - Parsed Parameters:
+AttractionID: 29
+EventID: 25
+TabID: butiran-acara
+2024-12-22 13:26:17 - Parsed Parameters:
+AttractionID: 29
+EventID: 25
+TabID: galeri-acara
+2024-12-22 13:26:23 - Raw GET Parameters:
+Array
+(
+    [attractionId] => 29
+    [eventId] => 25
+    [tab] => galeri-acara
+)
+
+
+2024-12-22 13:26:23 - Parsed Parameters:
+AttractionID: 29
+EventID: 25
+TabID: butiran-acara
+2024-12-22 13:26:23 - Parsed Parameters:
+AttractionID: 29
+EventID: 25
+TabID: galeri-acara
+2024-12-22 13:26:27 - Raw GET Parameters:
+Array
+(
+    [attractionId] => 29
+    [eventId] => 25
+    [tab] => butiran-acara
+)
+
+2024-12-22 13:26:27 - Parsed Parameters:
+AttractionID: 29
+EventID: 25
+TabID: butiran-acara
+2024-12-22 13:26:27 - Raw GET Parameters:
+Array
+(
+    [attractionId] => 29
+    [eventId] => 25
+    [tab] => galeri-acara
+)
+
+2024-12-22 13:26:27 - Parsed Parameters:
+AttractionID: 29
+EventID: 25
+TabID: galeri-acara
+2024-12-22 13:26:31 - Raw GET Parameters:
+Array
+(
+    [attractionId] => 29
+    [eventId] => 25
+    [tab] => butiran-acara
+)
+
+2024-12-22 13:26:31 - Parsed Parameters:
+AttractionID: 29
+EventID: 25
+TabID: butiran-acara
+ 25
+    [tab] => galeri-acara
+)
+
+2024-12-22 13:26:31 - Parsed Parameters:
+AttractionID: 29
+EventID: 25
+TabID: galeri-acara
+2024-12-22 13:26:39 - Raw GET Parameters:
+Array
+(
+    [attractionId] => 29
+    [eventId] => 25
+    [tab] => galeri-acara
+)
+
+
+2024-12-22 13:26:39 - Parsed Parameters:
+AttractionID: 29
+EventID: 25
+TabID: butiran-acara
+2024-12-22 13:26:53 - Raw GET Parameters:
+Array
+(
+    [attractionId] => 29
+    [eventId] => 25
+    [tab] => butiran-acara
+)
+
+2024-12-22 13:26:53 - Parsed Parameters:
+AttractionID: 29
+EventID: 25
+TabID: butiran-acara
+2024-12-22 13:26:53 - Raw GET Parameters:
+Array
+(
+    [attractionId] => 29
+    [eventId] => 25
+    [tab] => galeri-acara
+)
+
+2024-12-22 13:26:53 - Parsed Parameters:
+AttractionID: 29
+EventID: 25
+TabID: galeri-acara
+2024-12-22 13:27:04 - Raw GET Parameters:
+Array
+(
+    [attractionId] => 29
+    [eventId] => 25
+    [tab] => butiran-acara
+)
+
+2024-12-22 13:27:04 - Raw GET Parameters:
+Array
+(
+    [attractionId] => 29
+    [eventId] => 25
+    [tab] => galeri-acara
+)
+
+2024-12-22 13:27:04 - Parsed Parameters:
+AttractionID: 29
+EventID: 25
+TabID: galeri-acara
+2024-12-22 13:27:04 - Parsed Parameters:
+AttractionID: 29
+EventID: 25
+TabID: butiran-acara
+2024-12-22 13:27:15 - Raw GET Parameters:
+Array
+(
+    [attractionId] => 29
+    [eventId] => 25
+    [tab] => butiran-acara
+)
+
+2024-12-22 13:27:15 - Raw GET Parameters:
+Array
+(
+    [attractionId] => 29
+    [eventId] => 25
+    [tab] => galeri-acara
+)
+
+2024-12-22 13:27:15 - Parsed Parameters:
+AttractionID: 29
+EventID: 25
+TabID: galeri-acara
+
+2024-12-22 13:28:50 - Raw GET Parameters:
+Array
+(
+    [attractionId] => 29
+    [eventId] => 25
+    [tab] => galeri-acara
+)
+
+2024-12-22 13:28:50 - Raw GET Parameters:
+Array
+(
+    [attractionId] => 29
+    [eventId] => 25
+    [tab] => butiran-acara
+)
+
+2024-12-22 13:28:50 - Parsed Parameters:
+AttractionID: 29
+EventID: 25
+TabID: galeri-acara
+2024-12-22 13:28:50 - Parsed Parameters:
+AttractionID: 29
+EventID: 25
+TabID: butiran-acara
+2024-12-22 13:53:17 - Request: ID=29, Tab=butiran-am
+2024-12-22 13:53:17 - Request: ID=29, Tab=tarikan-acara
+2024-12-22 13:53:17 - Request: ID=29, Tab=ulasan
+2024-12-22 13:53:17 - Request: ID=29, Tab=galeri
+2024-12-22 14:05:31 - Request: ID=29, Tab=tarikan-acara
+2024-12-22 14:05:31 - Request: ID=29, Tab=ulasan
+2024-12-22 14:05:31 - Request: ID=29, Tab=galeri
+2024-12-22 14:05:31 - Request: ID=29, Tab=butiran-am
+2024-12-22 14:08:48 - Request: ID=29, Tab=butiran-am
+2024-12-22 14:08:48 - Request: ID=29, Tab=ulasan
+2024-12-22 14:08:48 - Request: ID=29, Tab=tarikan-acara
+2024-12-22 14:08:48 - Request: ID=29, Tab=galeri
+2024-12-22 14:26:50 - Request: ID=29, Tab=butiran-am
+2024-12-22 14:26:50 - Request: ID=29, Tab=tarikan-acara
+2024-12-22 14:26:50 - Request: ID=29, Tab=ulasan
+2024-12-22 14:26:50 - Request: ID=29, Tab=galeri
+2024-12-22 14:28:25 - Request: ID=29, Tab=butiran-am
+ra
+2024-12-22 14:28:25 - Request: ID=29, Tab=galeri
+2024-12-22 14:28:25 - Request: ID=29, Tab=ulasan
+2024-12-22 14:29:13 - Request: ID=29, Tab=butiran-am
+2024-12-22 14:29:13 - Request: ID=29, Tab=ulasan
+2024-12-22 14:29:13 - Request: ID=29, Tab=galeri
+-acara
+2024-12-23 08:20:31 - Request: ID=32, Tab=butiran-am
+ra
+2024-12-23 09:11:45 - Request: ID=29, Tab=galeri
+-acara
+2024-12-23 09:11:45 - Request: ID=29, Tab=butiran-am
+2024-12-23 09:13:44 - Request: ID=29, Tab=tarikan-acara
+2024-12-23 09:13:44 - Request: ID=29, Tab=galeri
+2024-12-23 09:13:44 - Request: ID=29, Tab=butiran-am
+2024-12-23 09:13:44 - Request: ID=29, Tab=ulasan
+2024-12-25 08:08:01 - Request: ID=32, Tab=ulasan
+-am
+2024-12-25 08:08:01 - Request: ID=32, Tab=tarikan-acara
+2024-12-25 08:08:03 - Raw GET Parameters:
+Array
+(
+    [attractionId] => 32
+    [eventId] => 24
+    [tab] => butiran-acara
+)
+
+2024-12-25 08:08:03 - Parsed Parameters:
+AttractionID: 32
+EventID: 24
+TabID: butiran-acara
+2024-12-25 08:08:03 - Raw GET Parameters:
+Array
+(
+    [attractionId] => 32
+    [eventId] => 24
+    [tab] => galeri-acara
+)
+
+2024-12-25 08:08:03 - Parsed Parameters:
+AttractionID: 32
+EventID: 24
+TabID: galeri-acara
+2024-12-25 08:18:31 - Raw GET Parameters:
+Array
+(
+    [attractionId] => 32
+    [eventId] => 24
+    [tab] => butiran-acara
+)
+
+2024-12-25 08:18:31 - Raw GET Parameters:
+Array
+(
+    [attractionId] => 32
+    [eventId] => 24
+    [tab] => galeri-acara
+)
+
+2024-12-25 08:18:31 - Parsed Parameters:
+AttractionID: 32
+EventID: 24
+TabID: butiran-acara
+2024-12-25 08:18:31 - Parsed Parameters:
+AttractionID: 32
+EventID: 24
+TabID: galeri-acara
+2024-12-27 03:19:11 - Request: ID=29, Tab=galeri
+-acara
+2024-12-27 03:19:16 - Request: ID=34, Tab=galeri
+-am
+2024-12-27 03:19:16 - Request: ID=34, Tab=ulasan
+2024-12-27 03:19:16 - Request: ID=34, Tab=tarikan-acara
+2024-12-27 03:19:18 - Request: ID=29, Tab=tarikan-acara
+2024-12-27 03:19:18 - Request: ID=29, Tab=ulasan
+2024-12-27 03:22:27 - Request: ID=34, Tab=tarikan-acara
+2024-12-27 03:22:27 - Request: ID=34, Tab=galeri
+2024-12-27 03:22:27 - Request: ID=34, Tab=ulasan
+2024-12-27 03:22:31 - Request: ID=29, Tab=butiran-am
+ra
+2024-12-27 03:22:31 - Request: ID=29, Tab=galeri
+2024-12-27 03:22:31 - Request: ID=29, Tab=ulasan
+2024-12-27 03:46:19 - Request: ID=29, Tab=butiran-am
+2024-12-27 03:46:19 - Request: ID=29, Tab=tarikan-acara
+2024-12-27 03:46:19 - Request: ID=29, Tab=galeri
+2024-12-27 03:46:19 - Request: ID=29, Tab=ulasan
+2024-12-27 03:53:01 - Request: ID=29, Tab=tarikan-acara
+2024-12-27 03:53:01 - Request: ID=29, Tab=butiran-am
+2024-12-27 03:53:01 - Request: ID=29, Tab=ulasan
+2024-12-27 03:53:01 - Request: ID=29, Tab=galeri
+2024-12-27 03:55:04 - Request: ID=29, Tab=butiran-am
+2024-12-27 03:55:04 - Request: ID=29, Tab=galeri
+2024-12-27 03:55:04 - Request: ID=29, Tab=ulasan
+-acara
+2024-12-27 03:55:07 - Request: ID=29, Tab=tarikan-acara
+2024-12-27 03:55:07 - Request: ID=29, Tab=ulasan
+2024-12-27 03:55:07 - Request: ID=29, Tab=galeri
+2024-12-27 03:55:07 - Request: ID=29, Tab=butiran-am
+2024-12-27 03:56:09 - Request: ID=29, Tab=butiran-am
+2024-12-27 03:56:09 - Request: ID=29, Tab=tarikan-acara
+2024-12-27 03:56:09 - Request: ID=29, Tab=galeri
+2024-12-27 03:56:09 - Request: ID=29, Tab=ulasan
+2024-12-27 04:00:15 - Request: ID=29, Tab=butiran-am
+2024-12-27 04:00:15 - Request: ID=29, Tab=tarikan-acara
+2024-12-27 04:00:15 - Request: ID=29, Tab=galeri
+2024-12-27 04:00:15 - Request: ID=29, Tab=ulasan
+2024-12-27 04:55:57 - Request: ID=29, Tab=galeri
+-am
+ra
+2024-12-27 04:57:04 - Request: ID=29, Tab=butiran-am
+2024-12-27 04:57:04 - Request: ID=29, Tab=tarikan-acara
+2024-12-27 04:57:04 - Request: ID=29, Tab=galeri
+2024-12-27 04:57:04 - Request: ID=29, Tab=ulasan
+2024-12-27 04:57:38 - Request: ID=29, Tab=butiran-am
+2024-12-27 04:57:38 - Request: ID=29, Tab=tarikan-acara
+2024-12-27 04:57:38 - Request: ID=29, Tab=galeri
+2024-12-27 04:57:38 - Request: ID=29, Tab=ulasan
+2024-12-27 04:57:56 - Request: ID=29, Tab=butiran-am
+2024-12-27 04:57:56 - Request: ID=29, Tab=tarikan-acara
+2024-12-27 04:57:56 - Request: ID=29, Tab=galeri
+2024-12-27 04:57:56 - Request: ID=29, Tab=ulasan
+2024-12-27 05:14:11 - Request: ID=29, Tab=galeri
+2024-12-27 05:14:11 - Request: ID=29, Tab=butiran-am
+2024-12-27 05:14:11 - Request: ID=29, Tab=tarikan-acara
+2024-12-27 05:14:11 - Request: ID=29, Tab=ulasan
+2024-12-27 05:22:58 - Request: ID=29, Tab=tarikan-acara
+2024-12-27 05:22:58 - Request: ID=29, Tab=butiran-am
+2024-12-27 05:22:58 - Request: ID=29, Tab=galeri
+2024-12-27 05:22:58 - Request: ID=29, Tab=ulasan
+2024-12-27 05:23:36 - Request: ID=29, Tab=tarikan-acara
+2024-12-27 05:23:36 - Request: ID=29, Tab=butiran-am
+2024-12-27 05:23:36 - Request: ID=29, Tab=galeri
+2024-12-27 05:23:36 - Request: ID=29, Tab=ulasan
+2024-12-27 08:32:50 - Request: ID=29, Tab=galeri
+-acara
+2024-12-27 08:52:26 - Request: ID=34, Tab=ulasan
+2024-12-27 08:52:26 - Request: ID=34, Tab=galeri
+2024-12-27 08:52:26 - Request: ID=34, Tab=butiran-am
+ra
+2024-12-27 08:52:29 - Request: ID=29, Tab=ulasan
+-acara
+2024-12-27 08:52:29 - Request: ID=29, Tab=galeri
+2024-12-28 02:44:03 - Request: ID=29, Tab=galeri
+-am
+ra
+2024-12-28 02:45:31 - Request: ID=29, Tab=butiran-am
+2024-12-28 02:45:31 - Request: ID=29, Tab=tarikan-acara
+2024-12-28 02:45:31 - Request: ID=29, Tab=ulasan
+2024-12-28 02:45:31 - Request: ID=29, Tab=galeri
+2024-12-28 02:46:30 - Request: ID=29, Tab=butiran-am
+2024-12-28 02:46:30 - Request: ID=29, Tab=tarikan-acara
+2024-12-28 02:46:30 - Request: ID=29, Tab=galeri
+2024-12-28 02:47:50 - Request: ID=29, Tab=tarikan-acara
+2024-12-28 02:47:50 - Request: ID=29, Tab=ulasan
+2024-12-28 02:49:56 - Request: ID=29, Tab=galeri
+2024-12-28 02:49:56 - Request: ID=29, Tab=ulasan
+-acara
+2024-12-28 02:49:56 - Request: ID=29, Tab=butiran-am
+2024-12-28 02:49:59 - Request: ID=29, Tab=ulasan
+-am
+ra
+2024-12-28 02:50:01 - Request: ID=29, Tab=tarikan-acara
+2024-12-28 02:50:01 - Request: ID=29, Tab=galeri
+2024-12-28 02:50:01 - Request: ID=29, Tab=ulasan
+2024-12-28 02:50:24 - Request: ID=29, Tab=galeri
+-am
+ra

@@ -1,7 +1,7 @@
 <?php
 error_reporting(E_ALL);
 
-include $_SERVER['DOCUMENT_ROOT'] . '/maranguide_connection.php';
+include $_SERVER['DOCUMENT_ROOT'] . '/MARANGUIDE/maranguide_connection.php';
 ob_start(); 
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
@@ -54,7 +54,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             throw new Exception("Failed to prepare statement: " . $conn->error);
         }
 
-        // Initially set event_thumbnails to null
+        
         $initial_thumbnails = '/media/default/placeholder.jpg';
 
         // Bind parameters and execute statement
@@ -146,7 +146,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         exit();
 
     } catch (Exception $e) {
-        // Rollback on error
+        // Rollback if error
         if (isset($conn)) {
             $conn->rollback();
         }

@@ -96,7 +96,7 @@ document.addEventListener('DOMContentLoaded', function() {
     document.getElementById('eventForm').addEventListener('submit', function(e) {
         const startDate = new Date(document.getElementById('event_start_date').value + ' ' + document.getElementById('event_start_time').value);
         const endDate = new Date(document.getElementById('event_end_date').value + ' ' + document.getElementById('event_end_time').value);
-        
+        //Check for error in setting event date
         if (endDate < startDate) {
             e.preventDefault();
             M.toast({html: 'Tarikh tamat tidak boleh lebih awal dari tarikh mula!', classes: 'red'});
@@ -119,7 +119,7 @@ function previewImage(event) {
         reader.readAsDataURL(file);
     }
 }
-
+//Remove image if wrong image
 function removeImage() {
     document.getElementById('imageUpload').value = '';
     document.getElementById('imagePreview').style.display = 'none';

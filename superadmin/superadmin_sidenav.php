@@ -1,7 +1,8 @@
 <?php 
 include('../maranguide_connection.php');
+
 if (!isset($_SESSION['admin_id']) || !isset($_SESSION['role']) || $_SESSION['role'] !== 'superadmin') {
-    header("Location: /visitor/admin_login.php");
+    header("Location: /MARANGUIDE/visitor/admin_login.php");
     exit();
 }
 
@@ -30,7 +31,7 @@ if ($admin) {
 <body>
 <nav class="nav-wrapper">
     <a href="superadmin_dashboard.php" class="brand-logo">
-        <img src="/media/icons/MARANGUIDE_ICON.png" alt="MaranGuide Logo">
+        <img src="/MARANGUIDE/media/icons/MARANGUIDE_ICON.png" alt="MaranGuide Logo">
     </a>
     <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
 
@@ -50,8 +51,8 @@ if ($admin) {
 
 <!-- Desktop Dropdown Content -->
 <ul id="dropdown_header_desktop" class="dropdown-content">
-    <li><a href="owner_profile.php"><i class="material-icons">person</i>Profile</a></li>
-    <li><a href="change_password.php"><i class="material-icons">lock</i>Change Password</a></li>
+    <li><a href="owner_profile.php"><i class="material-icons">person</i>Profile</a></li> <!-- Not yet implemented -->
+    <li><a href="change_password.php"><i class="material-icons">lock</i>Change Password</a></li> <!-- Not yet implemented -->
     <li class="divider"></li>
     <li><a href="#" onclick="confirmLogout()"><i class="material-icons">exit_to_app</i>Log Out</a></li>
 </ul>

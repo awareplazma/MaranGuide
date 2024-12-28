@@ -1,4 +1,5 @@
 function attachButiranAmScripts(attractionId) {
+
         const container = document.getElementById('butiran-am');
         async function fetchAttractionDetails() {
             try {

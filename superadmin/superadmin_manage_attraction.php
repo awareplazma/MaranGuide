@@ -93,11 +93,11 @@ function getDayRanges($days) {
                             getDayRanges($operating_days) : "No operating days set";
 
                         // Handle thumbnail path
-                        $thumbnail = '/media/default_image.png'; // Default image path
+                       $thumbnail = '/media/default_image.png'; // Default image path
                         if (!empty($row['attraction_thumbnails'])) {
-                            $thumbnail_path = $_SERVER['DOCUMENT_ROOT'] . $row['attraction_thumbnails'];
+                            $thumbnail_path = $_SERVER['DOCUMENT_ROOT'] . '/MARANGUIDE' . $row['attraction_thumbnails'];
                             if (file_exists($thumbnail_path)) {
-                                $thumbnail = $row['attraction_thumbnails'];
+                                $thumbnail = '/MARANGUIDE' . $row['attraction_thumbnails']; // Use relative path
                             }
                         }
 
@@ -191,7 +191,7 @@ function getDayRanges($days) {
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script>
-        // Attraction Search
+        // Attraction Search 
         document.getElementById('searchInput').addEventListener('keyup', function() {
             const searchValue = this.value.toLowerCase();
             const attractionCards = document.querySelectorAll('.attraction-card');
@@ -211,7 +211,7 @@ function getDayRanges($days) {
         // Delete confirmation
         function deleteAttraction(id) {
             if (confirm('Are you sure you want to delete this attraction?')) {
-        window.location.href = `/superadmin/src/process/superadmin_delete_attraction_process.php?id=${id}`;
+        window.location.href = `/MARANGUIDE/superadmin/src/process/superadmin_delete_attraction_process.php?id=${id}`;
     }
         }
     </script>

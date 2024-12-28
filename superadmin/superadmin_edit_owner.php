@@ -2,7 +2,7 @@
 include 'superadmin_sidenav.php';
 ob_start();
 
-$owner_id = $_GET['owner_id']; // Fetch the ID sent via URL
+$owner_id = $_GET['owner_id']; 
 
 // Query the database
 $sql = "SELECT * FROM adminlist WHERE admin_id = ?";

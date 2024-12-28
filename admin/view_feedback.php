@@ -1,5 +1,4 @@
 <?php 
-// Include side navigation - ensure this file exists and is properly secured
 include_once 'admin_nav.php';
 
 $attraction_id = $_SESSION['attraction_id'];
@@ -9,9 +8,6 @@ if (!isset($_SESSION['attraction_id']) || !filter_var($_SESSION['attraction_id']
     die('Invalid or missing attraction ID');
 }
 
-
-
-// Improve security: Use prepared statement for database query
 $sql = "SELECT 
             comment_id,
             user,
@@ -20,10 +16,9 @@ $sql = "SELECT
             created_at, 
             approval_status 
         FROM comments
-        WHERE attraction_id = ? AND (approval_status = 'Lulus' OR approval_status = 'Belum Dibaca')
+        WHERE attraction_id = ? AND (approval_status = 'Lulus' OR approval_status = 'Belum Dibaca' OR approval_status = '0')
         ORDER BY created_at DESC";
 
-// COMMENT: Switched to prepared statement for better security
 $stmt = $conn->prepare($sql);
 
 if ($stmt === false) {
@@ -45,7 +40,6 @@ $result = $stmt->get_result();
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MaranGuide Superadmin - Feedback Management</title>
     
-    <!-- COMMENT: Consolidated and updated CSS links -->
     <link rel="stylesheet" href="src/css/admin_section.css">
     <link rel="stylesheet" href="../project.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
@@ -71,7 +65,7 @@ $result = $stmt->get_result();
             <?php endif; ?>
             <div class="form-container">
                 <h1> Urus Komen </h1>
-                <!--Filter will add when have time -->
+                <!--Filter and search functionality will add when have time -->
 
                 <!-- <div class="search-wrapper-mobile">
                     <div class="search-input-container">
@@ -136,7 +130,7 @@ $result = $stmt->get_result();
         </div>
     </div>
 </body>
-<!-- COMMENT: Updated script links and added error handling -->
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 <script>
@@ -162,20 +156,10 @@ $result = $stmt->get_result();
     var instances = M.Tooltip.init(elems, {
         enterDelay: 200,  // Delay before tooltip appears (in ms)
         exitDelay: 0,    // Delay before tooltip disappears (in ms)
-        transitionMovement: 10   // Remove the semicolon here
+        transitionMovement: 10   
     });
 });
 
-    //Approve comment
-
-    // Delete Confirmation Function
-    function deleteFeedback(id) {
-        if (confirm('Are you sure you want to delete this feedback?')) {
-            // COMMENT: Updated to use a more secure deletion path
-            window.location.href = `/src/process/delete_feedback_process.php?id=${comment_id}`;
-        }
-    }
-     
 </script>
 </body>
 </html>

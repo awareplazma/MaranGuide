@@ -165,7 +165,6 @@ function attachGaleriScripts(attractionId) {
         }
     }
 
-    // Helper functions remain the same
     function displayErrorMessage(message) {
         const container = document.getElementById('gallery-container');
         if (container) {
@@ -212,6 +211,6 @@ function attachGaleriScripts(attractionId) {
         }
     }
 
-    // Initial gallery fetch
+   
     fetchGallery();
 }

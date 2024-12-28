@@ -6,7 +6,7 @@ function isValidFileType($file) {
     return in_array($file['type'], $allowed_types);
 }
 
-// Function to generate unique filename
+// Function to generate unique filename. Change if necessary
 function generateUniqueFilename($original_name, $file_extension) {
     return uniqid() . '_' . time() . '.' . $file_extension;
 }
@@ -14,7 +14,7 @@ function generateUniqueFilename($original_name, $file_extension) {
 try {
     // Check if form was submitted
     if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-        // Validate attraction ID
+        
         if (!isset($_POST['event_id']) || empty($_POST['event_id'])) {
             throw new Exception('Invalid event ID');
         }
@@ -52,7 +52,7 @@ try {
 
         // Use the media title and description from the form
         $media_title = trim($_POST['media_title']);
-        $media_description = trim($_POST['media_description']); // Fix: use media_description, not media_title
+        $media_description = trim($_POST['media_description']); 
         
         // Validate media title
         if (empty($media_title)) {
@@ -100,6 +100,7 @@ try {
         $file_extension = pathinfo($file['name'], PATHINFO_EXTENSION);
         $new_filename = generateUniqueFilename($file['name'], $file_extension);
         $file_path = $upload_dir . '/' . $new_filename;
+        $dbFilePath = "/media/attraction/{$attraction_name}/{$event_name}/thumbnail/" . $fileName;
         
         // Move uploaded file
         if (!move_uploaded_file($file['tmp_name'], $file_path)) {
@@ -121,20 +122,20 @@ try {
 
         $stmt = mysqli_prepare($conn, $sql);
         
-        // Check if preparation was successful
+     
         if ($stmt === false) {
             die('MySQLi prepare error: ' . mysqli_error($conn));
         }
 
-        // Bind parameters to the statement
+     
         mysqli_stmt_bind_param($stmt, 'issss', $event_id, $media_path, $media_type, $media_title, $media_description);
 
-        // Execute the statement
+   
         if (!mysqli_stmt_execute($stmt)) {
             die('MySQLi execute error: ' . mysqli_error($conn));
         }
         
-        // Set success message
+        // Success message and redirection
         $_SESSION['success_message'] = 'Media uploaded successfully';
         
         // Redirect back to event page
@@ -146,13 +147,13 @@ try {
     }
     
 } catch (Exception $e) {
-    // Log the error (optional but recommended)
+    // Log the error just in case
     error_log('Media Upload Error: ' . $e->getMessage());
     
-    // Set error message
+    // Error message and redirection
     $_SESSION['error_message'] = $e->getMessage();
     
-    // Redirect back to form with event ID
+   
     if (isset($event_id)) {
         header("Location: /MARANGUIDE/admin/admin_manage_events.php?id=" . $event_id);
     } else {

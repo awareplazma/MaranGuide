@@ -1,4 +1,7 @@
 <?php 
+// Database connection
+require_once($_SERVER['DOCUMENT_ROOT'] . '/MARANGUIDE/maranguide_connection.php');
+
 // Strict error reporting and logging
 error_reporting(E_ALL);
 ini_set('display_errors', 1);
@@ -17,8 +20,6 @@ if (php_sapi_name() !== 'cli' && (!defined('SITE_ROOT') || !SITE_ROOT)) {
     exit('Forbidden');
 } */
 
-// Database connection
-require_once($_SERVER['DOCUMENT_ROOT'] . '/MARANGUIDE/maranguide_connection.php');
 
 try {
     // Prepared statement for attractions
@@ -68,7 +69,7 @@ try {
     ], JSON_PRETTY_PRINT);
 
 } catch (Exception $e) {
-    // Detailed error logging without exposing sensitive info
+    
     error_log('Database Error: ' . $e->getMessage());
     
     http_response_code(500);

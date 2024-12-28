@@ -1,7 +1,4 @@
-<!-- How to prevent Spam? -->
-
 <?php 
-/*define('SITE_ROOT', true);*/
 // Database connection
 require_once('../maranguide_connection.php');
 if (!file_exists('../maranguide_connection.php')) {
@@ -28,6 +25,7 @@ if(empty($_POST['title']) || empty($_POST['content'])){
         'status' => 'error',
         'message' => 'Missing or empty required fields'
     ]);
+    var_dump($_POST);
     exit;
 }
 
@@ -44,7 +42,7 @@ try {
         throw new Exception('Database connection failed');
     }
 
-    // Prepared statement for attractions
+
     $query = "INSERT INTO feedback (
         title,
         feedback_content,
@@ -52,7 +50,7 @@ try {
         read_status
         ) VALUES (?, ? , NOW(), ?)";
 
-    //Prepare statement
+
     $stmt = $conn -> prepare($query);
 
     // Check if prepare was successful
@@ -75,7 +73,7 @@ try {
         throw new Exception('Insert Operation Failed');
     }
 
-    //Close statement
+ 
     $stmt->close();
 
 } catch (Exception $e) {

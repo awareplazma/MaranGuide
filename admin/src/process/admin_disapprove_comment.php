@@ -12,24 +12,24 @@ include $_SERVER['DOCUMENT_ROOT'] . '/MARANGUIDE/maranguide_connection.php';
 
 if ($_SERVER['REQUEST_METHOD'] === 'GET') {
     try {
-        // Ensure comment_id is provided
+        
         if (empty($_GET['comment_id'])) {
             throw new Exception("Comment ID not provided.");
         }
 
-        // Sanitize input
+        
         $comment_id = intval($_GET['comment_id']);
 
-        // Begin transaction
+    
         $conn->begin_transaction();
 
-        // Update approval_status in the comments table
+        
         $stmt = $conn->prepare("UPDATE comments SET approval_status = 'Tidak Lulus' WHERE comment_id = ?");
         if (!$stmt) {
             throw new Exception("Failed to prepare statement: " . $conn->error);
         }
 
-        // Bind parameters and execute
+        
         if (!$stmt->bind_param("i", $comment_id)) {
             throw new Exception("Failed to bind parameters: " . $stmt->error);
         }
@@ -41,13 +41,13 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
         $stmt->close();
         $conn->commit();
 
-        // Set success message and redirect
-        $_SESSION['success_message'] = "Comment approved successfully!";
+        // Success message and redirect
+        $_SESSION['error_message'] = "Comment disapproved successfully!";
         header("Location: ../../view_feedback.php");
         exit();
 
     } catch (Exception $e) {
-        // Rollback on error
+        // Rollback if error
         if (isset($conn)) {
             $conn->rollback();
         }

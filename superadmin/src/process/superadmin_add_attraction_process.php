@@ -61,7 +61,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $attraction_operating_days,
         $attraction_opening_hours,
         $attraction_closing_hours,
-        $attraction_thumbnails, // Always set to default
+        $attraction_thumbnails,
         $latitude, 
         $longitude
         )) {
@@ -75,7 +75,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         // Get the new attraction_id
         $attraction_id = $conn->insert_id;
 
-        // Base directory paths with improved security
+        // Base directory paths
         $baseDir = realpath("C:/xampp/htdocs/MARANGUIDE/media/attraction/") . DIRECTORY_SEPARATOR . preg_replace('/[^a-zA-Z0-9_\s-]/', '', $attraction_name) . DIRECTORY_SEPARATOR;
         $directories = [
             'videos' => $baseDir . 'videos' . DIRECTORY_SEPARATOR,
@@ -83,7 +83,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             'thumbnail' => $baseDir . 'thumbnail' . DIRECTORY_SEPARATOR
         ];
 
-        // Create directories with proper permissions
+        // Create directories
         foreach ($directories as $dir) {
             if (!file_exists($dir)) {
                 if (!mkdir($dir, 0755, true)) {
@@ -92,7 +92,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             }
         }
 
-        // Handle thumbnail upload with improved validation
+        // Handle thumbnail upload 
         if (isset($_FILES['ThumbnailUpload']) && $_FILES['ThumbnailUpload']['error'] == 0) {
             $allowed_picture_types = ['image/jpeg', 'image/png'];
             $finfo = finfo_open(FILEINFO_MIME_TYPE);
@@ -135,7 +135,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     } catch (Exception $e) {
 
-        // Rollback on error
+        // Rollback if error
         if (isset($conn)) {
             $conn->rollback();
         }

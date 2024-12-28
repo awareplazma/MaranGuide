@@ -1,8 +1,7 @@
 <?php 
-// Include side navigation - ensure this file exists and is properly secured
+
 include_once 'superadmin_sidenav.php';
 
-// Improve security: Use prepared statement for database query
 $sql = "SELECT 
             feedback_id, 
             title, 
@@ -12,7 +11,7 @@ $sql = "SELECT
         FROM feedback 
         ORDER BY feedback_created_at DESC";
 
-// COMMENT: Switched to prepared statement for better security
+
 $stmt = $conn->prepare($sql);
 $stmt->execute();
 $result = $stmt->get_result();
@@ -25,7 +24,7 @@ $result = $stmt->get_result();
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MaranGuide Superadmin - Feedback Management</title>
     
-    <!-- COMMENT: Consolidated and updated CSS links -->
+  
     <link rel="stylesheet" href="src/css/superadmin_section.css">
     <link rel="stylesheet" href="../project.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
@@ -36,7 +35,7 @@ $result = $stmt->get_result();
 <div class="dashboard-container">
     <!-- Error and Success Message Handling -->
     <?php 
-    // COMMENT: Consolidated message display with improved security
+    
     $message_types = [
         'error' => ['class' => 'error-message', 'icon' => 'bxs-error'],
         'success' => ['class' => 'success-message', 'icon' => 'bxs-check-square']
@@ -63,7 +62,7 @@ $result = $stmt->get_result();
             <?php 
             if ($result->num_rows > 0) {
                 while($row = $result->fetch_assoc()) {
-                    // COMMENT: Fixed undefined variable issues
+                    
                     $status_class = ($row['read_status'] === 'unread') ? 'active-badge' : 'inactive-badge';
                     
                     // Format and sanitize output
@@ -116,7 +115,7 @@ $result = $stmt->get_result();
     </div>
 </div>
 
-<!-- COMMENT: Updated script links and added error handling -->
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 <script>
@@ -139,8 +138,7 @@ $result = $stmt->get_result();
     // Delete Confirmation Function
     function deleteFeedback(id) {
         if (confirm('Are you sure you want to delete this feedback?')) {
-            // COMMENT: Updated to use a more secure deletion path
-            window.location.href = `/superadmin/src/process/superadmin_delete_feedback_process.php?id=${id}`;
+            window.location.href = `/MARANGUIDE/superadmin/src/process/superadmin_delete_feedback_process.php?id=${id}`;
         }
     }
 </script>
