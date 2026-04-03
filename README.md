@@ -1,4 +1,4 @@
-# MaranGuide: Geospatial Tourism Prototype
+# MaranGuide: Tourism 'Social Media' for the district of Maran, Pahang
 
 ## Project Overview
 
