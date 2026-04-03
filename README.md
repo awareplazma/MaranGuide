@@ -1,4 +1,4 @@
-# MaranGuide: Tourism 'Social Media' for the district of Maran, Pahang
+# MaranGuide: Tourism 'Social Media' for Maran, Pahang
 
 ## Project Overview
 
