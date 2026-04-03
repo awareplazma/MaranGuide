@@ -7,15 +7,15 @@ MaranGuide is a full-stack PHP application designed to digitize Majlis Daerah ma
 ## Key Features
 
 - **Interactive Mapping**: Integrated Leaflet.js with custom markers for local landmarks and services.
-- **Social Connectivity**: Built-in "Social Feed" logic for user-generated updates and community interactions.
+- **Social Connectivity**: Built-in "Social Feed" logic for user-generated updates and community interactions such as rating.
 - **External Integration**: "Deep Linking" to Google Maps for mobile-ready GPS navigation.
-- **Responsive UI**: Developed using Google Materialize and Custom CSS for a mobile-first user experience.
+- **Responsive UI**: Developed using Google Materialize and Custom CSS for a responsive web application.
 
 ## Technical Stack
 
-- **Backend**: PHP (Core)
+- **Backend**: PHP
 - **Frontend**: JavaScript (ES6), Google Materialize, Leaflet.js
-- **Database**: MySQL (Relational Schema Design)
+- **Database**: MySQL 
 - **Environment**: Developed and tested on Localhost (XAMPP/WAMP)
 
 ## Current Status
